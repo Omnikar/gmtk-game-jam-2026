@@ -1,0 +1,124 @@
+[gd_scene load_steps=6 format=3 uid="uid://6tmt7tajsfvr"]
+
+[ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_6wirs"]
+[ext_resource type="Texture2D" uid="uid://bcfq6n4vx41b2" path="res://sprites/evidence/will.png" id="2_tp6wr"]
+[ext_resource type="Texture2D" uid="uid://cmqrscbyn52km" path="res://sprites/evidence/stake.png" id="3_hchca"]
+[ext_resource type="Texture2D" uid="uid://cksgf8hqinrkt" path="res://sprites/evidence/garlic.png" id="4_le68i"]
+[ext_resource type="PackedScene" uid="uid://bnhgf1rm0syin" path="res://ui/journal/transcript_entry.tscn" id="5_pa4op"]
+
+[node name="Journal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -348.0
+offset_top = -266.0
+offset_right = 348.0
+offset_bottom = 266.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 0
+
+[node name="Evidence" type="ScrollContainer" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Evidence"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="object" parent="TabContainer/Evidence/VBoxContainer" instance=ExtResource("1_6wirs")]
+visible = false
+layout_mode = 2
+evidence_name = "Suspicious object"
+evidence_description = "This object is very suspicious. This is more text for the sake of increasing the length of this description"
+
+[node name="object_2" parent="TabContainer/Evidence/VBoxContainer" instance=ExtResource("1_6wirs")]
+visible = false
+layout_mode = 2
+evidence_name = "Even more suspicious object"
+evidence_description = "This object is wayyy more suspicious."
+
+[node name="Will" parent="TabContainer/Evidence/VBoxContainer" instance=ExtResource("1_6wirs")]
+layout_mode = 2
+texture = ExtResource("2_tp6wr")
+evidence_name = "Dracula's will"
+evidence_description = "The last will and testament of Count Dracula.
+Found in Dracula's study after his death.
+Among other things, entrusts the Transylvania estate to [NAME OF FAKE HEIR]."
+
+[node name="Stake" parent="TabContainer/Evidence/VBoxContainer" instance=ExtResource("1_6wirs")]
+layout_mode = 2
+texture = ExtResource("3_hchca")
+evidence_name = "Ash-covered wooden stake"
+evidence_description = "A sharp stake of oak wood. Found stabbed through the heart of Dracula's shriveled corpse. Its end is peppered with flakes of ash."
+
+[node name="EvidenceEntry" parent="TabContainer/Evidence/VBoxContainer" instance=ExtResource("1_6wirs")]
+layout_mode = 2
+texture = ExtResource("4_le68i")
+evidence_name = "Garlic"
+evidence_description = "One of several bulbs of garlic found hidden in the kitchen."
+
+[node name="Transcripts" type="TabContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+current_tab = 0
+metadata/_tab_index = 1
+
+[node name="Guard" type="ScrollContainer" parent="TabContainer/Transcripts"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Transcripts/Guard"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TranscriptEntry" parent="TabContainer/Transcripts/Guard/VBoxContainer" instance=ExtResource("5_pa4op")]
+layout_mode = 2
+prompt = "I know nothing gets in or out of these walls without you knowing."
+response = "Yes, detective."
+
+[node name="TranscriptEntry2" parent="TabContainer/Transcripts/Guard/VBoxContainer" instance=ExtResource("5_pa4op")]
+layout_mode = 2
+prompt = "So do you know anything about these missing stakes? Could make a pretty mean murder weapon against a powerful vampire like Dracula."
+response = "No idea, detective. I know they were on the premises somewhere, and now they’re gone."
+
+[node name="TranscriptEntry3" parent="TabContainer/Transcripts/Guard/VBoxContainer" instance=ExtResource("5_pa4op")]
+layout_mode = 2
+prompt = "So you didn’t see someone enter the mansion with them?"
+response = "No."
+
+[node name="TranscriptEntry4" parent="TabContainer/Transcripts/Guard/VBoxContainer" instance=ExtResource("5_pa4op")]
+layout_mode = 2
+prompt = "Who was the last person you saw enter the palace?"
+response = "It was dark, I couldn’t quite identify them."
+
+[node name="TranscriptEntry5" parent="TabContainer/Transcripts/Guard/VBoxContainer" instance=ExtResource("5_pa4op")]
+layout_mode = 2
+prompt = "Any defining characteristics?"
+response = "They smelled like flowers."
+
+[node name="Joe" type="ScrollContainer" parent="TabContainer/Transcripts"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Transcripts/Joe"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TranscriptEntry" parent="TabContainer/Transcripts/Joe/VBoxContainer" instance=ExtResource("5_pa4op")]
+layout_mode = 2
+prompt = "Who's joe?"
+response = "The voices"
