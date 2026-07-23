@@ -2,6 +2,7 @@
 
 extends VBoxContainer
 
+@export var tag: String = ""
 @export_multiline var prompt: String = "Prompt"
 @export_multiline var response: String = "Response"
 
