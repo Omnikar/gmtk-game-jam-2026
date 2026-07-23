@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://6tmt7tajsfvr"]
+
+[ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/evidence_entry.tscn" id="1_ei8f6"]
+[ext_resource type="Texture2D" uid="uid://bcfq6n4vx41b2" path="res://sprites/evidence/will.png" id="2_ge8r2"]
+
+[node name="Journal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_right = 685.0
+offset_bottom = 361.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="object" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_ei8f6")]
+layout_mode = 2
+evidence_name = "Suspicious object"
+evidence_description = "This object is very suspicious. This is more text for the sake of increasing the length of this description"
+
+[node name="object_2" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_ei8f6")]
+layout_mode = 2
+evidence_name = "Even more suspicious object"
+evidence_description = "This object is wayyy more suspicious."
+
+[node name="Will" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_ei8f6")]
+layout_mode = 2
+texture = ExtResource("2_ge8r2")
+evidence_name = "Dracula's will"
+evidence_description = "The last will and testament of Count Dracula.
+Found in Dracula's study after his death.
+Among other things, entrusts the Transylvania estate to [NAME OF FAKE HEIR]."

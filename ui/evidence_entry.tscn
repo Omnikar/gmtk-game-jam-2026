@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://bm4bi6vny2x0v"]
+
+[ext_resource type="Script" uid="uid://m47obk77kvgr" path="res://scripts/evidence_entry.gd" id="1_3su73"]
+[ext_resource type="Theme" uid="uid://culxxwmbh3x81" path="res://ui/journal.tres" id="1_va40m"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3su73"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_74yia"]
+size = Vector2(3, 3)
+
+[node name="EvidenceEntry" type="HBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -303.0
+offset_bottom = -514.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_3su73")
+texture = SubResource("PlaceholderTexture2D_3su73")
+evidence_name = "Name"
+evidence_description = "Description"
+
+[node name="Image" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_va40m")
+
+[node name="TextureRect" type="TextureRect" parent="Image"]
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_74yia")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Name" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_va40m")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Name"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+text = "Suspicious object"
+fit_content = true
+
+[node name="Description" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+theme = ExtResource("1_va40m")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Description"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+text = "This object is very suspicious. This is more text for the sake of increasing the length of this description"
+fit_content = true
