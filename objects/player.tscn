@@ -8,6 +8,7 @@ size = Vector2(16, 16)
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_bxedw"]
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
 motion_mode = 1
 script = ExtResource("1_eqqp1")
 
