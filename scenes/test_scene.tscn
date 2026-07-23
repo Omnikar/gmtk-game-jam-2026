@@ -1,25 +1,25 @@
-[gd_scene load_steps=5 format=3 uid="uid://j3eurykqlbo2"]
+[gd_scene format=3 uid="uid://j3eurykqlbo2"]
 
 [ext_resource type="PackedScene" uid="uid://81l1pn88itn2" path="res://objects/player.tscn" id="1_j8ivh"]
 [ext_resource type="PackedScene" uid="uid://dgj3wvfjol1lv" path="res://objects/test_obstacle.tscn" id="2_nd71p"]
 [ext_resource type="PackedScene" uid="uid://c2onydhiv4uxr" path="res://objects/test_npc.tscn" id="3_nd71p"]
 [ext_resource type="PackedScene" uid="uid://c61xmp77qray0" path="res://objects/test_evidence.tscn" id="4_7ddre"]
 
-[node name="TestScene" type="Node2D"]
+[node name="TestScene" type="Node2D" unique_id=1069451238]
 
-[node name="Player" parent="." instance=ExtResource("1_j8ivh")]
+[node name="Player" parent="." unique_id=788037649 instance=ExtResource("1_j8ivh")]
 
-[node name="TestObstacle" parent="." instance=ExtResource("2_nd71p")]
+[node name="TestObstacle" parent="." unique_id=1992660112 instance=ExtResource("2_nd71p")]
 position = Vector2(-28, -26)
 
-[node name="TestObstacle2" parent="." instance=ExtResource("2_nd71p")]
+[node name="TestObstacle2" parent="." unique_id=1814810670 instance=ExtResource("2_nd71p")]
 position = Vector2(69, -58)
 
-[node name="TestObstacle3" parent="." instance=ExtResource("2_nd71p")]
+[node name="TestObstacle3" parent="." unique_id=74950057 instance=ExtResource("2_nd71p")]
 position = Vector2(66, 35)
 
-[node name="TestNPC" parent="." instance=ExtResource("3_nd71p")]
+[node name="TestNPC" parent="." unique_id=956004964 instance=ExtResource("3_nd71p")]
 position = Vector2(21, -72)
 
-[node name="TestEvidence" parent="." instance=ExtResource("4_7ddre")]
+[node name="TestEvidence" parent="." unique_id=1395274787 instance=ExtResource("4_7ddre")]
 position = Vector2(-55, 51)

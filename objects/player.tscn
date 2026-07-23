@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://81l1pn88itn2"]
+[gd_scene format=3 uid="uid://81l1pn88itn2"]
 
 [ext_resource type="Script" uid="uid://dhrhyaxpopvft" path="res://scripts/player.gd" id="1_eqqp1"]
 
@@ -7,17 +7,17 @@ size = Vector2(16, 16)
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_bxedw"]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" unique_id=1419036307]
 collision_layer = 2
 motion_mode = 1
 script = ExtResource("1_eqqp1")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=464919177]
 shape = SubResource("RectangleShape2D_eqqp1")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=467417967]
 scale = Vector2(15.999999, 15.999999)
 texture = SubResource("PlaceholderTexture2D_bxedw")
 
-[node name="MainCamera" type="Camera2D" parent="."]
+[node name="MainCamera" type="Camera2D" parent="." unique_id=332261095]
 zoom = Vector2(1.7, 1.7)

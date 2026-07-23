@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://c61xmp77qray0"]
+[gd_scene format=3 uid="uid://c61xmp77qray0"]
 
 [ext_resource type="Script" uid="uid://f4i71guyefxw" path="res://scripts/evidence.gd" id="1_ygq5j"]
 [ext_resource type="Resource" uid="uid://ch78p8xfon1le" path="res://dialogue/test_evidence_timeline.dtl" id="2_4761r"]
@@ -8,15 +8,15 @@ size = Vector2(36, 36)
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_4761r"]
 
-[node name="TestEvidence" type="Area2D"]
+[node name="TestEvidence" type="Area2D" unique_id=576349916]
 collision_mask = 2
 script = ExtResource("1_ygq5j")
 timeline = ExtResource("2_4761r")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=30213949]
 shape = SubResource("RectangleShape2D_e0s0w")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1640067437]
 modulate = Color(0.18031618, 0.5847296, 0.87206703, 1)
 scale = Vector2(16, 16)
 texture = SubResource("PlaceholderTexture2D_4761r")
