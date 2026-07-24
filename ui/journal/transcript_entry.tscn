@@ -1,33 +1,48 @@
 [gd_scene format=3 uid="uid://bnhgf1rm0syin"]
 
 [ext_resource type="Script" uid="uid://cqguvl2gxxc4" path="res://scripts/transcript_entry.gd" id="1_wy4p5"]
+[ext_resource type="Texture2D" uid="uid://uyin2836k3pn" path="res://sprites/ui/red_circle.png" id="2_owpfj"]
 
-[node name="TranscriptEntry" type="VBoxContainer" unique_id=274706357]
-offset_right = 1152.0
-offset_bottom = 113.0
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ns7cy"]
+
+[node name="TranscriptEntry" type="PanelContainer" unique_id=1672265170]
+offset_right = 699.0
+offset_bottom = 114.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ns7cy")
 script = ExtResource("1_wy4p5")
 
-[node name="Prompt" type="MarginContainer" parent="." unique_id=1739130202]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=231577188]
+layout_mode = 2
+
+[node name="Prompt" type="MarginContainer" parent="VBoxContainer" unique_id=1739130202]
 layout_mode = 2
 theme_override_constants/margin_left = 150
 theme_override_constants/margin_top = 15
 theme_override_constants/margin_right = 30
 theme_override_constants/margin_bottom = 5
 
-[node name="Text" type="RichTextLabel" parent="Prompt" unique_id=242127744]
+[node name="Text" type="RichTextLabel" parent="VBoxContainer/Prompt" unique_id=242127744]
 layout_mode = 2
 text = "Prompt"
 fit_content = true
 horizontal_alignment = 2
 
-[node name="Response" type="MarginContainer" parent="." unique_id=191761785]
+[node name="Response" type="MarginContainer" parent="VBoxContainer" unique_id=191761785]
 layout_mode = 2
 theme_override_constants/margin_left = 30
 theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 150
 theme_override_constants/margin_bottom = 15
 
-[node name="Text" type="RichTextLabel" parent="Response" unique_id=1247203716]
+[node name="Text" type="RichTextLabel" parent="VBoxContainer/Response" unique_id=1247203716]
 layout_mode = 2
 text = "Response"
 fit_content = true
+
+[node name="Selected" type="TextureRect" parent="." unique_id=2020317544]
+texture_filter = 2
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("2_owpfj")
+expand_mode = 3
+stretch_mode = 4

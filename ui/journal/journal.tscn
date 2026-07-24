@@ -101,38 +101,43 @@ layout_mode = 2
 current_tab = 0
 metadata/_tab_index = 1
 
-[node name="Guard" type="ScrollContainer" parent="TabContainer/Transcripts" unique_id=767514674]
+[node name="Cook" type="ScrollContainer" parent="TabContainer/Transcripts" unique_id=767514674]
 layout_mode = 2
 metadata/_tab_index = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Transcripts/Guard" unique_id=614043166]
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Transcripts/Cook" unique_id=614043166]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="TranscriptEntry" parent="TabContainer/Transcripts/Guard/VBoxContainer" unique_id=1499117769 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry" parent="TabContainer/Transcripts/Cook/VBoxContainer" unique_id=1499117769 instance=ExtResource("5_pa4op")]
 layout_mode = 2
-prompt = "I know nothing gets in or out of these walls without you knowing."
-response = "Yes, detective."
+tag = "3021123567"
+prompt = "bruh"
+response = "what?"
 
-[node name="TranscriptEntry2" parent="TabContainer/Transcripts/Guard/VBoxContainer" unique_id=26953639 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry2" parent="TabContainer/Transcripts/Cook/VBoxContainer" unique_id=26953639 instance=ExtResource("5_pa4op")]
 layout_mode = 2
-prompt = "So do you know anything about these missing stakes? Could make a pretty mean murder weapon against a powerful vampire like Dracula."
-response = "No idea, detective. I know they were on the premises somewhere, and now they’re gone."
+tag = "1944829288"
+prompt = "you did it"
+response = "no i din't"
 
-[node name="TranscriptEntry3" parent="TabContainer/Transcripts/Guard/VBoxContainer" unique_id=1632837180 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry3" parent="TabContainer/Transcripts/Cook/VBoxContainer" unique_id=1632837180 instance=ExtResource("5_pa4op")]
 layout_mode = 2
-prompt = "So you didn’t see someone enter the mansion with them?"
-response = "No."
+tag = "2387722629"
+prompt = "prove it"
+response = "no"
 
-[node name="TranscriptEntry4" parent="TabContainer/Transcripts/Guard/VBoxContainer" unique_id=779741373 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry4" parent="TabContainer/Transcripts/Cook/VBoxContainer" unique_id=779741373 instance=ExtResource("5_pa4op")]
 layout_mode = 2
-prompt = "Who was the last person you saw enter the palace?"
-response = "It was dark, I couldn’t quite identify them."
+tag = "4187588906"
+prompt = "yes"
+response = "no"
 
-[node name="TranscriptEntry5" parent="TabContainer/Transcripts/Guard/VBoxContainer" unique_id=109404175 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry5" parent="TabContainer/Transcripts/Cook/VBoxContainer" unique_id=109404175 instance=ExtResource("5_pa4op")]
 layout_mode = 2
-prompt = "Any defining characteristics?"
-response = "They smelled like flowers."
+tag = "1982566434"
+prompt = "guilty"
+response = "darn"
 
 [node name="Joe" type="ScrollContainer" parent="TabContainer/Transcripts" unique_id=1747064354]
 visible = false
@@ -146,7 +151,8 @@ size_flags_vertical = 3
 
 [node name="TranscriptEntry" parent="TabContainer/Transcripts/Joe/VBoxContainer" unique_id=941348356 instance=ExtResource("5_pa4op")]
 layout_mode = 2
-prompt = "Who's joe?"
+tag = "3719641705"
+prompt = "Who's Joe?"
 response = "The voices"
 
 [node name="Reference" type="ScrollContainer" parent="TabContainer" unique_id=1720425453]
@@ -193,7 +199,6 @@ theme_override_font_sizes/normal_font_size = 36
 text = "0 items selected"
 
 [node name="PresentButton" type="Button" parent="." unique_id=339706286]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -207,6 +212,6 @@ offset_bottom = 393.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 40
-text = "PRESENT"
+text = "Present"
 
 [connection signal="pressed" from="PresentButton" to="." method="_on_present_button_pressed"]

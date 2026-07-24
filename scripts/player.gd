@@ -10,7 +10,7 @@ func _ready() -> void:
 
 
 func _physics_process(_delta: float) -> void:
-	var can_move = Dialogic.current_timeline == null
+	var can_move = Dialogic.current_timeline == null and not DialogueManager.journal_in_present_mode
 
 	if can_move:
 		var motion = Vector2(

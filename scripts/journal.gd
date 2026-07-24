@@ -17,6 +17,8 @@ func _ready() -> void:
 
 	evidence_folder = evidence_folder.rstrip("/")
 
+	add_evidence("cook_character")
+
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("toggle_journal"):
@@ -29,17 +31,21 @@ func _on_dialogic_signal(arg: Dictionary) -> void:
 	var present_character = arg.get("present_evidence")
 
 	if evidence_id != null and !added_evidence.has(evidence_id):
-		var vbox = $TabContainer/Evidence/MarginContainer/VBoxContainer
-		vbox.get_node("TutorialTip").hide()
-		added_evidence[evidence_id] = true
-		var scene_path = "%s/%s.tscn" % [evidence_folder, evidence_id]
-		var scene_resource: PackedScene = load(scene_path)
-		var scene_instance = scene_resource.instantiate()
-		scene_instance.evidence_clicked.connect(_on_evidence_clicked)
-		vbox.add_child(scene_instance)
+		add_evidence(evidence_id)
 	elif present_character != null:
 		present_target = present_character
 		start_present_mode()
+
+
+func add_evidence(evidence_id: String) -> void:
+	var vbox = $TabContainer/Evidence/MarginContainer/VBoxContainer
+	vbox.get_node("TutorialTip").hide()
+	added_evidence[evidence_id] = true
+	var scene_path = "%s/%s.tscn" % [evidence_folder, evidence_id]
+	var scene_resource: PackedScene = load(scene_path)
+	var scene_instance = scene_resource.instantiate()
+	scene_instance.evidence_clicked.connect(_on_evidence_clicked)
+	vbox.add_child(scene_instance)
 
 
 func _on_evidence_clicked(tag: String) -> void:
@@ -58,6 +64,7 @@ func _on_evidence_clicked(tag: String) -> void:
 
 func start_present_mode() -> void:
 	present_mode = true
+	DialogueManager.journal_in_present_mode = true
 	visible = true
 	$SelectedCount.visible = true
 	$PresentButton.visible = true
@@ -66,6 +73,7 @@ func start_present_mode() -> void:
 
 func end_present_mode() -> void:
 	present_mode = false
+	DialogueManager.journal_in_present_mode = false
 	$SelectedCount.visible = false
 	$PresentButton.visible = false
 	for entry in $TabContainer/Evidence/MarginContainer/VBoxContainer.get_children():
@@ -75,4 +83,5 @@ func end_present_mode() -> void:
 
 func _on_present_button_pressed() -> void:
 	end_present_mode()
-	evidence_presented.emit(present_target, Array(selected_evidence.keys()))
+	# evidence_presented.emit(present_target, Array(selected_evidence.keys()))
+	DialogueManager.submit_evidence(present_target, Array(selected_evidence.keys()))

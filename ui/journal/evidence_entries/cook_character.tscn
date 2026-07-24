@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bsd808m07oxow"]
+
+[ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_qjua0"]
+[ext_resource type="Texture2D" uid="uid://c5i1d5iepsqty" path="res://sprites/characters/cook/cook_face.png" id="2_3yypy"]
+
+[node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_qjua0")]
+texture = ExtResource("2_3yypy")
+tag = "cook_character"
+evidence_name = "The Cook"
+evidence_description = "Human
+Responsible for preparing blood-based dishes for the Dracula estate."
+
+[node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
+texture = ExtResource("2_3yypy")
+
+[node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
+text = "The Cook"
+
+[node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
+text = "Human
+Responsible for preparing blood-based dishes for the Dracula estate."

@@ -70,6 +70,7 @@ fit_content = true
 scroll_active = false
 
 [node name="Selected" type="TextureRect" parent="." unique_id=1128306705]
+visible = false
 texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 0
