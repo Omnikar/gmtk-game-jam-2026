@@ -1,0 +1,58 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "Speaking",
+&"description": "",
+&"display_name": "Guard",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"Angry": {
+"export_overrides": {
+"image": "\"res://sprites/characters/guard/dialogue_guard_earmuffs_angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Ears Angry": {
+"export_overrides": {
+"image": "\"res://sprites/characters/guard/dialogue_guard_ears_angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Ears Speaking": {
+"export_overrides": {
+"image": "\"res://sprites/characters/guard/dialogue_guard_ears_neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Speaking": {
+"export_overrides": {
+"image": "\"res://sprites/characters/guard/dialogue_guard_earmuffs_neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

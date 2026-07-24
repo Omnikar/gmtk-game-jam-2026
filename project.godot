@@ -30,9 +30,14 @@ Journal="*uid://6tmt7tajsfvr"
 directories/dch_directory={
 "cook": "res://dialogue/characters/cook.dch",
 "detective": "res://dialogue/characters/detective.dch",
+"friend": "res://dialogue/characters/friend.dch",
+"gardener": "res://dialogue/characters/gardener.dch",
+"guard": "res://dialogue/characters/guard.dch",
+"niece": "res://dialogue/characters/niece.dch",
 "test_npc": "res://dialogue/characters/test_npc.dch"
 }
 directories/dtl_directory={
+"cook_introduction": "res://dialogue/character_timelines/cook/cook_introduction.dtl",
 "cook_self_test": "res://dialogue/character_timelines/cook_self_test.dtl",
 "detective_unsure": "res://dialogue/character_timelines/detective_unsure.dtl",
 "intro": "res://dialogue/intro.dtl",
