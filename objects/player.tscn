@@ -206,7 +206,7 @@ scale = Vector2(15.999999, 15.999999)
 texture = SubResource("PlaceholderTexture2D_bxedw")
 
 [node name="MainCamera" type="Camera2D" parent="." unique_id=332261095]
-zoom = Vector2(2.67, 2.67)
+zoom = Vector2(3.45, 3.45)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=708546280]
 position = Vector2(0, -13)
