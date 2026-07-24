@@ -1,3 +1,4 @@
+[style name="dialogue_style"]
 What is Dracula's will doing on the ground?
 Dracula's will added to journal.
 [signal arg_type="dict" arg="{"add_evidence":"fake_will"}"]
