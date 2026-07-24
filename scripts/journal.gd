@@ -1,4 +1,4 @@
-extends Control
+class_name Journal extends Control
 
 signal evidence_presented(character: String, tags: Array[String])
 
@@ -12,6 +12,8 @@ var selected_evidence: Dictionary[String, bool] = {}
 
 
 func _ready() -> void:
+	DialogueManager.journal = self
+
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	Dialogic.timeline_started.connect(hide)
 
@@ -60,20 +62,18 @@ func _on_evidence_clicked(tag: String) -> void:
 				selected_count += 1
 		var message = "%d items selected" % selected_count
 		$SelectedCount.text = message
+		$PresentButton.visible = selected_count >= 1
 
 
 func start_present_mode() -> void:
 	present_mode = true
-	DialogueManager.journal_in_present_mode = true
 	visible = true
 	$SelectedCount.visible = true
-	$PresentButton.visible = true
 	selected_evidence = {}
 
 
 func end_present_mode() -> void:
 	present_mode = false
-	DialogueManager.journal_in_present_mode = false
 	$SelectedCount.visible = false
 	$PresentButton.visible = false
 	for entry in $TabContainer/Evidence/MarginContainer/VBoxContainer.get_children():
