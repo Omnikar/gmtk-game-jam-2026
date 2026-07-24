@@ -1,25 +1,25 @@
 [gd_scene format=3 uid="uid://6tmt7tajsfvr"]
 
 [ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_6wirs"]
-[ext_resource type="Theme" uid="uid://dibnl3s6ovwo6" path="res://ui/journal/journal.tres" id="1_hchca"]
 [ext_resource type="Script" uid="uid://xa5153munf4x" path="res://scripts/journal.gd" id="1_tp6wr"]
 [ext_resource type="Texture2D" uid="uid://bcfq6n4vx41b2" path="res://sprites/evidence/will.png" id="2_tp6wr"]
 [ext_resource type="Texture2D" uid="uid://cmqrscbyn52km" path="res://sprites/evidence/stake.png" id="3_hchca"]
 [ext_resource type="Texture2D" uid="uid://cksgf8hqinrkt" path="res://sprites/evidence/garlic.png" id="4_le68i"]
 [ext_resource type="PackedScene" uid="uid://bnhgf1rm0syin" path="res://ui/journal/transcript_entry.tscn" id="5_pa4op"]
 
-[node name="Journal" type="Control" unique_id=1243644707]
+[node name="Journal" type="CanvasLayer" unique_id=890431623]
+script = ExtResource("1_tp6wr")
+evidence_folder = "res://ui/journal/evidence_entries"
+
+[node name="Control" type="Control" parent="." unique_id=1108159999]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_hchca")
-script = ExtResource("1_tp6wr")
-evidence_folder = "res://ui/journal/evidence_entries"
 
-[node name="TabContainer" type="TabContainer" parent="." unique_id=632751016]
+[node name="TabContainer" type="TabContainer" parent="Control" unique_id=632751016]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -37,46 +37,46 @@ tab_0/title = "       Evidence      "
 tab_1/title = "       Transcripts      "
 tab_2/title = "      Reference      "
 
-[node name="Evidence" type="ScrollContainer" parent="TabContainer" unique_id=155027342]
+[node name="Evidence" type="ScrollContainer" parent="Control/TabContainer" unique_id=155027342]
 layout_mode = 2
 metadata/_tab_index = 0
 metadata/_tab_name = "       Evidence      "
 
-[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Evidence" unique_id=1806709718]
+[node name="MarginContainer" type="MarginContainer" parent="Control/TabContainer/Evidence" unique_id=1806709718]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Evidence/MarginContainer" unique_id=144918834]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/TabContainer/Evidence/MarginContainer" unique_id=144918834]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="TutorialTip" type="MarginContainer" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=596501027]
+[node name="TutorialTip" type="MarginContainer" parent="Control/TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=596501027]
 visible = false
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/margin_left = 30
 
-[node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Evidence/MarginContainer/VBoxContainer/TutorialTip" unique_id=1716339994]
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/TabContainer/Evidence/MarginContainer/VBoxContainer/TutorialTip" unique_id=1716339994]
 layout_mode = 2
 text = "Investigate the scene to find evidence to log here"
 fit_content = true
 
-[node name="object" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1985030895 instance=ExtResource("1_6wirs")]
+[node name="object" parent="Control/TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1985030895 instance=ExtResource("1_6wirs")]
 visible = false
 layout_mode = 2
 evidence_name = "Suspicious object"
 evidence_description = "This object is very suspicious. This is more text for the sake of increasing the length of this description"
 
-[node name="object_2" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=164065472 instance=ExtResource("1_6wirs")]
+[node name="object_2" parent="Control/TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=164065472 instance=ExtResource("1_6wirs")]
 visible = false
 layout_mode = 2
 evidence_name = "Even more suspicious object"
 evidence_description = "This object is wayyy more suspicious."
 
-[node name="Will" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1668971342 instance=ExtResource("1_6wirs")]
+[node name="Will" parent="Control/TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1668971342 instance=ExtResource("1_6wirs")]
 visible = false
 layout_mode = 2
 texture = ExtResource("2_tp6wr")
@@ -85,86 +85,88 @@ evidence_description = "The last will and testament of Count Dracula.
 Found in Dracula's study after his death.
 Among other things, entrusts the Transylvania estate to [NAME OF FAKE HEIR]."
 
-[node name="Stake" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1986431209 instance=ExtResource("1_6wirs")]
+[node name="Stake" parent="Control/TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1986431209 instance=ExtResource("1_6wirs")]
+visible = false
 layout_mode = 2
 texture = ExtResource("3_hchca")
 evidence_name = "Ash-covered wooden stake"
 evidence_description = "A sharp stake of oak wood. Found stabbed through the heart of Dracula's shriveled corpse. Its end is peppered with flakes of ash."
 
-[node name="Garlic" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1946197375 instance=ExtResource("1_6wirs")]
+[node name="Garlic" parent="Control/TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1946197375 instance=ExtResource("1_6wirs")]
+visible = false
 layout_mode = 2
 texture = ExtResource("4_le68i")
 evidence_name = "Garlic"
 evidence_description = "One of several bulbs of garlic found hidden in the kitchen."
 
-[node name="Transcripts" type="TabContainer" parent="TabContainer" unique_id=994399470]
+[node name="Transcripts" type="TabContainer" parent="Control/TabContainer" unique_id=994399470]
 visible = false
 layout_mode = 2
 current_tab = 0
 metadata/_tab_index = 1
 metadata/_tab_name = "       Transcripts      "
 
-[node name="Cook" type="ScrollContainer" parent="TabContainer/Transcripts" unique_id=767514674]
+[node name="Cook" type="ScrollContainer" parent="Control/TabContainer/Transcripts" unique_id=767514674]
 layout_mode = 2
 metadata/_tab_index = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Transcripts/Cook" unique_id=614043166]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/TabContainer/Transcripts/Cook" unique_id=614043166]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="TranscriptEntry" parent="TabContainer/Transcripts/Cook/VBoxContainer" unique_id=1499117769 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry" parent="Control/TabContainer/Transcripts/Cook/VBoxContainer" unique_id=1499117769 instance=ExtResource("5_pa4op")]
 layout_mode = 2
 tag = "3021123567"
 prompt = "bruh"
 response = "what?"
 
-[node name="TranscriptEntry2" parent="TabContainer/Transcripts/Cook/VBoxContainer" unique_id=26953639 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry2" parent="Control/TabContainer/Transcripts/Cook/VBoxContainer" unique_id=26953639 instance=ExtResource("5_pa4op")]
 layout_mode = 2
 tag = "1944829288"
 prompt = "you did it"
 response = "no i din't"
 
-[node name="TranscriptEntry3" parent="TabContainer/Transcripts/Cook/VBoxContainer" unique_id=1632837180 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry3" parent="Control/TabContainer/Transcripts/Cook/VBoxContainer" unique_id=1632837180 instance=ExtResource("5_pa4op")]
 layout_mode = 2
 tag = "2387722629"
 prompt = "prove it"
 response = "no"
 
-[node name="TranscriptEntry4" parent="TabContainer/Transcripts/Cook/VBoxContainer" unique_id=779741373 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry4" parent="Control/TabContainer/Transcripts/Cook/VBoxContainer" unique_id=779741373 instance=ExtResource("5_pa4op")]
 layout_mode = 2
 tag = "4187588906"
 prompt = "yes"
 response = "no"
 
-[node name="TranscriptEntry5" parent="TabContainer/Transcripts/Cook/VBoxContainer" unique_id=109404175 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry5" parent="Control/TabContainer/Transcripts/Cook/VBoxContainer" unique_id=109404175 instance=ExtResource("5_pa4op")]
 layout_mode = 2
 tag = "1982566434"
 prompt = "guilty"
 response = "darn"
 
-[node name="Joe" type="ScrollContainer" parent="TabContainer/Transcripts" unique_id=1747064354]
+[node name="Joe" type="ScrollContainer" parent="Control/TabContainer/Transcripts" unique_id=1747064354]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Transcripts/Joe" unique_id=588520242]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/TabContainer/Transcripts/Joe" unique_id=588520242]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="TranscriptEntry" parent="TabContainer/Transcripts/Joe/VBoxContainer" unique_id=941348356 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry" parent="Control/TabContainer/Transcripts/Joe/VBoxContainer" unique_id=941348356 instance=ExtResource("5_pa4op")]
 layout_mode = 2
 tag = "3719641705"
 prompt = "Who's Joe?"
 response = "The voices"
 
-[node name="Reference" type="ScrollContainer" parent="TabContainer" unique_id=1720425453]
+[node name="Reference" type="ScrollContainer" parent="Control/TabContainer" unique_id=1720425453]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 2
 metadata/_tab_name = "      Reference      "
 
-[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Reference" unique_id=1211947474]
+[node name="MarginContainer" type="MarginContainer" parent="Control/TabContainer/Reference" unique_id=1211947474]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -173,7 +175,7 @@ theme_override_constants/margin_top = 30
 theme_override_constants/margin_right = 30
 theme_override_constants/margin_bottom = 30
 
-[node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Reference/MarginContainer" unique_id=644172496]
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/TabContainer/Reference/MarginContainer" unique_id=644172496]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -185,37 +187,36 @@ text = "– Garlic
 
 – Reflections"
 
-[node name="SelectedCount" type="RichTextLabel" parent="." unique_id=656829663]
-visible = false
+[node name="SelectedCount" type="RichTextLabel" parent="Control" unique_id=656829663]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 573.0
-offset_top = 250.0
-offset_right = 889.0
-offset_bottom = 322.0
+offset_left = 554.0
+offset_top = 226.0
+offset_right = 870.0
+offset_bottom = 298.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 36
 text = "0 items selected"
 
-[node name="PresentButton" type="Button" parent="." unique_id=339706286]
+[node name="PresentButton" type="Button" parent="Control" unique_id=339706286]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 619.0
-offset_top = 330.0
-offset_right = 798.0
-offset_bottom = 393.0
+offset_left = 604.0
+offset_top = 308.0
+offset_right = 783.0
+offset_bottom = 371.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 40
 text = "Present"
 
-[connection signal="pressed" from="PresentButton" to="." method="_on_present_button_pressed"]
+[connection signal="pressed" from="Control/PresentButton" to="." method="_on_present_button_pressed"]

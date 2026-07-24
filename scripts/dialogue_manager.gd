@@ -22,8 +22,6 @@ var triggers: Array[DialogueTrigger] = [
 	dt("cook", ["cook_character"], "cook_self_test")
 ]
 
-var journal: Journal
-
 
 func submit_evidence(character: String, tags: Array[String]) -> void:
 	for trig in triggers:

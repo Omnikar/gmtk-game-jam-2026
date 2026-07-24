@@ -1,6 +1,4 @@
-class_name Journal extends Control
-
-signal evidence_presented(character: String, tags: Array[String])
+extends CanvasLayer
 
 @export var evidence_folder: String
 
@@ -12,7 +10,7 @@ var selected_evidence: Dictionary[String, bool] = {}
 
 
 func _ready() -> void:
-	DialogueManager.journal = self
+	visible = false
 
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	Dialogic.timeline_started.connect(hide)
@@ -40,7 +38,7 @@ func _on_dialogic_signal(arg: Dictionary) -> void:
 
 
 func add_evidence(evidence_id: String) -> void:
-	var vbox = $TabContainer/Evidence/MarginContainer/VBoxContainer
+	var vbox = $Control/TabContainer/Evidence/MarginContainer/VBoxContainer
 	vbox.get_node("TutorialTip").hide()
 	added_evidence[evidence_id] = true
 	var scene_path = "%s/%s.tscn" % [evidence_folder, evidence_id]
@@ -53,7 +51,7 @@ func add_evidence(evidence_id: String) -> void:
 func _on_evidence_clicked(tag: String) -> void:
 	if present_mode:
 		selected_evidence[tag] = !selected_evidence.get(tag, false)
-		for entry in $TabContainer/Evidence/MarginContainer/VBoxContainer.get_children():
+		for entry in $Control/TabContainer/Evidence/MarginContainer/VBoxContainer.get_children():
 			if entry is EvidenceEntry and entry.tag == tag:
 				entry.selected = selected_evidence[tag]
 		var selected_count = 0
@@ -61,22 +59,22 @@ func _on_evidence_clicked(tag: String) -> void:
 			if selected:
 				selected_count += 1
 		var message = "%d items selected" % selected_count
-		$SelectedCount.text = message
-		$PresentButton.visible = selected_count >= 1
+		$Control/SelectedCount.text = message
+		$Control/PresentButton.visible = selected_count >= 1
 
 
 func start_present_mode() -> void:
 	present_mode = true
 	visible = true
-	$SelectedCount.visible = true
+	$Control/SelectedCount.visible = true
 	selected_evidence = {}
 
 
 func end_present_mode() -> void:
 	present_mode = false
-	$SelectedCount.visible = false
-	$PresentButton.visible = false
-	for entry in $TabContainer/Evidence/MarginContainer/VBoxContainer.get_children():
+	$Control/SelectedCount.visible = false
+	$Control/PresentButton.visible = false
+	for entry in $Control/TabContainer/Evidence/MarginContainer/VBoxContainer.get_children():
 		if entry is EvidenceEntry:
 			entry.selected = false
 

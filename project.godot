@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="GMTK Game Jam 2026"
-run/main_scene="uid://cwvjuc3suirmc"
+run/main_scene="uid://j3eurykqlbo2"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -23,6 +23,7 @@ config/icon="res://icon.svg"
 
 Dialogic="*uid://ds2q0uclmolvu"
 DialogueManager="*uid://cp2harkcbvn6m"
+Journal="*uid://6tmt7tajsfvr"
 
 [dialogic]
 
