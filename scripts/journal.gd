@@ -1,5 +1,7 @@
 extends Control
 
+signal evidence_presented(character: String, tags: Array[String])
+
 @export var evidence_folder: String
 
 var added_evidence: Dictionary[String, bool] = {}
@@ -58,12 +60,14 @@ func start_present_mode() -> void:
 	present_mode = true
 	visible = true
 	$SelectedCount.visible = true
+	$PresentButton.visible = true
 	selected_evidence = {}
 
 
 func end_present_mode() -> void:
 	present_mode = false
 	$SelectedCount.visible = false
+	$PresentButton.visible = false
 	for entry in $TabContainer/Evidence/MarginContainer/VBoxContainer.get_children():
 		if entry is EvidenceEntry:
 			entry.selected = false
@@ -71,4 +75,4 @@ func end_present_mode() -> void:
 
 func _on_present_button_pressed() -> void:
 	end_present_mode()
-	pass  # Replace with function body.
+	evidence_presented.emit(present_target, Array(selected_evidence.keys()))
