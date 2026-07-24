@@ -1,2 +1,3 @@
-A suspicious blue square lays motionless on the ground
-Blue Square added to journal
+What is Dracula's will doing on the ground?
+Dracula's will added to journal.
+[signal arg_type="dict" arg="{"add_evidence":"fake_will"}"]

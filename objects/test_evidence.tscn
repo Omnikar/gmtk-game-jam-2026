@@ -2,11 +2,10 @@
 
 [ext_resource type="Script" uid="uid://f4i71guyefxw" path="res://scripts/evidence.gd" id="1_ygq5j"]
 [ext_resource type="Resource" uid="uid://ch78p8xfon1le" path="res://dialogue/test_evidence_timeline.dtl" id="2_4761r"]
+[ext_resource type="Texture2D" uid="uid://bcfq6n4vx41b2" path="res://sprites/evidence/will.png" id="3_fsmxr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e0s0w"]
 size = Vector2(36, 36)
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_4761r"]
 
 [node name="TestEvidence" type="Area2D" unique_id=576349916]
 collision_mask = 2
@@ -17,6 +16,5 @@ timeline = ExtResource("2_4761r")
 shape = SubResource("RectangleShape2D_e0s0w")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1640067437]
-modulate = Color(0.18031618, 0.5847296, 0.87206703, 1)
-scale = Vector2(16, 16)
-texture = SubResource("PlaceholderTexture2D_4761r")
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_fsmxr")

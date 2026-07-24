@@ -5,53 +5,67 @@
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3su73"]
 
-[node name="EvidenceEntry" type="HBoxContainer" unique_id=1556413337]
+[node name="EvidenceEntry" type="Control" unique_id=362404533]
 custom_minimum_size = Vector2(0, 100)
+layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -303.0
-offset_bottom = -514.0
+offset_right = -638.0
+offset_bottom = -528.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+script = ExtResource("1_3su73")
+texture = SubResource("PlaceholderTexture2D_3su73")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1997011912]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("1_3su73")
-texture = SubResource("PlaceholderTexture2D_3su73")
 
-[node name="Image" type="MarginContainer" parent="." unique_id=1774074990]
+[node name="Image" type="MarginContainer" parent="HBoxContainer" unique_id=1774074990]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("1_va40m")
+size_flags_vertical = 4
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 20
 
-[node name="TextureRect" type="TextureRect" parent="Image" unique_id=1924471794]
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Image" unique_id=1924471794]
 layout_mode = 2
 texture = SubResource("PlaceholderTexture2D_3su73")
 expand_mode = 5
 stretch_mode = 5
 
-[node name="Name" type="MarginContainer" parent="." unique_id=577881238]
+[node name="Name" type="MarginContainer" parent="HBoxContainer" unique_id=577881238]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_va40m")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Name" unique_id=269140008]
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Name" unique_id=269140008]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 3.0
+mouse_filter = 1
 text = "Name"
 fit_content = true
 vertical_alignment = 1
 
-[node name="Description" type="MarginContainer" parent="." unique_id=1240456865]
+[node name="Description" type="MarginContainer" parent="HBoxContainer" unique_id=1240456865]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 3.0
 theme = ExtResource("1_va40m")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Description" unique_id=848825136]
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Description" unique_id=848825136]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 3.0
+mouse_filter = 1
 text = "Description"
 fit_content = true

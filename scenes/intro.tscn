@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://c6l35ao48najv"]
+
+[ext_resource type="Texture2D" uid="uid://p26y0pgtqv7r" path="res://sprites/pixel.png" id="1_ioskq"]
+[ext_resource type="AudioStream" uid="uid://cnf02tsdo0ja3" path="res://sounds/thunder.wav" id="2_yjqpq"]
+[ext_resource type="Script" uid="uid://cicdlc0cjto18" path="res://scripts/intro_timer.gd" id="3_4bx60"]
+
+[sub_resource type="Animation" id="Animation_yjqpq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_4bx60"]
+resource_name = "lightning"
+length = 16.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6333333, 0.70000005, 1, 1.1, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(0.6255971, 0.6255971, 0.6255971, 1), Color(0.23211983, 0.23211989, 0.23211977, 1), Color(0.6255971, 0.6255971, 0.6255971, 1), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": null
+}, {
+"end_offset": 0.0,
+"start_offset": 5.252,
+"stream": ExtResource("2_yjqpq")
+}],
+"times": PackedFloat32Array(0.03333333, 0.55)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i2l1n"]
+_data = {
+&"RESET": SubResource("Animation_yjqpq"),
+&"lightning": SubResource("Animation_4bx60")
+}
+
+[node name="Intro" type="CanvasLayer" unique_id=1063657094]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=691975166]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ioskq")
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1246512559]
+libraries/ = SubResource("AnimationLibrary_i2l1n")
+autoplay = &"lightning"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=136781625]
+autoplay = true
+
+[node name="Timer" type="Timer" parent="." unique_id=848794377]
+wait_time = 2.0
+one_shot = true
+autostart = true
+script = ExtResource("3_4bx60")
+
+[connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]

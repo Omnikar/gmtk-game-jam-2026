@@ -1,6 +1,6 @@
 @tool
 
-extends HBoxContainer
+extends Control
 
 @export var texture: Texture2D
 @export var tag: String = ""
@@ -17,7 +17,16 @@ func _process(_delta: float) -> void:
 		update_inner_properties()
 
 
+func _gui_input(event: InputEvent) -> void:
+	if (
+		event is InputEventMouseButton
+		and event.is_pressed()
+		and event.button_index == MOUSE_BUTTON_LEFT
+	):
+		print(name)
+
+
 func update_inner_properties() -> void:
-	$Image/TextureRect.texture = texture
-	$Name/RichTextLabel.text = evidence_name
-	$Description/RichTextLabel.text = evidence_description
+	$HBoxContainer/Image/TextureRect.texture = texture
+	$HBoxContainer/Name/RichTextLabel.text = evidence_name
+	$HBoxContainer/Description/RichTextLabel.text = evidence_description

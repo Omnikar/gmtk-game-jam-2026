@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://6tmt7tajsfvr"]
 
 [ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_6wirs"]
+[ext_resource type="Script" uid="uid://xa5153munf4x" path="res://scripts/journal.gd" id="1_tp6wr"]
 [ext_resource type="Texture2D" uid="uid://bcfq6n4vx41b2" path="res://sprites/evidence/will.png" id="2_tp6wr"]
 [ext_resource type="Texture2D" uid="uid://cmqrscbyn52km" path="res://sprites/evidence/stake.png" id="3_hchca"]
 [ext_resource type="Texture2D" uid="uid://cksgf8hqinrkt" path="res://sprites/evidence/garlic.png" id="4_le68i"]
@@ -13,6 +14,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_tp6wr")
+evidence_folder = "res://ui/journal/evidence_entries"
 
 [node name="TabContainer" type="TabContainer" parent="." unique_id=632751016]
 layout_mode = 1
@@ -33,23 +36,41 @@ current_tab = 0
 layout_mode = 2
 metadata/_tab_index = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Evidence" unique_id=144918834]
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/Evidence" unique_id=1806709718]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Evidence/MarginContainer" unique_id=144918834]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="object" parent="TabContainer/Evidence/VBoxContainer" unique_id=1985030895 instance=ExtResource("1_6wirs")]
+[node name="TutorialTip" type="MarginContainer" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=596501027]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 30
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Evidence/MarginContainer/VBoxContainer/TutorialTip" unique_id=1716339994]
+layout_mode = 2
+text = "Investigate the scene to find evidence to log here"
+fit_content = true
+
+[node name="object" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1985030895 instance=ExtResource("1_6wirs")]
 visible = false
 layout_mode = 2
 evidence_name = "Suspicious object"
 evidence_description = "This object is very suspicious. This is more text for the sake of increasing the length of this description"
 
-[node name="object_2" parent="TabContainer/Evidence/VBoxContainer" unique_id=164065472 instance=ExtResource("1_6wirs")]
+[node name="object_2" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=164065472 instance=ExtResource("1_6wirs")]
 visible = false
 layout_mode = 2
 evidence_name = "Even more suspicious object"
 evidence_description = "This object is wayyy more suspicious."
 
-[node name="Will" parent="TabContainer/Evidence/VBoxContainer" unique_id=1668971342 instance=ExtResource("1_6wirs")]
+[node name="Will" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1668971342 instance=ExtResource("1_6wirs")]
+visible = false
 layout_mode = 2
 texture = ExtResource("2_tp6wr")
 evidence_name = "Dracula's will"
@@ -57,13 +78,15 @@ evidence_description = "The last will and testament of Count Dracula.
 Found in Dracula's study after his death.
 Among other things, entrusts the Transylvania estate to [NAME OF FAKE HEIR]."
 
-[node name="Stake" parent="TabContainer/Evidence/VBoxContainer" unique_id=1986431209 instance=ExtResource("1_6wirs")]
+[node name="Stake" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1986431209 instance=ExtResource("1_6wirs")]
+visible = false
 layout_mode = 2
 texture = ExtResource("3_hchca")
 evidence_name = "Ash-covered wooden stake"
 evidence_description = "A sharp stake of oak wood. Found stabbed through the heart of Dracula's shriveled corpse. Its end is peppered with flakes of ash."
 
-[node name="EvidenceEntry" parent="TabContainer/Evidence/VBoxContainer" unique_id=1946197375 instance=ExtResource("1_6wirs")]
+[node name="Garlic" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1946197375 instance=ExtResource("1_6wirs")]
+visible = false
 layout_mode = 2
 texture = ExtResource("4_le68i")
 evidence_name = "Garlic"

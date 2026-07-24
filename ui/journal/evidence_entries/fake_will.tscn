@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://deb6b01kqsalp"]
+
+[ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_t0fyi"]
+[ext_resource type="Texture2D" uid="uid://bcfq6n4vx41b2" path="res://sprites/evidence/will.png" id="2_wvnic"]
+
+[node name="FakeWill" unique_id=1556413337 instance=ExtResource("1_t0fyi")]
+texture = ExtResource("2_wvnic")
+tag = "fake_will"
+evidence_name = "Dracula's will"
+evidence_description = "The last will and testament of Count Dracula.
+Found in Dracula's study after his death.
+Among other things, entrusts the Transylvania estate to [NAME OF FAKE HEIR]."
+
+[node name="TextureRect" parent="Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
+texture = ExtResource("2_wvnic")
+
+[node name="RichTextLabel" parent="Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
+text = "Dracula's will"
+
+[node name="RichTextLabel" parent="Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
+text = "The last will and testament of Count Dracula.
+Found in Dracula's study after his death.
+Among other things, entrusts the Transylvania estate to [NAME OF FAKE HEIR]."
