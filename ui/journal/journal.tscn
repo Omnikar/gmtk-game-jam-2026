@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://6tmt7tajsfvr"]
 
 [ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_6wirs"]
+[ext_resource type="Theme" uid="uid://dibnl3s6ovwo6" path="res://ui/journal/journal.tres" id="1_hchca"]
 [ext_resource type="Script" uid="uid://xa5153munf4x" path="res://scripts/journal.gd" id="1_tp6wr"]
 [ext_resource type="Texture2D" uid="uid://bcfq6n4vx41b2" path="res://sprites/evidence/will.png" id="2_tp6wr"]
 [ext_resource type="Texture2D" uid="uid://cmqrscbyn52km" path="res://sprites/evidence/stake.png" id="3_hchca"]
@@ -14,6 +15,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_hchca")
 script = ExtResource("1_tp6wr")
 evidence_folder = "res://ui/journal/evidence_entries"
 
@@ -24,10 +26,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -348.0
-offset_top = -266.0
-offset_right = 348.0
-offset_bottom = 266.0
+offset_left = -517.0
+offset_top = -427.0
+offset_right = 517.0
+offset_bottom = 427.0
 grow_horizontal = 2
 grow_vertical = 2
 current_tab = 0
@@ -48,6 +50,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="TutorialTip" type="MarginContainer" parent="TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=596501027]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/margin_left = 30

@@ -7,3 +7,8 @@ cook: ur cute
 detective (Thinking): ...
 detective (Thinking): uhh
 detective (Speaking): what
+label pre_evidence
+- Present evidence
+	[signal arg_type="dict" arg="{"present_evidence":"cook"}"]
+- Leave
+	[end_timeline]

@@ -1,11 +1,15 @@
 @tool
 
-extends Control
+class_name EvidenceEntry extends Control
+
+signal evidence_clicked(tag: String)
 
 @export var texture: Texture2D
 @export var tag: String = ""
 @export_multiline var evidence_name: String = "Name"
 @export_multiline var evidence_description: String = "Description"
+
+var selected: bool = false
 
 
 func _ready() -> void:
@@ -15,6 +19,8 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if Engine.is_editor_hint():
 		update_inner_properties()
+	else:
+		$Selected.visible = selected
 
 
 func _gui_input(event: InputEvent) -> void:
@@ -23,7 +29,7 @@ func _gui_input(event: InputEvent) -> void:
 		and event.is_pressed()
 		and event.button_index == MOUSE_BUTTON_LEFT
 	):
-		print(name)
+		evidence_clicked.emit(tag)
 
 
 func update_inner_properties() -> void:

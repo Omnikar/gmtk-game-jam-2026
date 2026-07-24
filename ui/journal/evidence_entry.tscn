@@ -2,37 +2,34 @@
 
 [ext_resource type="Script" uid="uid://m47obk77kvgr" path="res://scripts/evidence_entry.gd" id="1_3su73"]
 [ext_resource type="Theme" uid="uid://culxxwmbh3x81" path="res://ui/journal/evidence_entry.tres" id="1_va40m"]
+[ext_resource type="Texture2D" uid="uid://p26y0pgtqv7r" path="res://sprites/pixel.png" id="3_v3bid"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cflc2"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3su73"]
 
-[node name="EvidenceEntry" type="Control" unique_id=362404533]
+[node name="EvidenceEntry" type="PanelContainer" unique_id=1957364986]
 custom_minimum_size = Vector2(0, 100)
-layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -638.0
-offset_bottom = -528.0
+offset_right = -1242.0
+offset_bottom = -847.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_cflc2")
 script = ExtResource("1_3su73")
 texture = SubResource("PlaceholderTexture2D_3su73")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1997011912]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
 
 [node name="Image" type="MarginContainer" parent="HBoxContainer" unique_id=1774074990]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 4
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_right = 20
 
@@ -54,6 +51,7 @@ size_flags_stretch_ratio = 3.0
 mouse_filter = 1
 text = "Name"
 fit_content = true
+scroll_active = false
 vertical_alignment = 1
 
 [node name="Description" type="MarginContainer" parent="HBoxContainer" unique_id=1240456865]
@@ -69,3 +67,9 @@ size_flags_stretch_ratio = 3.0
 mouse_filter = 1
 text = "Description"
 fit_content = true
+scroll_active = false
+
+[node name="Selected" type="TextureRect" parent="." unique_id=1128306705]
+visible = false
+layout_mode = 2
+texture = ExtResource("3_v3bid")
