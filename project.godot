@@ -26,14 +26,18 @@ Dialogic="*uid://ds2q0uclmolvu"
 [dialogic]
 
 directories/dch_directory={
-"test_npc": "res://characters/test_npc/test_npc.dch"
+"cook": "res://dialogue/characters/cook.dch",
+"detective": "res://dialogue/characters/detective.dch",
+"test_npc": "res://dialogue/characters/test_npc.dch"
 }
 directories/dtl_directory={
 "intro": "res://dialogue/intro.dtl",
-"test_evidence_timeline": "res://dialogue/test_evidence_timeline.dtl",
-"test_npc_timeline": "res://dialogue/test_npc_timeline.dtl"
+"test_evidence_timeline": "res://dialogue/evidence_timelines/test_evidence_timeline.dtl",
+"test_npc_timeline": "res://dialogue/character_timelines/test_npc_timeline.dtl"
 }
-layout/style_directory={}
+layout/style_directory={
+"dialogue_style": "res://dialogue/dialogue_style.tres"
+}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
@@ -66,6 +70,13 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+layout/style_list=["res://dialogue/dialogue_style.tres"]
+layout/default_style=""
+
+[display]
+
+window/size/resizable=false
+window/stretch/mode="viewport"
 
 [editor_plugins]
 
@@ -118,5 +129,6 @@ toggle_journal={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

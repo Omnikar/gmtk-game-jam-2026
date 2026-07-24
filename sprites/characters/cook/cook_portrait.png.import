@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du5gv0co0q5ql"
-path="res://.godot/imported/lob.png-b83fc2d8a627e7ac48b982e3508b83be.ctex"
+uid="uid://bndyxnifshdxi"
+path="res://.godot/imported/cook_portrait.png-7a2dfa5823b0c7083e2c5c419dd73f90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/test_npc/lob.png"
-dest_files=["res://.godot/imported/lob.png-b83fc2d8a627e7ac48b982e3508b83be.ctex"]
+source_file="res://sprites/characters/cook/cook_portrait.png"
+dest_files=["res://.godot/imported/cook_portrait.png-7a2dfa5823b0c7083e2c5c419dd73f90.ctex"]
 
 [params]
 

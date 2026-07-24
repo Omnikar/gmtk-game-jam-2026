@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://c2onydhiv4uxr"]
 
 [ext_resource type="Script" uid="uid://hf2d57so7gvg" path="res://scripts/npc.gd" id="1_tkuce"]
-[ext_resource type="Resource" uid="uid://cwm71oukdwp07" path="res://dialogue/test_npc_timeline.dtl" id="2_vwif4"]
-[ext_resource type="Texture2D" uid="uid://du5gv0co0q5ql" path="res://characters/test_npc/lob.png" id="3_4f8ch"]
+[ext_resource type="Resource" uid="uid://cwm71oukdwp07" path="res://dialogue/character_timelines/test_npc_timeline.dtl" id="2_vwif4"]
+[ext_resource type="Texture2D" uid="uid://jrx5iddqfnyk" path="res://sprites/characters/cook/cook_sprite.png" id="3_4f8ch"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jywcn"]
-size = Vector2(36, 36)
+size = Vector2(36, 28)
 
 [node name="TestNPC" type="Area2D" unique_id=217485892]
 collision_mask = 2
@@ -13,8 +13,9 @@ script = ExtResource("1_tkuce")
 timeline = ExtResource("2_vwif4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=424949572]
+position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_jywcn")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=905578458]
-scale = Vector2(0.029411765, 0.029411815)
+position = Vector2(0, -13)
 texture = ExtResource("3_4f8ch")

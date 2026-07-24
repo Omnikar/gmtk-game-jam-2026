@@ -1,6 +1,0 @@
-join test_npc left
-test_npc: jumpscare
-- cower
-	test_npc: hahahahaha
-- hide
-	test_npc: I'll find you eventually
