@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://7pphswsl38e5"]
+
+[ext_resource type="Texture2D" uid="uid://bmmj7hqdje4wt" path="res://sprites/evidence/items.png" id="1_ahbq6"]
+
+[node name="CleanPlate" type="Node2D" unique_id=74848945]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1534436695]
+position = Vector2(-2, 0)
+texture = ExtResource("1_ahbq6")
+region_enabled = true
+region_rect = Rect2(71.7442, 85.35214, 35.81613, 27.10411)

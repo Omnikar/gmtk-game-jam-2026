@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cbly6umx150gg"]
+
+[ext_resource type="Texture2D" uid="uid://bpqqc6yam5q6h" path="res://sprites/environment/shed_items.png" id="1_g658j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rxb5q"]
+size = Vector2(8, 3.5)
+
+[node name="PlantPot" type="Node2D" unique_id=1176366453]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=893313528]
+position = Vector2(-1, -8)
+texture = ExtResource("1_g658j")
+region_enabled = true
+region_rect = Rect2(23, 83, 12, 22)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=11497898]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1549527714]
+position = Vector2(0, -1.75)
+shape = SubResource("RectangleShape2D_rxb5q")
