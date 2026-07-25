@@ -1,18 +1,27 @@
-join detective (Speaking) right
-detective: Hello.
 join cook left
-cook: Hey.
-detective: I'm here to ask you some questions about the murder.
-cook: I figured.
-- Who are you?
+if {cook_introduced} == false:
+	set {cook_introduced} = true
+	join detective right
+	detective: Hello.
+	join cook left
+	cook: Hey.
+	detective: I'm here to ask you some questions about the murder.
+	cook: I figured.
 	detective: Mind introducing yourself?
 	cook: Name’s [COOK]. I make food for Dracula. Or, did, rather.
 	detective: Food, huh? Wasn’t he having a dinner party before he died?
-	cook: Whatever you’re implying, you’re at the wrong address. 
+	cook: Whatever you’re implying, you’re at the wrong address.
 	detective: Mighty defensive.
-	cook: Listen, I don’t get why we need some big investigation for all this. Drac’s dead, and some other blood-sucker is taking his place for the next 400 years until the same thing happens to them. 
+	cook: Listen, I don’t get why we need some big investigation for all this.
+	cook: Drac's dead, and some other blood-sucker is taking his place for the next 400 years until the same thing happens to them.
 	detective: You don't like Dracula very much, do you?
 	cook: It’s nothing personal. Vampires in general get under my skin.
 	cook: In the metaphorical sense, that is.
 	detective: Yet you work for one?
 	cook: Someone has to pay my bills, and I don’t know if you noticed, but Drac's pretty loaded— er, was.
+	cook: ...
+else:
+	cook: Hello.
+- Present evidence
+	[signal arg_type="dict" arg="{"present_evidence":"cook"}"]
+- Leave

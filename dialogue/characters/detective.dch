@@ -7,17 +7,17 @@
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "dialogue_style",
+"style": "detective_dialogue_style",
 "suffix": ""
 },
-&"default_portrait": "Speaking",
+&"default_portrait": "speaking",
 &"description": "",
 &"display_name": "Detective",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"Speaking": {
+"speaking": {
 "export_overrides": {
 "image": "\"res://sprites/characters/detective/detective_portrait_speaking.png\""
 },
@@ -26,7 +26,7 @@
 "scale": 1,
 "scene": ""
 },
-"Thinking": {
+"thinking": {
 "export_overrides": {
 "image": "\"res://sprites/characters/detective/detective_portrait_thinking.png\""
 },

@@ -10,16 +10,34 @@
 "style": "dialogue_style",
 "suffix": ""
 },
-&"default_portrait": "Speaking",
+&"default_portrait": "speaking",
 &"description": "",
 &"display_name": "Cook",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"Speaking": {
+"speaking": {
 "export_overrides": {
 "image": "\"res://sprites/characters/cook/cook_portrait.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"squinting": {
+"export_overrides": {
+"image": "\"res://sprites/characters/cook/dialogue_cook_squint.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"unamused": {
+"export_overrides": {
+"image": "\"res://sprites/characters/cook/dialogue_cook_eyeroll.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

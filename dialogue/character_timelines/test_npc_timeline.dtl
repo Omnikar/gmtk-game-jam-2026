@@ -1,12 +1,12 @@
 [style name="dialogue_style"]
 join cook left
 cook: yo
-join detective (Speaking) right
-detective (Speaking): sup
+join detective (speaking) right
+detective (speaking): sup
 cook: ur cute
-detective (Thinking): ...
-detective (Thinking): uhh
-detective (Speaking): what
+detective (thinking): ...
+detective (thinking): uhh
+detective (speaking): what
 label pre_evidence
 - Present evidence
 	[signal arg_type="dict" arg="{"present_evidence":"cook"}"]

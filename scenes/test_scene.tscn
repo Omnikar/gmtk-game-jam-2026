@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dgj3wvfjol1lv" path="res://objects/test_obstacle.tscn" id="2_nd71p"]
 [ext_resource type="PackedScene" uid="uid://c2onydhiv4uxr" path="res://objects/test_npc.tscn" id="3_nd71p"]
 [ext_resource type="PackedScene" uid="uid://c61xmp77qray0" path="res://objects/test_evidence.tscn" id="4_7ddre"]
+[ext_resource type="Resource" uid="uid://c8kajsfucvj3k" path="res://dialogue/character_timelines/cook/cook_introduction.dtl" id="5_3qnke"]
 
 [node name="TestScene" type="Node2D" unique_id=1069451238]
 
@@ -25,6 +26,7 @@ position = Vector2(66, 35)
 
 [node name="TestNPC" parent="." unique_id=956004964 instance=ExtResource("3_nd71p")]
 position = Vector2(21, -72)
+timeline = ExtResource("5_3qnke")
 
 [node name="TestEvidence" parent="." unique_id=1395274787 instance=ExtResource("4_7ddre")]
 position = Vector2(-55, 51)

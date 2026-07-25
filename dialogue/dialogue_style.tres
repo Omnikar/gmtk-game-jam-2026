@@ -32,6 +32,8 @@ scene = ExtResource("5_qh0f0")
 script = ExtResource("2_neu2c")
 scene = ExtResource("6_dew0p")
 overrides = {
+"box_animation_in": "0",
+"box_animation_out": "0",
 "box_size": "Vector2(750, 270)",
 "name_label_custom_font_size": "24.0",
 "name_label_use_global_font_size": "false",
@@ -71,4 +73,4 @@ layer_info = {
 "16": SubResource("Resource_0n1cq"),
 "17": SubResource("Resource_joanj")
 }
-metadata/_latest_layer = "13"
+metadata/_latest_layer = "14"

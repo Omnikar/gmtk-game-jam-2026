@@ -19,12 +19,17 @@ func dt(ch: String, t: Array[String], tl: String) -> DialogueTrigger:
 
 var triggers: Array[DialogueTrigger] = [
 	#
-	dt("cook", ["cook_character"], "cook_self_test")
+	dt("cook", ["cook_character"], "cook_self_test"),
+	dt("cook", ["guard_character"], "cook_discuss_guard"),
 ]
+
+var used_triggers: Array[int] = []
 
 
 func submit_evidence(character: String, tags: Array[String]) -> void:
+	var i: int = -1
 	for trig in triggers:
+		i += 1
 		if trig.character != character:
 			continue
 		var tag_masks = {}
@@ -41,7 +46,11 @@ func submit_evidence(character: String, tags: Array[String]) -> void:
 		if not matches:
 			continue
 
-		Dialogic.start(trig.timeline)
+		if i in used_triggers:
+			Dialogic.start("detective_already_asked")
+		else:
+			Dialogic.start(trig.timeline)
+			used_triggers.append(i)
 		return
 
 	Dialogic.start("detective_unsure")

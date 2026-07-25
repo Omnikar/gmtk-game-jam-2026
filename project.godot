@@ -37,14 +37,18 @@ directories/dch_directory={
 "test_npc": "res://dialogue/characters/test_npc.dch"
 }
 directories/dtl_directory={
+"cook_discuss_guard": "res://dialogue/character_timelines/cook/cook_discuss_guard.dtl",
+"cook_discuss_niece": "res://dialogue/character_timelines/cook/cook_discuss_niece.dtl",
 "cook_introduction": "res://dialogue/character_timelines/cook/cook_introduction.dtl",
 "cook_self_test": "res://dialogue/character_timelines/cook_self_test.dtl",
-"detective_unsure": "res://dialogue/character_timelines/detective_unsure.dtl",
+"detective_already_asked": "res://dialogue/character_timelines/detective/detective_already_asked.dtl",
+"detective_unsure": "res://dialogue/character_timelines/detective/detective_unsure.dtl",
 "intro": "res://dialogue/intro.dtl",
 "test_evidence_timeline": "res://dialogue/evidence_timelines/test_evidence_timeline.dtl",
 "test_npc_timeline": "res://dialogue/character_timelines/test_npc_timeline.dtl"
 }
 layout/style_directory={
+"detective_dialogue_style": "res://dialogue/detective_dialogue_style.tres",
 "dialogue_style": "res://dialogue/dialogue_style.tres"
 }
 text/letter_speed=0.01
@@ -79,9 +83,15 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
-layout/style_list=["res://dialogue/dialogue_style.tres"]
+layout/style_list=["res://dialogue/dialogue_style.tres", "res://dialogue/detective_dialogue_style.tres"]
 layout/default_style=""
-variables={}
+variables={
+"cook_introduced": false,
+"friend_introduced": false,
+"gardener_introduced": false,
+"guard_introduced": false,
+"niece_introduced": false
+}
 
 [display]
 

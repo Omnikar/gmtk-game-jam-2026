@@ -17,7 +17,11 @@ func _ready() -> void:
 
 	evidence_folder = evidence_folder.rstrip("/")
 
+	add_evidence("guard_character")
+	add_evidence("friend_character")
+	add_evidence("niece_character")
 	add_evidence("cook_character")
+	add_evidence("gardener_character")
 
 
 func _input(event: InputEvent) -> void:

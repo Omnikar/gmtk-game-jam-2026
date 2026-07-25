@@ -10,14 +10,14 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "Speaking",
+&"default_portrait": "speaking",
 &"description": "",
 &"display_name": "Niece",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"Speaking": {
+"speaking": {
 "export_overrides": {
 "image": "\"res://sprites/characters/niece/dialogue_niece.png\""
 },

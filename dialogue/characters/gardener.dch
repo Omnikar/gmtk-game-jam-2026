@@ -10,14 +10,14 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "Speaking",
+&"default_portrait": "antsy",
 &"description": "",
 &"display_name": "Gardener",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"Antsy": {
+"antsy": {
 "export_overrides": {
 "image": "\"res://sprites/characters/gardener/dialogue_gardener_antsy.png\""
 },
@@ -26,7 +26,7 @@
 "scale": 1,
 "scene": ""
 },
-"Guilty": {
+"guilty": {
 "export_overrides": {
 "image": "\"res://sprites/characters/gardener/dialogue_gardener_guilty.png\""
 },
@@ -35,7 +35,7 @@
 "scale": 1,
 "scene": ""
 },
-"Speaking": {
+"speaking": {
 "export_overrides": {
 "image": "\"res://sprites/characters/gardener/dialogue_gardener.png\""
 },

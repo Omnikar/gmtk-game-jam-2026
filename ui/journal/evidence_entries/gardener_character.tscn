@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://du70a7uht7mk"]
+
+[ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_ousvg"]
+[ext_resource type="Texture2D" uid="uid://cysqw8n34p0r8" path="res://sprites/characters/gardener/gardener_face.png" id="2_ousvg"]
+
+[node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_ousvg")]
+texture = ExtResource("2_ousvg")
+tag = "gardener_character"
+evidence_name = "[GARDENER]"
+evidence_description = "Human
+Employee of Dracula's, maintains and lives among the gardens behind the manor."
+
+[node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
+texture = ExtResource("2_ousvg")
+
+[node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
+text = "[GARDENER]"
+
+[node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
+text = "Human
+Employee of Dracula's, maintains and lives among the gardens behind the manor."
