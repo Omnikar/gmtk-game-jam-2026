@@ -1,17 +1,21 @@
 [gd_scene format=3 uid="uid://c4ga2d1xifi85"]
 
 [ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_ie23o"]
-[ext_resource type="Texture2D" uid="uid://cdcumueaiirdh" path="res://sprites/characters/friend/friend_face.png" id="2_ie23o"]
+[ext_resource type="Texture2D" uid="uid://bs63tb71hi1py" path="res://sprites/characters/friend/dialogue_friend.png" id="2_ie23o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t0fyi"]
+atlas = ExtResource("2_ie23o")
+region = Rect2(302.47388, 13.90686, 1297.6449, 1297.6449)
 
 [node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_ie23o")]
-texture = ExtResource("2_ie23o")
+texture = SubResource("AtlasTexture_t0fyi")
 tag = "friend_character"
 evidence_name = "[FRIEND]"
 evidence_description = "Vampire
 Close friend of Dracula's, and one of the honored guests at the dinner party."
 
 [node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
-texture = ExtResource("2_ie23o")
+texture = SubResource("AtlasTexture_t0fyi")
 
 [node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
 text = "[FRIEND]"

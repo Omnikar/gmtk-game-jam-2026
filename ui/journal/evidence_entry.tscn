@@ -6,8 +6,6 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cflc2"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3su73"]
-
 [node name="EvidenceEntry" type="PanelContainer" unique_id=1957364986]
 custom_minimum_size = Vector2(0, 100)
 anchors_preset = 15
@@ -21,7 +19,6 @@ size_flags_horizontal = 3
 size_flags_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_cflc2")
 script = ExtResource("1_3su73")
-texture = SubResource("PlaceholderTexture2D_3su73")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1997011912]
 layout_mode = 2
@@ -35,7 +32,6 @@ theme_override_constants/margin_right = 20
 
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer/Image" unique_id=1924471794]
 layout_mode = 2
-texture = SubResource("PlaceholderTexture2D_3su73")
 expand_mode = 5
 stretch_mode = 5
 

@@ -4,7 +4,7 @@ class_name EvidenceEntry extends Control
 
 signal evidence_clicked(tag: String)
 
-@export var texture: Texture2D
+@export var texture: AtlasTexture
 @export var tag: String = ""
 @export_multiline var evidence_name: String = "Name"
 @export_multiline var evidence_description: String = "Description"

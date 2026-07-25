@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bj2v60xknnyuy"]
+
+[ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_0hydf"]
+[ext_resource type="Texture2D" uid="uid://b5toj1823057v" path="res://sprites/evidence/key.png" id="2_le54q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ajoh"]
+atlas = ExtResource("2_le54q")
+
+[node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_0hydf")]
+texture = SubResource("AtlasTexture_5ajoh")
+tag = "key"
+evidence_name = "Golden key"
+evidence_description = "An ornate key, found in a pocket near the bottom-right part of Dracula's cloak."
+
+[node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
+texture = SubResource("AtlasTexture_5ajoh")
+
+[node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
+text = "Golden key"
+
+[node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
+text = "An ornate key, found in a pocket near the bottom-right part of Dracula's cloak."

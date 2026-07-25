@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d37q6y3rsrvht"]
+
+[ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_24iej"]
+[ext_resource type="Texture2D" uid="uid://cmqrscbyn52km" path="res://sprites/evidence/stake.png" id="2_e1f4e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ueut4"]
+atlas = ExtResource("2_e1f4e")
+
+[node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_24iej")]
+texture = SubResource("AtlasTexture_ueut4")
+tag = "murder_weapon"
+evidence_name = "Ash-covered wooden stake"
+evidence_description = "A sharp stake of oak wood. Found stabbed through the heart of Dracula's shriveled corpse. Its end is peppered with flakes of ash."
+
+[node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
+texture = SubResource("AtlasTexture_ueut4")
+
+[node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
+text = "Ash-covered wooden stake"
+
+[node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
+text = "A sharp stake of oak wood. Found stabbed through the heart of Dracula's shriveled corpse. Its end is peppered with flakes of ash."

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b8nmuuc00dmw2"]
+
+[ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_uuo4k"]
+[ext_resource type="Texture2D" uid="uid://c6fb65i8xw88u" path="res://sprites/environment/vase.png" id="2_npba2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_usmrc"]
+atlas = ExtResource("2_npba2")
+region = Rect2(10.597733, 81.041916, 40.385986, 40.385986)
+
+[node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_uuo4k")]
+texture = SubResource("AtlasTexture_usmrc")
+tag = "vase"
+evidence_name = "Shattered vase"
+evidence_description = "The fragmented remnants of a priceless vase. Found in the main upstairs hallway, beside a broken table."
+
+[node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
+texture = SubResource("AtlasTexture_usmrc")
+
+[node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
+text = "Shattered vase"
+
+[node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
+text = "The fragmented remnants of a priceless vase. Found in the main upstairs hallway, beside a broken table."

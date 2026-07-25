@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cjm8rtv5655ay"]
+
+[ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_dxe16"]
+[ext_resource type="Texture2D" uid="uid://cmqrscbyn52km" path="res://sprites/evidence/stake.png" id="2_l53jw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lwcsp"]
+atlas = ExtResource("2_l53jw")
+
+[node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_dxe16")]
+texture = SubResource("AtlasTexture_lwcsp")
+tag = "second_stake"
+evidence_name = "Wooden stake"
+evidence_description = "A sharp stake of oak wood. Found in a hidden cupboard in the kitchen, next to a pouch of garlic cloves."
+
+[node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
+texture = SubResource("AtlasTexture_lwcsp")
+
+[node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
+text = "Wooden stake"
+
+[node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
+text = "A sharp stake of oak wood. Found in a hidden cupboard in the kitchen, next to a pouch of garlic cloves."

@@ -1,17 +1,21 @@
 [gd_scene format=3 uid="uid://djq6ud31cjw7n"]
 
 [ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_wfp8l"]
-[ext_resource type="Texture2D" uid="uid://ci0tlpe21fga4" path="res://sprites/characters/guard/guard_face.png" id="2_ueut4"]
+[ext_resource type="Texture2D" uid="uid://b7ptp33mdbosg" path="res://sprites/characters/guard/dialogue_guard_earmuffs_neutral.png" id="2_wfp8l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ev5e"]
+atlas = ExtResource("2_wfp8l")
+region = Rect2(362.93066, 116.08392, 1331.0598, 1331.0598)
 
 [node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_wfp8l")]
-texture = ExtResource("2_ueut4")
+texture = SubResource("AtlasTexture_3ev5e")
 tag = "guard_character"
 evidence_name = "[GUARD]"
 evidence_description = "Human
 Professional venue security officer hired to guard Count Dracula's manor for the duration of the dinner party."
 
 [node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
-texture = ExtResource("2_ueut4")
+texture = SubResource("AtlasTexture_3ev5e")
 
 [node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
 text = "[GUARD]"

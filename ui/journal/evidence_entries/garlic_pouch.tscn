@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bwgcmkaelkbvd"]
+
+[ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_p1ur5"]
+[ext_resource type="Texture2D" uid="uid://86ru2cny46ot" path="res://sprites/evidence/garlic_bag.png" id="2_du48a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pfsv7"]
+atlas = ExtResource("2_du48a")
+region = Rect2(3.4371033, 15.099976, 50.618576, 50.618576)
+
+[node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_p1ur5")]
+texture = SubResource("AtlasTexture_pfsv7")
+tag = "garlic_pouch"
+evidence_name = "Sealed pouch of garlic cloves"
+evidence_description = "A small bag of garlic cloves. Found in a hidden cupboard in the kitchen, next to a wooden stake. The fumes can't escape the airtight bag, so even a vampire could hold it if they wanted to, assuming they could get over the sight of it."
+
+[node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
+texture = SubResource("AtlasTexture_pfsv7")
+
+[node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
+text = "Sealed pouch of garlic cloves"
+
+[node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
+text = "A small bag of garlic cloves. Found in a hidden cupboard in the kitchen, next to a wooden stake. The fumes can't escape the airtight bag, so even a vampire could hold it if they wanted to, assuming they could get over the sight of it."

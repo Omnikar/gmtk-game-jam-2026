@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://j3re8cpklc5m"]
+
+[ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_35rcw"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_p5w32"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmvjl"]
+atlas = SubResource("PlaceholderTexture2D_p5w32")
+region = Rect2(0, 0, 4, 4)
+
+[node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_35rcw")]
+texture = SubResource("AtlasTexture_cmvjl")
+tag = "dessert"
+evidence_name = "Dessert"
+evidence_description = "A vampiric delicacy, a small dish of gelatin prepared of human blood. Found on the kitchen counter."
+
+[node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
+texture = SubResource("AtlasTexture_cmvjl")
+
+[node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
+text = "Dessert"
+
+[node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
+text = "A vampiric delicacy, a small dish of gelatin prepared of human blood. Found on the kitchen counter."

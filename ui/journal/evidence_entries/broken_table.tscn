@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cohug84xbujwr"]
+
+[ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_iwsu3"]
+[ext_resource type="Texture2D" uid="uid://0jdgn4jo5krt" path="res://sprites/environment/decor.png" id="2_fksxs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_py4j1"]
+atlas = ExtResource("2_fksxs")
+region = Rect2(13.7968445, 141.82713, 38.09456, 38.09456)
+
+[node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_iwsu3")]
+texture = SubResource("AtlasTexture_py4j1")
+tag = "broken_table"
+evidence_name = "Broken table"
+evidence_description = "An old display table that has collapsed to the floor. Found in the main upstairs hallway. It once held an ornate vase atop it, which has now shattered. One leg was found a short distance away from the rest of the table."
+
+[node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
+texture = SubResource("AtlasTexture_py4j1")
+
+[node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
+text = "Broken table"
+
+[node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
+text = "An old display table that has collapsed to the floor. Found in the main upstairs hallway. It once held an ornate vase atop it, which has now shattered. One leg was found a short distance away from the rest of the table."
