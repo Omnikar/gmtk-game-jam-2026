@@ -1,3 +1,3 @@
-join detective (thinking) right
-detective (thinking): I don't know what I'd say to them about that.
+join detective_thinking (thinking) right
+detective_thinking (thinking): I don't know what I'd say to them about that.
 [signal arg_type="dict" arg="{"present_evidence":""}"]
