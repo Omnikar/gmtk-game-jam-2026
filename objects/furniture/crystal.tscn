@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dusvuhu3qguxd"]
+
+[ext_resource type="Texture2D" uid="uid://0jdgn4jo5krt" path="res://sprites/environment/decor.png" id="1_cltr3"]
+
+[node name="Crystal" type="Node2D" unique_id=1399211297]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1647419792]
+position = Vector2(2, -4)
+texture = ExtResource("1_cltr3")
+region_enabled = true
+region_rect = Rect2(14.905487, 75.896866, 36.78415, 39.68817)

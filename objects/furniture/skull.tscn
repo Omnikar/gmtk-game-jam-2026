@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://xedx8y5bs0a1"]
+
+[ext_resource type="Texture2D" uid="uid://0jdgn4jo5krt" path="res://sprites/environment/decor.png" id="1_lmc80"]
+
+[node name="Skull" type="Node2D" unique_id=1962406875]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=128525521]
+position = Vector2(0, -5)
+texture = ExtResource("1_lmc80")
+region_enabled = true
+region_rect = Rect2(80.512085, 75.672104, 38.720154, 33.880142)

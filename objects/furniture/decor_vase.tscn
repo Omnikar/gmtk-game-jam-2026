@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cg31pa3nf85rl"]
+
+[ext_resource type="Texture2D" uid="uid://0jdgn4jo5krt" path="res://sprites/environment/decor.png" id="1_l3cs3"]
+
+[node name="DecorVase" type="Node2D" unique_id=534189687]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=128379062]
+position = Vector2(-1, -5)
+texture = ExtResource("1_l3cs3")
+region_enabled = true
+region_rect = Rect2(138.71942, 5.096297, 39.24237, 40.732597)

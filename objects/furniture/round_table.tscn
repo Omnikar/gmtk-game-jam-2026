@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cgd0uvv400vh3"]
+
+[ext_resource type="Texture2D" uid="uid://0jdgn4jo5krt" path="res://sprites/environment/decor.png" id="1_kof35"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mv70y"]
+size = Vector2(10, 6)
+
+[node name="RoundTable" type="Node2D" unique_id=421629113]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=356156385]
+position = Vector2(1, -9)
+texture = ExtResource("1_kof35")
+region_enabled = true
+region_rect = Rect2(9.070526, 14.0376, 48.680435, 47.686943)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1442511498]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1675998031]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_mv70y")

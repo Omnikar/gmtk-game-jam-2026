@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d0vvjduo6g20d"]
+
+[ext_resource type="Texture2D" uid="uid://323imero51vc" path="res://sprites/environment/plants.png" id="1_t150w"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wexef"]
+radius = 8.0
+
+[node name="SmallShrub" type="Node2D" unique_id=1441838153]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=781546387]
+position = Vector2(0, -10)
+texture = ExtResource("1_t150w")
+region_enabled = true
+region_rect = Rect2(119.36023, 17.719849, 58.08023, 62.920258)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1473755419]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2100167101]
+position = Vector2(1, -2)
+shape = SubResource("CircleShape2D_wexef")

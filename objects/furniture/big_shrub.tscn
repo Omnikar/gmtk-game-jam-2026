@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bxrckg41io7l6"]
+
+[ext_resource type="Texture2D" uid="uid://323imero51vc" path="res://sprites/environment/plants.png" id="1_cxcxm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3dngu"]
+size = Vector2(29, 16)
+
+[node name="BigShrub" type="Node2D" unique_id=827796167]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1163094434]
+position = Vector2(1, -17)
+texture = ExtResource("1_cxcxm")
+region_enabled = true
+region_rect = Rect2(15.783813, 106.776215, 71.63229, 73.56828)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2064050748]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=58621233]
+position = Vector2(0.5, -2)
+shape = SubResource("RectangleShape2D_3dngu")

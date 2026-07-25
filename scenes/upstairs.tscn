@@ -5,6 +5,18 @@
 [ext_resource type="PackedScene" uid="uid://81l1pn88itn2" path="res://objects/player.tscn" id="3_af0kd"]
 [ext_resource type="PackedScene" uid="uid://c1pvhrse50pp4" path="res://objects/furniture/sofa.tscn" id="4_af0kd"]
 [ext_resource type="PackedScene" uid="uid://c1suq414oxtjg" path="res://objects/furniture/loss_painting.tscn" id="5_s02p6"]
+[ext_resource type="PackedScene" uid="uid://bnvvd5k3hicrf" path="res://objects/furniture/ace_painting.tscn" id="6_nqn47"]
+[ext_resource type="PackedScene" uid="uid://bioo7ii46s0n8" path="res://objects/furniture/aro_painting.tscn" id="7_6hmx5"]
+[ext_resource type="PackedScene" uid="uid://b71os5d52fde1" path="res://objects/furniture/vase.tscn" id="9_5ownu"]
+[ext_resource type="Texture2D" uid="uid://0jdgn4jo5krt" path="res://sprites/environment/decor.png" id="9_ubpyk"]
+[ext_resource type="PackedScene" uid="uid://cgd0uvv400vh3" path="res://objects/furniture/round_table.tscn" id="10_2cwo3"]
+[ext_resource type="PackedScene" uid="uid://l5y13moqix8f" path="res://objects/furniture/round_table_cloth.tscn" id="11_x274g"]
+[ext_resource type="PackedScene" uid="uid://cg31pa3nf85rl" path="res://objects/furniture/decor_vase.tscn" id="12_dyg8e"]
+[ext_resource type="PackedScene" uid="uid://xedx8y5bs0a1" path="res://objects/furniture/skull.tscn" id="13_88afm"]
+[ext_resource type="PackedScene" uid="uid://c8rgnvpquei67" path="res://objects/furniture/candelabra.tscn" id="14_fennu"]
+[ext_resource type="PackedScene" uid="uid://cxurxqhooejmj" path="res://objects/furniture/kettle.tscn" id="15_3dt3a"]
+[ext_resource type="PackedScene" uid="uid://dusvuhu3qguxd" path="res://objects/furniture/crystal.tscn" id="16_ibjcq"]
+[ext_resource type="PackedScene" uid="uid://c2r7wkbyw5nu0" path="res://objects/furniture/bookshelf.tscn" id="17_x274g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hibae"]
 size = Vector2(61, 46)
@@ -15,6 +27,9 @@ size = Vector2(50, 48)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3hjup"]
 size = Vector2(16, 15)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_awd46"]
+size = Vector2(34, 16)
+
 [node name="Upstairs" type="Node2D" unique_id=1011893950]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1434782804]
@@ -22,7 +37,7 @@ tile_map_data = PackedByteArray("AAD+//7/BwAAAAAAAAD+////BwAAAAAAAAD///7/BwAAAAA
 tile_set = ExtResource("1_5bcbq")
 
 [node name="Desk" type="Node2D" parent="." unique_id=2074971252]
-position = Vector2(18, -251)
+position = Vector2(27, -251)
 
 [node name="Sprite2D" type="Sprite2D" parent="Desk" unique_id=773268205]
 texture = ExtResource("2_jqoci")
@@ -53,7 +68,7 @@ position = Vector2(2, 1)
 shape = SubResource("RectangleShape2D_wexef")
 
 [node name="Safe" type="Node2D" parent="." unique_id=148054523]
-position = Vector2(58, -253)
+position = Vector2(69, -253)
 
 [node name="Sprite2D" type="Sprite2D" parent="Safe" unique_id=807072166]
 position = Vector2(-2, -1)
@@ -72,3 +87,75 @@ position = Vector2(-9, -180)
 
 [node name="LossPainting" parent="." unique_id=845526192 instance=ExtResource("5_s02p6")]
 position = Vector2(88, -8)
+
+[node name="AcePainting" parent="." unique_id=1493602490 instance=ExtResource("6_nqn47")]
+position = Vector2(-90, -108)
+
+[node name="AroPainting" parent="." unique_id=1596647884 instance=ExtResource("7_6hmx5")]
+position = Vector2(-122, -109)
+
+[node name="Vase" parent="." unique_id=1555561706 instance=ExtResource("9_5ownu")]
+position = Vector2(-30, -64)
+
+[node name="Vase_Table" type="Node2D" parent="." unique_id=1976512838]
+position = Vector2(0, -75)
+
+[node name="Sprite2D" type="Sprite2D" parent="Vase_Table" unique_id=2018765806]
+position = Vector2(-6, -8)
+texture = ExtResource("9_ubpyk")
+region_enabled = true
+region_rect = Rect2(0, 132.09344, 58.009735, 52.157593)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Vase_Table" unique_id=1778595616]
+position = Vector2(-6, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Vase_Table/StaticBody2D" unique_id=908834519]
+position = Vector2(4, 3)
+shape = SubResource("RectangleShape2D_awd46")
+
+[node name="TableLeg" type="Node2D" parent="." unique_id=1344876762]
+position = Vector2(-67, -53)
+
+[node name="Sprite2D" type="Sprite2D" parent="TableLeg" unique_id=1011700763]
+texture = ExtResource("9_ubpyk")
+region_enabled = true
+region_rect = Rect2(80.1042, 154.61473, 30.301086, 25.83043)
+
+[node name="RoundTable" parent="." unique_id=421629113 instance=ExtResource("10_2cwo3")]
+position = Vector2(29, -161)
+
+[node name="RoundTableCloth" parent="." unique_id=1457467907 instance=ExtResource("11_x274g")]
+position = Vector2(108, -249)
+
+[node name="DecorVase" parent="." unique_id=534189687 instance=ExtResource("12_dyg8e")]
+position = Vector2(108, -266)
+
+[node name="Skull" parent="." unique_id=1962406875 instance=ExtResource("13_88afm")]
+position = Vector2(28, -176)
+
+[node name="RoundTableCloth2" parent="." unique_id=1866957348 instance=ExtResource("11_x274g")]
+position = Vector2(181, -250)
+
+[node name="DecorVase2" parent="." unique_id=2086033999 instance=ExtResource("12_dyg8e")]
+position = Vector2(180, -267)
+
+[node name="RoundTable2" parent="." unique_id=2064461666 instance=ExtResource("10_2cwo3")]
+position = Vector2(164, -78)
+
+[node name="Kettle" parent="." unique_id=1315252326 instance=ExtResource("15_3dt3a")]
+position = Vector2(164, -93)
+
+[node name="Candelabra2" parent="." unique_id=198944019 instance=ExtResource("14_fennu")]
+position = Vector2(142, -88)
+
+[node name="Candelabra3" parent="." unique_id=7376869 instance=ExtResource("14_fennu")]
+position = Vector2(182, -88)
+
+[node name="RoundTable3" parent="." unique_id=738616156 instance=ExtResource("10_2cwo3")]
+position = Vector2(-178, -77)
+
+[node name="Crystal" parent="." unique_id=1399211297 instance=ExtResource("16_ibjcq")]
+position = Vector2(-178, -92)
+
+[node name="Bookshelf" parent="." unique_id=1905424332 instance=ExtResource("17_x274g")]
+position = Vector2(-27, -244)

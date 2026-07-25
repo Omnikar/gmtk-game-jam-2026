@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c2r7wkbyw5nu0"]
+
+[ext_resource type="Texture2D" uid="uid://bvb0aob5pcld1" path="res://sprites/environment/furniture.png" id="1_hobka"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tffoe"]
+size = Vector2(39, 12)
+
+[node name="Bookshelf" type="Node2D" unique_id=1905424332]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1625275915]
+position = Vector2(-2, -20)
+texture = ExtResource("1_hobka")
+region_enabled = true
+region_rect = Rect2(0, 0, 56.31201, 58.303894)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1749263470]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=397671516]
+position = Vector2(0.5, -4)
+shape = SubResource("RectangleShape2D_tffoe")

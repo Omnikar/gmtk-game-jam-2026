@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://l5y13moqix8f"]
+
+[ext_resource type="Texture2D" uid="uid://0jdgn4jo5krt" path="res://sprites/environment/decor.png" id="1_cwld0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2f6eb"]
+size = Vector2(10, 5)
+
+[node name="RoundTableCloth" type="Node2D" unique_id=1457467907]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=964432265]
+position = Vector2(0, -10)
+texture = ExtResource("1_cwld0")
+region_enabled = true
+region_rect = Rect2(78.11725, 16.521296, 36.261948, 41.726074)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2126732750]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1087192974]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_2f6eb")

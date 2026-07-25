@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://0ohe1jqg61pq"]
+
+[ext_resource type="Texture2D" uid="uid://323imero51vc" path="res://sprites/environment/plants.png" id="1_mqxum"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hibae"]
+radius = 7.0
+
+[node name="Tree" type="Node2D" unique_id=518940622]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2028310205]
+position = Vector2(-3, -33)
+texture = ExtResource("1_mqxum")
+region_enabled = true
+region_rect = Rect2(95.160126, 92.25615, 104.839874, 107.74385)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=982288017]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2095672024]
+shape = SubResource("CircleShape2D_hibae")

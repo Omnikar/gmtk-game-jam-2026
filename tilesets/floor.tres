@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b6tpnk0i3epn6" path="res://sprites/tiles/wood_floor.png" id="1_rbdsi"]
 [ext_resource type="Texture2D" uid="uid://cmxxbac4swxdd" path="res://sprites/tiles/grass.png" id="2_t8dy8"]
+[ext_resource type="Texture2D" uid="uid://ddqk83so1ofve" path="res://sprites/tiles/shed_walls.png" id="3_1dfiu"]
 [ext_resource type="Texture2D" uid="uid://bexavx00gn26d" path="res://sprites/tiles/wood_stairs.png" id="3_7i147"]
 [ext_resource type="Texture2D" uid="uid://dvt12o4mycui4" path="res://sprites/tiles/kitchen_floor.png" id="4_ctslo"]
 [ext_resource type="Texture2D" uid="uid://d303ot26n05ai" path="res://sprites/tiles/walls.png" id="5_nwpu1"]
@@ -23,6 +24,25 @@ texture = ExtResource("2_t8dy8")
 1:1/0 = 0
 0:2/0 = 0
 1:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3c1nb"]
+texture = ExtResource("3_1dfiu")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4, 8, 4, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(4, -8, 8, -8, 8, 8, 4, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(4, -8, 8, -8, 8, 8, 4, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -4, -8, -4, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -4, -8, -4, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4, 8, 4, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4, 8, 4, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nwpu1"]
 texture = ExtResource("3_7i147")
@@ -401,3 +421,4 @@ sources/6 = SubResource("TileSetAtlasSource_liw6t")
 sources/7 = SubResource("TileSetAtlasSource_1dfiu")
 sources/8 = SubResource("TileSetAtlasSource_wg0s2")
 sources/9 = SubResource("TileSetAtlasSource_cj5f0")
+sources/10 = SubResource("TileSetAtlasSource_3c1nb")

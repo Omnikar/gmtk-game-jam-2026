@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cxurxqhooejmj"]
+
+[ext_resource type="Texture2D" uid="uid://0jdgn4jo5krt" path="res://sprites/environment/decor.png" id="1_28mkf"]
+
+[node name="Kettle" type="Node2D" unique_id=1315252326]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=222328829]
+position = Vector2(-2, -10)
+texture = ExtResource("1_28mkf")
+region_enabled = true
+region_rect = Rect2(137.62433, 74.7041, 32.91214, 43.560165)
