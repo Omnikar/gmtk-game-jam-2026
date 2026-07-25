@@ -15,6 +15,7 @@ region_enabled = true
 region_rect = Rect2(15.783813, 106.776215, 71.63229, 73.56828)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2064050748]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=58621233]
 position = Vector2(0.5, -2)

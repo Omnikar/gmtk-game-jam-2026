@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://jrx5iddqfnyk" path="res://sprites/characters/cook/cook_sprite.png" id="3_4f8ch"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jywcn"]
-size = Vector2(36, 28)
+size = Vector2(38, 36)
 
 [node name="TestNPC" type="Area2D" unique_id=217485892]
 y_sort_enabled = true
@@ -14,7 +14,7 @@ script = ExtResource("1_tkuce")
 timeline = ExtResource("2_vwif4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=424949572]
-position = Vector2(0, -5)
+position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_jywcn")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=905578458]

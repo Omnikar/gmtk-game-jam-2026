@@ -15,6 +15,7 @@ region_enabled = true
 region_rect = Rect2(95.160126, 92.25615, 104.839874, 107.74385)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=982288017]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2095672024]
 shape = SubResource("CircleShape2D_hibae")

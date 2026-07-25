@@ -1,0 +1,23 @@
+join gardener left
+if {gardener_introduced} == false:
+	set {gardener_introduced} = true
+	join detective right
+	detective: Hello.
+	detective: I'm here to ask you about the murder.
+	detective: Tell me everything you know about what happened tonight.
+	gardener: Well, someone took the Count down.
+	gardener: ...that's all I know.
+	detective: ...
+	gardener: ...
+	detective: ...
+	gardener: I was, y'know, gardening. 
+	gardener: I generally don't step foot in the house when there're houseguests over.
+	gardener (antsy): Not that Drac lets me come in usually anyway.
+	gardener (speaking): That door you just took to get out here is almost always locked.
+	gardener: Tonight was no different.
+	gardener: ...
+else:
+	gardener: Sup?
+- Present evidence
+	[signal arg_type="dict" arg="{"present_evidence":"gardener"}"]
+- Leave

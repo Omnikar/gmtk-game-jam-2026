@@ -9,6 +9,7 @@
 size = Vector2(64, 18)
 
 [node name="Manor" type="Node2D" unique_id=360900187]
+y_sort_enabled = true
 script = ExtResource("1_gd6oa")
 
 [node name="Downstairs" parent="." unique_id=1069451238 instance=ExtResource("2_pebnw")]

@@ -28,6 +28,8 @@
 [ext_resource type="PackedScene" uid="uid://cbly6umx150gg" path="res://objects/furniture/plant_pot.tscn" id="27_2oq4n"]
 [ext_resource type="Resource" uid="uid://da1hb4wcdexor" path="res://dialogue/evidence_timelines/evidence_dessert.dtl" id="27_8r6a3"]
 [ext_resource type="Resource" uid="uid://bifwqt46kymjq" path="res://dialogue/evidence_timelines/evidence_missing_stakes.dtl" id="28_7ery4"]
+[ext_resource type="Resource" uid="uid://s5oer1vo48iv" path="res://dialogue/character_timelines/gardener/gardener_introduction.dtl" id="29_4kwo4"]
+[ext_resource type="Texture2D" uid="uid://ej0fgaeeoutp" path="res://sprites/characters/gardener/sprite_gardener.png" id="30_5icnq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hibae"]
 size = Vector2(59, 28)
@@ -309,6 +311,7 @@ autoplay = "default"
 frame_progress = 0.86476094
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Fountain" unique_id=1257966850]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fountain/StaticBody2D" unique_id=1836990921]
 position = Vector2(0, 1)
@@ -424,9 +427,17 @@ timeline = ExtResource("27_8r6a3")
 position = Vector2(72, -369)
 timeline = ExtResource("28_7ery4")
 
+[node name="TestNPC2" parent="." unique_id=217485892 instance=ExtResource("3_nd71p")]
+position = Vector2(123, -239)
+timeline = ExtResource("29_4kwo4")
+
+[node name="Sprite2D" parent="TestNPC2" index="1" unique_id=905578458]
+texture = ExtResource("30_5icnq")
+
 [editable path="Kettle"]
 [editable path="RoundTable2/Skull"]
 [editable path="RoundTableCloth/Crystal"]
 [editable path="RoundTableCloth2/Crystal"]
 [editable path="RoundTable3/DecorVase"]
 [editable path="RoundTable4/Kettle"]
+[editable path="TestNPC2"]
