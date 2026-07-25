@@ -94,11 +94,12 @@ audio/channel_defaults={
 layout/style_list=["res://dialogue/dialogue_style.tres", "res://dialogue/detective_dialogue_style.tres", "res://dialogue/detective_thinking_style.tres"]
 layout/default_style=""
 variables={
+"cook_angry": false,
 "cook_introduced": false,
 "friend_introduced": false,
 "gardener_introduced": false,
 "guard_introduced": false,
-"has_searched_cabinet": true,
+"has_searched_cabinet": false,
 "niece_introduced": false
 }
 
