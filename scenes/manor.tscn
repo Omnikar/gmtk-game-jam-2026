@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://icqnislki3vx"]
+
+[ext_resource type="Script" uid="uid://dj2vale3ru2uf" path="res://scripts/manor.gd" id="1_gd6oa"]
+[ext_resource type="PackedScene" uid="uid://j3eurykqlbo2" path="res://scenes/test_scene.tscn" id="2_pebnw"]
+[ext_resource type="PackedScene" uid="uid://ftefqu73hrj3" path="res://scenes/upstairs.tscn" id="3_y4eaa"]
+[ext_resource type="PackedScene" uid="uid://81l1pn88itn2" path="res://objects/player.tscn" id="4_pebnw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ns7cy"]
+size = Vector2(64, 18)
+
+[node name="Manor" type="Node2D" unique_id=360900187]
+script = ExtResource("1_gd6oa")
+
+[node name="Downstairs" parent="." unique_id=1069451238 instance=ExtResource("2_pebnw")]
+
+[node name="Upstairs" parent="." unique_id=1011893950 instance=ExtResource("3_y4eaa")]
+position = Vector2(0, -64)
+
+[node name="DownstairsTrigger" type="Area2D" parent="." unique_id=1983689197]
+position = Vector2(0, 44)
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DownstairsTrigger" unique_id=893496247]
+position = Vector2(0, -86)
+shape = SubResource("RectangleShape2D_ns7cy")
+
+[node name="UpstairsTrigger" type="Area2D" parent="." unique_id=170296676]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UpstairsTrigger" unique_id=873330511]
+position = Vector2(0, -86)
+shape = SubResource("RectangleShape2D_ns7cy")
+
+[node name="Player" parent="." unique_id=1419036307 instance=ExtResource("4_pebnw")]
+position = Vector2(-17, 21)
+
+[connection signal="body_entered" from="DownstairsTrigger" to="." method="_on_downstairs_trigger_body_entered"]
+[connection signal="body_entered" from="UpstairsTrigger" to="." method="_on_upstairs_trigger_body_entered"]
