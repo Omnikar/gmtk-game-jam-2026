@@ -20,6 +20,7 @@
 [ext_resource type="Resource" uid="uid://c8fva06j53d7h" path="res://dialogue/evidence_timelines/evidence_safe.dtl" id="18_dyg8e"]
 [ext_resource type="Texture2D" uid="uid://dsp8g2f6ooblq" path="res://sprites/characters/sprite_dracula_dead.png" id="19_88afm"]
 [ext_resource type="Resource" uid="uid://bj13jwnmhwqmx" path="res://dialogue/evidence_timelines/evidence_body.dtl" id="20_fennu"]
+[ext_resource type="Resource" uid="uid://ckqxob7anr50o" path="res://dialogue/evidence_timelines/evidence_vase.dtl" id="21_3dt3a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hibae"]
 size = Vector2(61, 46)
@@ -187,3 +188,7 @@ texture = ExtResource("19_88afm")
 position = Vector2(111, -230)
 timeline = ExtResource("20_fennu")
 reusable = true
+
+[node name="TestEvidence3" parent="." unique_id=2071696065 instance=ExtResource("17_dyg8e")]
+position = Vector2(-16, -66)
+timeline = ExtResource("21_3dt3a")

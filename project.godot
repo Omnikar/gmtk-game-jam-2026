@@ -52,6 +52,7 @@ directories/dtl_directory={
 "evidence_dessert": "res://dialogue/evidence_timelines/evidence_dessert.dtl",
 "evidence_missing_stakes": "res://dialogue/evidence_timelines/evidence_missing_stakes.dtl",
 "evidence_safe": "res://dialogue/evidence_timelines/evidence_safe.dtl",
+"evidence_vase": "res://dialogue/evidence_timelines/evidence_vase.dtl",
 "gardener_introduction": "res://dialogue/character_timelines/gardener/gardener_introduction.dtl",
 "guard_discuss_friend": "res://dialogue/character_timelines/guard/guard_discuss_friend.dtl",
 "guard_discuss_gardener": "res://dialogue/character_timelines/guard/guard_discuss_gardener.dtl",
