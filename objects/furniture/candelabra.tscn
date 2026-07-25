@@ -38,8 +38,7 @@ size = Vector2(8, 4)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1579928760]
 sprite_frames = SubResource("SpriteFrames_wexef")
-frame = 1
-frame_progress = 0.20254591
+autoplay = "default"
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1558525360]
 

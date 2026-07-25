@@ -34,13 +34,12 @@ offset_right = 517.0
 offset_bottom = 427.0
 grow_horizontal = 2
 grow_vertical = 2
-current_tab = 1
+current_tab = 0
 tab_0/title = "       Evidence      "
 tab_1/title = "       Transcripts      "
 tab_2/title = "      Reference      "
 
 [node name="Evidence" type="ScrollContainer" parent="Control/TabContainer" unique_id=155027342]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 metadata/_tab_name = "       Evidence      "
@@ -103,6 +102,7 @@ evidence_name = "Garlic"
 evidence_description = "One of several bulbs of garlic found hidden in the kitchen."
 
 [node name="Transcripts" type="TabContainer" parent="Control/TabContainer" unique_id=994399470]
+visible = false
 layout_mode = 2
 current_tab = 0
 tab_0/title = "[COOK]"
