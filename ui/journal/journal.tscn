@@ -122,41 +122,6 @@ metadata/_tab_name = "[COOK]"
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="TranscriptEntry" parent="Control/TabContainer/Transcripts/cook/VBoxContainer" unique_id=1499117769 instance=ExtResource("5_pa4op")]
-visible = false
-layout_mode = 2
-tag = "3021123567"
-prompt = "bruh"
-response = "what?"
-
-[node name="TranscriptEntry2" parent="Control/TabContainer/Transcripts/cook/VBoxContainer" unique_id=26953639 instance=ExtResource("5_pa4op")]
-visible = false
-layout_mode = 2
-tag = "1944829288"
-prompt = "you did it"
-response = "no i din't"
-
-[node name="TranscriptEntry3" parent="Control/TabContainer/Transcripts/cook/VBoxContainer" unique_id=1632837180 instance=ExtResource("5_pa4op")]
-visible = false
-layout_mode = 2
-tag = "2387722629"
-prompt = "prove it"
-response = "no"
-
-[node name="TranscriptEntry4" parent="Control/TabContainer/Transcripts/cook/VBoxContainer" unique_id=779741373 instance=ExtResource("5_pa4op")]
-visible = false
-layout_mode = 2
-tag = "4187588906"
-prompt = "yes"
-response = "no"
-
-[node name="TranscriptEntry5" parent="Control/TabContainer/Transcripts/cook/VBoxContainer" unique_id=109404175 instance=ExtResource("5_pa4op")]
-visible = false
-layout_mode = 2
-tag = "1982566434"
-prompt = "guilty"
-response = "darn"
-
 [node name="guard" type="ScrollContainer" parent="Control/TabContainer/Transcripts" unique_id=1568511897]
 visible = false
 layout_mode = 2
@@ -212,17 +177,32 @@ theme_override_constants/margin_top = 30
 theme_override_constants/margin_right = 30
 theme_override_constants/margin_bottom = 30
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Control/TabContainer/Reference/MarginContainer" unique_id=644172496]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/TabContainer/Reference/MarginContainer" unique_id=1531347612]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "– Garlic
 
-– Wooden stakes
+[node name="Garlic" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=1672265170 instance=ExtResource("5_pa4op")]
+layout_mode = 2
+tag = "reference_garlic"
+prompt = ""
+response = "– Garlic"
 
-– A vampire cannot enter without being invited yadda yadda
+[node name="Stakes" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=852611652 instance=ExtResource("5_pa4op")]
+layout_mode = 2
+tag = "reference_stakes"
+prompt = ""
+response = "– Wooden stakes"
 
-– Reflections"
+[node name="Entering" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=1068244341 instance=ExtResource("5_pa4op")]
+layout_mode = 2
+tag = "reference_entering"
+prompt = ""
+response = "– A vampire cannot enter without being invited yadda yadda"
+
+[node name="Reflections" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=2005352844 instance=ExtResource("5_pa4op")]
+layout_mode = 2
+tag = "reference_reflections"
+prompt = ""
+response = "– Reflections"
 
 [node name="SelectedCount" type="RichTextLabel" parent="Control" unique_id=656829663]
 layout_mode = 1

@@ -12,6 +12,7 @@ var selected: bool = false
 
 
 func _ready() -> void:
+	selected = false
 	update_inner_properties()
 	if not Engine.is_editor_hint() and tag.is_empty():
 		tag = str(randi())

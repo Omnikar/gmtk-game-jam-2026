@@ -21,6 +21,10 @@ func _ready() -> void:
 	evidence_folder = evidence_folder.rstrip("/")
 	transcript_folder = transcript_folder.rstrip("/")
 
+	for entry in $Control/TabContainer/Reference/MarginContainer/VBoxContainer.get_children():
+		if entry is TranscriptEntry:
+			entry.transcript_clicked.connect(_on_evidence_clicked)
+
 	add_evidence("guard_character")
 	add_evidence("friend_character")
 	add_evidence("niece_character")
@@ -116,6 +120,9 @@ func _on_evidence_clicked(tag: String) -> void:
 			for entry in tab.get_node("VBoxContainer").get_children():
 				if entry is TranscriptEntry and entry.tag == tag:
 					entry.selected = selected_evidence[tag]
+		for entry in $Control/TabContainer/Reference/MarginContainer/VBoxContainer.get_children():
+			if entry is TranscriptEntry and entry.tag == tag:
+				entry.selected = selected_evidence[tag]
 		var selected_count = 0
 		for selected in selected_evidence.values():
 			if selected:
@@ -143,6 +150,10 @@ func end_present_mode() -> void:
 			entry.selected = false
 	for tab in $Control/TabContainer/Transcripts.get_children():
 		for entry in tab.get_node("VBoxContainer").get_children():
+			if entry is TranscriptEntry:
+				entry.selected = false
+	for entry in $Control/TabContainer/Reference/MarginContainer/VBoxContainer.get_children():
+		if entry is TranscriptEntry:
 			entry.selected = false
 
 

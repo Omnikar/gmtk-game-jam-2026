@@ -42,6 +42,7 @@ text = "Response"
 fit_content = true
 
 [node name="Selected" type="TextureRect" parent="." unique_id=2020317544]
+visible = false
 texture_filter = 2
 layout_mode = 2
 size_flags_horizontal = 0
