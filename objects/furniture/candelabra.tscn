@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://c8rgnvpquei67"]
+
+[ext_resource type="Texture2D" uid="uid://bb45n8wotp3i5" path="res://sprites/environment/candelabra.png" id="1_4uhxv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4rjce"]
+atlas = ExtResource("1_4uhxv")
+region = Rect2(0, 0, 15, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jqo7x"]
+atlas = ExtResource("1_4uhxv")
+region = Rect2(15, 0, 15, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u600f"]
+atlas = ExtResource("1_4uhxv")
+region = Rect2(30, 0, 15, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wexef"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4rjce")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jqo7x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u600f")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3dngu"]
+size = Vector2(8, 4)
+
+[node name="Candelabra" type="Node2D" unique_id=623592888]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1579928760]
+sprite_frames = SubResource("SpriteFrames_wexef")
+frame = 1
+frame_progress = 0.20254591
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1558525360]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1758533194]
+position = Vector2(0, 10)
+shape = SubResource("RectangleShape2D_3dngu")

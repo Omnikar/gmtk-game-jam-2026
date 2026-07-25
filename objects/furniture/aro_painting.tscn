@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bioo7ii46s0n8"]
+
+[ext_resource type="Texture2D" uid="uid://dtm4l57l6shx0" path="res://sprites/environment/paintings.png" id="1_l7wx6"]
+
+[node name="AroPainting" type="Node2D" unique_id=1596647884]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1235180758]
+texture = ExtResource("1_l7wx6")
+region_enabled = true
+region_rect = Rect2(16.070385, 0, 15.929615, 16.118195)

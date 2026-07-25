@@ -192,6 +192,7 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=1419036307]
+y_sort_enabled = true
 collision_layer = 2
 motion_mode = 1
 script = ExtResource("1_eqqp1")

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c1suq414oxtjg"]
+
+[ext_resource type="Texture2D" uid="uid://dtm4l57l6shx0" path="res://sprites/environment/paintings.png" id="1_irack"]
+
+[node name="LossPainting" type="Node2D" unique_id=845526192]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1529305144]
+position = Vector2(0, -99)
+texture = ExtResource("1_irack")
+region_enabled = true
+region_rect = Rect2(0, -0.17515707, 16.0089, 16.236174)
