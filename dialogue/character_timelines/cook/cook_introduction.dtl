@@ -26,7 +26,10 @@ if {cook_introduced} == false:
 	cook: That was the last time I saw him.
 	cook: ...
 else:
-	cook: Hello.
+	if {cook_angry} == false:
+		cook: Hello.
+	else:
+		cook (squinting): What do you want?
 - Present evidence
 	[signal arg_type="dict" arg="{"present_evidence":"cook"}"]
 - Leave
