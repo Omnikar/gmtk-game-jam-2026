@@ -25,11 +25,11 @@ func _ready() -> void:
 		if entry is TranscriptEntry:
 			entry.transcript_clicked.connect(_on_evidence_clicked)
 
-	add_evidence("guard_character")
-	add_evidence("friend_character")
-	add_evidence("niece_character")
-	add_evidence("cook_character")
 	add_evidence("gardener_character")
+	add_evidence("cook_character")
+	add_evidence("niece_character")
+	add_evidence("friend_character")
+	add_evidence("guard_character")
 
 
 func _input(event: InputEvent) -> void:
@@ -60,6 +60,7 @@ func add_evidence(evidence_id: String) -> void:
 	var scene_instance = scene_resource.instantiate()
 	scene_instance.evidence_clicked.connect(_on_evidence_clicked)
 	vbox.add_child(scene_instance)
+	vbox.move_child(scene_instance, 0)
 
 
 func add_transcript(transcript_id: String) -> void:
