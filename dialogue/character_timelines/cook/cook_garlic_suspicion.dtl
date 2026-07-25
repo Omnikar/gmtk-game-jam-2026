@@ -1,11 +1,17 @@
-join detective right
-detective: The others report that Dracula collapsed shortly after consuming a dessert that you prepared.
-detective (thinking): The behavior exhibited by Dracula is characteristic of vampiric garlic poisoning.
-detective (speaking): You didn't happen to let garlic into Dracula's dessert, did you?
-join cook left
-cook: Of course not. I'm a chef for a vampire household. Garlic stays far, far away from here.
-detective: Would you mind if I searched the cabinets?
-cook: Not at all. Take a look, only vampire-safe ingredients in there.
-[style name="dialogue_style"]
-You search the cabinet. There isn't any garlic in sight.
-cook: See? I might not be his biggest fan, but I mean him no harm.
+if {has_searched_cabinet} == false:
+	set {has_searched_cabinet} = true
+	join detective right
+	detective: The others report that Dracula collapsed shortly after consuming a dessert that you prepared.
+	detective (thinking): The behavior exhibited by Dracula is characteristic of vampiric garlic poisoning.
+	detective (speaking): You didn't happen to let garlic into Dracula's dessert, did you?
+	join cook left
+	cook: Of course not. I'm a chef for a vampire household. Garlic stays far, far away from here.
+	detective: Would you mind if I searched the cabinets?
+	cook: Not at all. Take a look, only vampire-safe ingredients in there.
+	[style name="dialogue_style"]
+	You search the cabinet. There isn't any garlic in sight.
+	cook: See? I might not be his biggest fan, but I mean him no harm.
+else:
+	join detective_thinking right
+	detective_thinking: I've already found the garlic [COOK] was hiding. I would be better off asking them about the evidence directly.
+

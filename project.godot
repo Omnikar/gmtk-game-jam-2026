@@ -43,6 +43,7 @@ directories/dtl_directory={
 "cook_discuss_safe": "res://dialogue/character_timelines/cook/cook_discuss_safe.dtl",
 "cook_garlic_suspicion": "res://dialogue/character_timelines/cook/cook_garlic_suspicion.dtl",
 "cook_introduction": "res://dialogue/character_timelines/cook/cook_introduction.dtl",
+"cook_secret_cabinet": "res://dialogue/character_timelines/cook/cook_secret_cabinet.dtl",
 "cook_self_test": "res://dialogue/character_timelines/cook_self_test.dtl",
 "detective_already_asked": "res://dialogue/character_timelines/detective/detective_already_asked.dtl",
 "detective_already_introduced": "res://dialogue/character_timelines/detective/detective_already_introduced.dtl",
@@ -97,6 +98,7 @@ variables={
 "friend_introduced": false,
 "gardener_introduced": false,
 "guard_introduced": false,
+"has_searched_cabinet": true,
 "niece_introduced": false
 }
 
