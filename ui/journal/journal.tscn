@@ -10,6 +10,8 @@
 [node name="Journal" type="CanvasLayer" unique_id=890431623]
 script = ExtResource("1_tp6wr")
 evidence_folder = "res://ui/journal/evidence_entries"
+transcript_folder = "res://ui/journal/transcript_entries"
+transcript_entry_prefab_file = "res://ui/journal/transcript_entry.tscn"
 
 [node name="Control" type="Control" parent="." unique_id=1108159999]
 layout_mode = 3
@@ -32,12 +34,13 @@ offset_right = 517.0
 offset_bottom = 427.0
 grow_horizontal = 2
 grow_vertical = 2
-current_tab = 0
+current_tab = 1
 tab_0/title = "       Evidence      "
 tab_1/title = "       Transcripts      "
 tab_2/title = "      Reference      "
 
 [node name="Evidence" type="ScrollContainer" parent="Control/TabContainer" unique_id=155027342]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 metadata/_tab_name = "       Evidence      "
@@ -100,65 +103,99 @@ evidence_name = "Garlic"
 evidence_description = "One of several bulbs of garlic found hidden in the kitchen."
 
 [node name="Transcripts" type="TabContainer" parent="Control/TabContainer" unique_id=994399470]
-visible = false
 layout_mode = 2
 current_tab = 0
+tab_0/title = "[COOK]"
+tab_1/title = "[GUARD]"
+tab_2/title = "[NIECE]"
+tab_3/title = "[FRIEND]"
+tab_4/title = "[GARDENER]"
 metadata/_tab_index = 1
 metadata/_tab_name = "       Transcripts      "
 
-[node name="Cook" type="ScrollContainer" parent="Control/TabContainer/Transcripts" unique_id=767514674]
+[node name="cook" type="ScrollContainer" parent="Control/TabContainer/Transcripts" unique_id=767514674]
 layout_mode = 2
 metadata/_tab_index = 0
+metadata/_tab_name = "[COOK]"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/TabContainer/Transcripts/Cook" unique_id=614043166]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/TabContainer/Transcripts/cook" unique_id=614043166]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="TranscriptEntry" parent="Control/TabContainer/Transcripts/Cook/VBoxContainer" unique_id=1499117769 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry" parent="Control/TabContainer/Transcripts/cook/VBoxContainer" unique_id=1499117769 instance=ExtResource("5_pa4op")]
+visible = false
 layout_mode = 2
 tag = "3021123567"
 prompt = "bruh"
 response = "what?"
 
-[node name="TranscriptEntry2" parent="Control/TabContainer/Transcripts/Cook/VBoxContainer" unique_id=26953639 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry2" parent="Control/TabContainer/Transcripts/cook/VBoxContainer" unique_id=26953639 instance=ExtResource("5_pa4op")]
+visible = false
 layout_mode = 2
 tag = "1944829288"
 prompt = "you did it"
 response = "no i din't"
 
-[node name="TranscriptEntry3" parent="Control/TabContainer/Transcripts/Cook/VBoxContainer" unique_id=1632837180 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry3" parent="Control/TabContainer/Transcripts/cook/VBoxContainer" unique_id=1632837180 instance=ExtResource("5_pa4op")]
+visible = false
 layout_mode = 2
 tag = "2387722629"
 prompt = "prove it"
 response = "no"
 
-[node name="TranscriptEntry4" parent="Control/TabContainer/Transcripts/Cook/VBoxContainer" unique_id=779741373 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry4" parent="Control/TabContainer/Transcripts/cook/VBoxContainer" unique_id=779741373 instance=ExtResource("5_pa4op")]
+visible = false
 layout_mode = 2
 tag = "4187588906"
 prompt = "yes"
 response = "no"
 
-[node name="TranscriptEntry5" parent="Control/TabContainer/Transcripts/Cook/VBoxContainer" unique_id=109404175 instance=ExtResource("5_pa4op")]
+[node name="TranscriptEntry5" parent="Control/TabContainer/Transcripts/cook/VBoxContainer" unique_id=109404175 instance=ExtResource("5_pa4op")]
+visible = false
 layout_mode = 2
 tag = "1982566434"
 prompt = "guilty"
 response = "darn"
 
-[node name="Joe" type="ScrollContainer" parent="Control/TabContainer/Transcripts" unique_id=1747064354]
+[node name="guard" type="ScrollContainer" parent="Control/TabContainer/Transcripts" unique_id=1568511897]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
+metadata/_tab_name = "[GUARD]"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/TabContainer/Transcripts/Joe" unique_id=588520242]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/TabContainer/Transcripts/guard" unique_id=69325055]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
 
-[node name="TranscriptEntry" parent="Control/TabContainer/Transcripts/Joe/VBoxContainer" unique_id=941348356 instance=ExtResource("5_pa4op")]
+[node name="niece" type="ScrollContainer" parent="Control/TabContainer/Transcripts" unique_id=503845345]
+visible = false
 layout_mode = 2
-tag = "3719641705"
-prompt = "Who's Joe?"
-response = "The voices"
+metadata/_tab_index = 2
+metadata/_tab_name = "[NIECE]"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/TabContainer/Transcripts/niece" unique_id=349679641]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="friend" type="ScrollContainer" parent="Control/TabContainer/Transcripts" unique_id=870916206]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+metadata/_tab_name = "[FRIEND]"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/TabContainer/Transcripts/friend" unique_id=1792386354]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="gardener" type="ScrollContainer" parent="Control/TabContainer/Transcripts" unique_id=2104761695]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+metadata/_tab_name = "[GARDENER]"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/TabContainer/Transcripts/gardener" unique_id=1614793515]
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="Reference" type="ScrollContainer" parent="Control/TabContainer" unique_id=1720425453]
 visible = false

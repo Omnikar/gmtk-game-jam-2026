@@ -10,7 +10,7 @@
 "style": "dialogue_style",
 "suffix": ""
 },
-&"default_portrait": "antsy",
+&"default_portrait": "speaking",
 &"description": "",
 &"display_name": "Gardener",
 &"mirror": false,

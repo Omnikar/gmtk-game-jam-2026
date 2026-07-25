@@ -1,6 +1,6 @@
 @tool
 
-extends Control
+class_name TranscriptEntry extends Control
 
 signal transcript_clicked(tag: String)
 
@@ -13,7 +13,7 @@ var selected: bool = false
 
 func _ready() -> void:
 	update_inner_properties()
-	if tag.is_empty():
+	if not Engine.is_editor_hint() and tag.is_empty():
 		tag = str(randi())
 
 

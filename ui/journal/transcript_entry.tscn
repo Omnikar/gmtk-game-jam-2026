@@ -23,6 +23,7 @@ theme_override_constants/margin_bottom = 5
 
 [node name="Text" type="RichTextLabel" parent="VBoxContainer/Prompt" unique_id=242127744]
 layout_mode = 2
+mouse_filter = 1
 text = "Prompt"
 fit_content = true
 horizontal_alignment = 2
@@ -36,6 +37,7 @@ theme_override_constants/margin_bottom = 15
 
 [node name="Text" type="RichTextLabel" parent="VBoxContainer/Response" unique_id=1247203716]
 layout_mode = 2
+mouse_filter = 1
 text = "Response"
 fit_content = true
 

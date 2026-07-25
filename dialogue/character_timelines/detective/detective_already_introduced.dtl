@@ -1,2 +1,3 @@
 join detective right
 detective (thinking): They've already told me about themself. Maybe I should ask them about the others.
+[signal arg_type="dict" arg="{"present_evidence":""}"]

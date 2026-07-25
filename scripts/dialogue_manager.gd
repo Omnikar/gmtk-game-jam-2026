@@ -26,6 +26,11 @@ var triggers: Array[DialogueTrigger] = [
 var used_triggers: Array[int] = []
 
 
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("debug_end_dialogue") and Dialogic.current_timeline != null:
+		Dialogic.end_timeline(true)
+
+
 func submit_evidence(character: String, tags: Array[String]) -> void:
 	var i: int = -1
 	for trig in triggers:
