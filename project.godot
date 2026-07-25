@@ -40,6 +40,8 @@ directories/dch_directory={
 directories/dtl_directory={
 "cook_discuss_guard": "res://dialogue/character_timelines/cook/cook_discuss_guard.dtl",
 "cook_discuss_niece": "res://dialogue/character_timelines/cook/cook_discuss_niece.dtl",
+"cook_discuss_safe": "res://dialogue/character_timelines/cook/cook_discuss_safe.dtl",
+"cook_garlic_suspicion": "res://dialogue/character_timelines/cook/cook_garlic_suspicion.dtl",
 "cook_introduction": "res://dialogue/character_timelines/cook/cook_introduction.dtl",
 "cook_self_test": "res://dialogue/character_timelines/cook_self_test.dtl",
 "detective_already_asked": "res://dialogue/character_timelines/detective/detective_already_asked.dtl",
