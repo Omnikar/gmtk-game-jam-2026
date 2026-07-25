@@ -1,6 +1,6 @@
 join guard left
-if {cook_introduced} == false:
-	set {cook_introduced} = true
+if {guard_introduced} == false:
+	set {guard_introduced} = true
 	join detective right
 	detective: Tell me about yourself.
 	guard: I'm a guard.

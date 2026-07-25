@@ -26,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://cg31pa3nf85rl" path="res://objects/furniture/decor_vase.tscn" id="25_kub5s"]
 [ext_resource type="Texture2D" uid="uid://bpqqc6yam5q6h" path="res://sprites/environment/shed_items.png" id="26_sstcd"]
 [ext_resource type="PackedScene" uid="uid://cbly6umx150gg" path="res://objects/furniture/plant_pot.tscn" id="27_2oq4n"]
+[ext_resource type="Resource" uid="uid://da1hb4wcdexor" path="res://dialogue/evidence_timelines/evidence_dessert.dtl" id="27_8r6a3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hibae"]
 size = Vector2(59, 28)
@@ -413,6 +414,10 @@ region_rect = Rect2(8, 75, 15, 31)
 
 [node name="PlantPot3" parent="." unique_id=731581168 instance=ExtResource("27_2oq4n")]
 position = Vector2(90, -367)
+
+[node name="TestEvidence2" parent="." unique_id=576349916 instance=ExtResource("4_7ddre")]
+position = Vector2(-242, -232)
+timeline = ExtResource("27_8r6a3")
 
 [editable path="Kettle"]
 [editable path="RoundTable2/Skull"]

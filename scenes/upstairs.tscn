@@ -15,7 +15,11 @@
 [ext_resource type="PackedScene" uid="uid://c8rgnvpquei67" path="res://objects/furniture/candelabra.tscn" id="14_fennu"]
 [ext_resource type="PackedScene" uid="uid://cxurxqhooejmj" path="res://objects/furniture/kettle.tscn" id="15_3dt3a"]
 [ext_resource type="PackedScene" uid="uid://dusvuhu3qguxd" path="res://objects/furniture/crystal.tscn" id="16_ibjcq"]
+[ext_resource type="PackedScene" uid="uid://c61xmp77qray0" path="res://objects/test_evidence.tscn" id="17_dyg8e"]
 [ext_resource type="PackedScene" uid="uid://c2r7wkbyw5nu0" path="res://objects/furniture/bookshelf.tscn" id="17_x274g"]
+[ext_resource type="Resource" uid="uid://c8fva06j53d7h" path="res://dialogue/evidence_timelines/evidence_safe.dtl" id="18_dyg8e"]
+[ext_resource type="Texture2D" uid="uid://dsp8g2f6ooblq" path="res://sprites/characters/sprite_dracula_dead.png" id="19_88afm"]
+[ext_resource type="Resource" uid="uid://bj13jwnmhwqmx" path="res://dialogue/evidence_timelines/evidence_body.dtl" id="20_fennu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hibae"]
 size = Vector2(61, 46)
@@ -170,3 +174,16 @@ position = Vector2(-133, -89)
 
 [node name="Candelabra4" parent="." unique_id=110924864 instance=ExtResource("14_fennu")]
 position = Vector2(37, -89)
+
+[node name="TestEvidence" parent="." unique_id=576349916 instance=ExtResource("17_dyg8e")]
+position = Vector2(67, -238)
+timeline = ExtResource("18_dyg8e")
+
+[node name="SpriteDraculaDead" type="Sprite2D" parent="." unique_id=506344545]
+position = Vector2(133, -251)
+texture = ExtResource("19_88afm")
+
+[node name="TestEvidence2" parent="." unique_id=1545465965 instance=ExtResource("17_dyg8e")]
+position = Vector2(111, -230)
+timeline = ExtResource("20_fennu")
+reusable = true

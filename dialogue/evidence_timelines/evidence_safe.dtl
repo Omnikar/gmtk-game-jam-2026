@@ -1,0 +1,4 @@
+[style name="dialogue_style"]
+A sturdy safe stands in the corner of the room
+Safe added to journal
+[signal arg_type="dict" arg="{"add_evidence":"safe"}"]

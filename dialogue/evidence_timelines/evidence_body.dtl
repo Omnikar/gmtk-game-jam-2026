@@ -1,0 +1,14 @@
+[style name="dialogue_style"]
+The shriveled corpse of Count Dracula lays motionless on the bed.
+if {body_seen} == false:
+	set {body_seen} = true
+	It is penetrated through the heart by a wooden stake.
+	Ash-covered wooden stake added to journal.
+	[signal arg_type="dict" arg="{"add_evidence":"murder_weapon"}"]
+if {key_known} == true:
+	- Search body
+		Dracula's cloak has many pockets on the inside.
+		In a pocket on the bottom-right side, you find an ornate key.
+		Golden key added to journal.
+		[signal arg_type="dict" arg="{"add_evidence":"key"}"]
+	- Leave
