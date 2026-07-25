@@ -1,0 +1,14 @@
+[style name="dialogue_style"]
+A pile of wooden stakes sits at the back of the garden shed.
+join gardener left
+gardener: Hey! Let me take a wild guess why you're eyeing my pile of stakes.
+join detective right
+detective: I suppose I won't have to ask.
+gardener: I know I know, the big Drac was stabbed with a stake, and I'm the one with the stakes.
+gardener: But of course, that doesn't mean I'm the only one with stakes.
+gardener: In fact, two of my stakes went missing right before the murder happened.
+gardener: S'pose Drac found one of 'em.
+gardener: But the other is still out there somewhere.
+detective (thinking): Interesting.
+Wooden stake supply added to journal.
+[signal arg_type="dict" arg="{"add_evidence":"missing_stakes"}"]
