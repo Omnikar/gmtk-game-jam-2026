@@ -19,7 +19,7 @@ func dt(ch: String, t: Array[String], tl: String) -> DialogueTrigger:
 
 var triggers: Array[DialogueTrigger] = [
 	#
-	dt("cook", ["cook_character"], "cook_self_test"),
+	dt("cook", ["cook_character"], "detective_already_introduced"),
 	dt("cook", ["guard_character"], "cook_discuss_guard"),
 ]
 

@@ -42,6 +42,7 @@ directories/dtl_directory={
 "cook_introduction": "res://dialogue/character_timelines/cook/cook_introduction.dtl",
 "cook_self_test": "res://dialogue/character_timelines/cook_self_test.dtl",
 "detective_already_asked": "res://dialogue/character_timelines/detective/detective_already_asked.dtl",
+"detective_already_introduced": "res://dialogue/character_timelines/detective/detective_already_introduced.dtl",
 "detective_unsure": "res://dialogue/character_timelines/detective/detective_unsure.dtl",
 "intro": "res://dialogue/intro.dtl",
 "test_evidence_timeline": "res://dialogue/evidence_timelines/test_evidence_timeline.dtl",
