@@ -6,6 +6,7 @@
 size = Vector2(29, 16)
 
 [node name="BigShrub" type="Node2D" unique_id=827796167]
+y_sort_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1163094434]
 position = Vector2(1, -17)

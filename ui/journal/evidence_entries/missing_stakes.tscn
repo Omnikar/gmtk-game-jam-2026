@@ -1,21 +1,20 @@
 [gd_scene format=3 uid="uid://co688tnfp2x1l"]
 
 [ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_navli"]
+[ext_resource type="Texture2D" uid="uid://bpqqc6yam5q6h" path="res://sprites/environment/shed_items.png" id="2_cmvjl"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6w51t"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b5f10"]
-atlas = SubResource("PlaceholderTexture2D_6w51t")
-region = Rect2(0, 0, 4, 4)
+[sub_resource type="AtlasTexture" id="AtlasTexture_l53jw"]
+atlas = ExtResource("2_cmvjl")
+region = Rect2(20.426918, 13.955139, 38.39946, 38.541584)
 
 [node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_navli")]
-texture = SubResource("AtlasTexture_b5f10")
+texture = SubResource("AtlasTexture_l53jw")
 tag = "missing_stakes"
 evidence_name = "Wooden stake supply"
 evidence_description = "[GARDENER]'s supply of gardening stakes. Two stakes went missing on the night of the murder."
 
 [node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
-texture = SubResource("AtlasTexture_b5f10")
+texture = SubResource("AtlasTexture_l53jw")
 
 [node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
 text = "Wooden stake supply"

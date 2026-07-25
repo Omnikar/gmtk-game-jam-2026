@@ -1,19 +1,20 @@
 [gd_scene format=3 uid="uid://d37q6y3rsrvht"]
 
 [ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_24iej"]
-[ext_resource type="Texture2D" uid="uid://cmqrscbyn52km" path="res://sprites/evidence/stake.png" id="2_e1f4e"]
+[ext_resource type="Texture2D" uid="uid://bmmj7hqdje4wt" path="res://sprites/evidence/items.png" id="2_mr6th"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ueut4"]
-atlas = ExtResource("2_e1f4e")
+[sub_resource type="AtlasTexture" id="AtlasTexture_sstcd"]
+atlas = ExtResource("2_mr6th")
+region = Rect2(70.16422, 7.05674, 44.13613, 44.13613)
 
 [node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_24iej")]
-texture = SubResource("AtlasTexture_ueut4")
+texture = SubResource("AtlasTexture_sstcd")
 tag = "murder_weapon"
 evidence_name = "Ash-covered wooden stake"
 evidence_description = "A sharp stake of oak wood. Found stabbed through the heart of Dracula's shriveled corpse. Its end is peppered with flakes of ash."
 
 [node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
-texture = SubResource("AtlasTexture_ueut4")
+texture = SubResource("AtlasTexture_sstcd")
 
 [node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
 text = "Ash-covered wooden stake"

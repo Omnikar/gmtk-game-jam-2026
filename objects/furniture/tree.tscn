@@ -6,6 +6,7 @@
 radius = 7.0
 
 [node name="Tree" type="Node2D" unique_id=518940622]
+y_sort_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2028310205]
 position = Vector2(-3, -33)

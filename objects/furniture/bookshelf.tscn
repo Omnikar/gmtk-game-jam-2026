@@ -6,6 +6,7 @@
 size = Vector2(39, 12)
 
 [node name="Bookshelf" type="Node2D" unique_id=1905424332]
+y_sort_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1625275915]
 position = Vector2(-2, -20)

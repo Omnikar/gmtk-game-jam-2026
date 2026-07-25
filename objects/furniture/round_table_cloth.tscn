@@ -6,6 +6,7 @@
 size = Vector2(10, 5)
 
 [node name="RoundTableCloth" type="Node2D" unique_id=1457467907]
+y_sort_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=964432265]
 position = Vector2(0, -10)
