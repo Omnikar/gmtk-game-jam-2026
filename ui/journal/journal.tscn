@@ -2,9 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://bm4bi6vny2x0v" path="res://ui/journal/evidence_entry.tscn" id="1_6wirs"]
 [ext_resource type="Script" uid="uid://xa5153munf4x" path="res://scripts/journal.gd" id="1_tp6wr"]
-[ext_resource type="Texture2D" uid="uid://bcfq6n4vx41b2" path="res://sprites/evidence/will.png" id="2_tp6wr"]
-[ext_resource type="Texture2D" uid="uid://cmqrscbyn52km" path="res://sprites/evidence/stake.png" id="3_hchca"]
-[ext_resource type="Texture2D" uid="uid://cksgf8hqinrkt" path="res://sprites/evidence/garlic.png" id="4_le68i"]
 [ext_resource type="PackedScene" uid="uid://bnhgf1rm0syin" path="res://ui/journal/transcript_entry.tscn" id="5_pa4op"]
 
 [node name="Journal" type="CanvasLayer" unique_id=890431623]
@@ -81,7 +78,6 @@ evidence_description = "This object is wayyy more suspicious."
 [node name="Will" parent="Control/TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1668971342 instance=ExtResource("1_6wirs")]
 visible = false
 layout_mode = 2
-texture = ExtResource("2_tp6wr")
 evidence_name = "Dracula's will"
 evidence_description = "The last will and testament of Count Dracula.
 Found in Dracula's study after his death.
@@ -90,14 +86,12 @@ Among other things, entrusts the Transylvania estate to [NAME OF FAKE HEIR]."
 [node name="Stake" parent="Control/TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1986431209 instance=ExtResource("1_6wirs")]
 visible = false
 layout_mode = 2
-texture = ExtResource("3_hchca")
 evidence_name = "Ash-covered wooden stake"
 evidence_description = "A sharp stake of oak wood. Found stabbed through the heart of Dracula's shriveled corpse. Its end is peppered with flakes of ash."
 
 [node name="Garlic" parent="Control/TabContainer/Evidence/MarginContainer/VBoxContainer" unique_id=1946197375 instance=ExtResource("1_6wirs")]
 visible = false
 layout_mode = 2
-texture = ExtResource("4_le68i")
 evidence_name = "Garlic"
 evidence_description = "One of several bulbs of garlic found hidden in the kitchen."
 
@@ -180,29 +174,46 @@ theme_override_constants/margin_bottom = 30
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/TabContainer/Reference/MarginContainer" unique_id=1531347612]
 layout_mode = 2
 
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=1002196758]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 24
+text = "Vampire Reference Guide"
+fit_content = true
+
 [node name="Garlic" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=1672265170 instance=ExtResource("5_pa4op")]
 layout_mode = 2
 tag = "reference_garlic"
 prompt = ""
-response = "– Garlic"
+response = "– Garlic
+	– The fumes from garlic can cause a vampire to experience a variety of allergy- or sickness-adjacent symptoms.
+	– Consumption of garlic can induce a sudden state of unconsciousness. Though it will not kill a vampire the duration of this unconsciousness is proportional to the amount of garlic consumed.
+	– Some vampires wince and cower at even the sight of garlic, though this is not universal."
 
 [node name="Stakes" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=852611652 instance=ExtResource("5_pa4op")]
 layout_mode = 2
 tag = "reference_stakes"
 prompt = ""
-response = "– Wooden stakes"
-
-[node name="Entering" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=1068244341 instance=ExtResource("5_pa4op")]
-layout_mode = 2
-tag = "reference_entering"
-prompt = ""
-response = "– A vampire cannot enter without being invited yadda yadda"
+response = "– Wooden stakes
+	– A wooden stake is among the only known ways to permanently kill a vampire.
+	– The stake must be driven through the vampire's heart. If it misses its mark, the vampire will be virtually unharmed."
 
 [node name="Reflections" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=2005352844 instance=ExtResource("5_pa4op")]
 layout_mode = 2
 tag = "reference_reflections"
 prompt = ""
-response = "– Reflections"
+response = "– Reflections
+	– A vampire has no reflection in a mirror.
+	– This effect also applies to garments and accessories being worn by the vampire."
+
+[node name="Entering" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=1068244341 instance=ExtResource("5_pa4op")]
+layout_mode = 2
+tag = "reference_entering"
+prompt = ""
+response = "– Being invited into a home
+	– A vampire is unable to enter anyone's home without being explicitly invited inside by that home's owner.
+	– The sole owner of the home is the only one allowed to invite a vampire inside.
+	– The owner may revoke permission at any time, in which case the vampire is mentally compelled to exit the home as efficiently as possible.
+	– Should the owner of a home die, the new owner for the sake of this rule is determined by the previous owner's written will."
 
 [node name="SelectedCount" type="RichTextLabel" parent="Control" unique_id=656829663]
 layout_mode = 1
