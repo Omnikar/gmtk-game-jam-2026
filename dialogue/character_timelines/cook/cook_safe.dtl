@@ -1,0 +1,15 @@
+join detective right
+detective: I found a safe in Dracula's study. Do you know anything about it?
+join cook left
+cook (unamused): Oh, do I KNOW about it?
+cook (speaking): Drac may be a lot of things, but humble isn't one of them.
+cook (unamused): I'm sure you've noticed there's no shortage of fancy decor around the place.
+cook (speaking): But the real valuables, they're in the safe.
+cook: Drac loves rubbing it in everyone's faces the untold riches that he has hidden away in there.
+cook: He brags about how the key never leaves his person, even for a moment.
+cook (unamused): And if you've spent enough time around him you've probably seen him show you exactly which pocket he always keeps it in. On the front left side of his fancy cloak.
+cook (speaking): But he doesn't say that part as much. I'd reckon only me and the gardener [GARDENER] know about it.
+cook (unamused): Not that I was planning to take the key or anything. I'm not that stupid.
+cook (speaking): Can't say the same about [GARDENER] though, poor as he is. If I were him, untold riches in a box wouldn't sound half bad.
+join detective_thinking right
+detective_thinking: I should see if Dracula still has the key on him.

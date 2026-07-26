@@ -1,0 +1,7 @@
+detective: Dracula’s key wasn’t in the pocket I was told it would be in.
+cook: Hm. Weird.
+cook: I can’t think of any reason why he’d put it in a different pocket.
+detective (thinking): It might not have been him, then…
+join detective_thinking right
+detective_thinking: Maybe someone took the key from Dracula and returned it to the wrong pocket.
+detective_thinking: And maybe they used the key sometime in between.

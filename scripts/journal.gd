@@ -68,6 +68,11 @@ func add_evidence(evidence_id: String) -> void:
 
 
 func add_transcript(transcript_id: String) -> void:
+	if transcript_id == "cook_garlic_suspicion" and Dialogic.VAR.has_searched_cabinet:
+		return
+	if transcript_id == "cook_secret_cabinet":
+		transcript_id = "cook_secret_cabinet-%s" % Dialogic.VAR.has_searched_cabinet
+
 	if added_transcripts.has(transcript_id):
 		return
 

@@ -1,4 +1,4 @@
-{niece_planted_will}
+{niece_planted_will-0}
 [NIECE], I have come to the conclusion that this will is fake.
 You’re not Dracula’s real heiress. 
 That title belongs to [FRIEND].
@@ -18,6 +18,5 @@ That will is fake. I forged it and hid it in his safe.
 But I deserve to be his heiress!
 It should be someone from his own family, not some irrelevant friend!
 
-
-{niece_stole_key}
+{niece_planted_will-1}
 She must have stolen the key to unlock the safe.

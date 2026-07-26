@@ -33,10 +33,20 @@ var triggers: Array[DialogueTrigger] = [
 	# --- COOK ---
 	# Ask cook about other people
 	dt("cook", [["guard_character"]], "cook_discuss_guard"),
+	dt("cook", [["niece_character"]], "cook_discuss_niece"),
+	dt("cook", [["friend_character"]], "cook_discuss_friend"),
+	dt("cook", [["gardener_character"]], "cook_discuss_gardener"),
 	# Other
+	dt("cook", [["safe"]], "cook_safe"),
 	dt("cook", [["friend_suspects_cook"]], "cook_friend_suspects"),
 	dt("cook", [["garlic_suspicion"]], "cook_garlic_suspicion"),
 	dt("cook", [["secret_cabinet"]], "cook_secret_cabinet"),
+	dt("cook", [["key", "key_location"]], "cook_key_wrong"),
+	dt(
+		"cook",
+		[["garlic_pouch"], ["second_stake"], ["garlic_pouch", "second_stake"]],
+		"cook_garlic_accusation",
+	),
 	#
 	# --- GARDENER ---
 	# Ask gardener about other people

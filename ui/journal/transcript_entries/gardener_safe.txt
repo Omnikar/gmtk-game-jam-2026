@@ -4,7 +4,7 @@ If you asked old Drac’ ‘bout that thing, he’d’ve sat you down for a good
 He said he’s got gold in there… jewels… rare art. Real fancy stuff.
 
 
-{key_location-0}
+{key_location-gardener-0}
 ---
 He always kept the key on him, right in his upper-left-inner pocket of his cloak. 
 Right next to his heart.

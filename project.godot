@@ -38,12 +38,15 @@ directories/dch_directory={
 "test_npc": "res://dialogue/characters/test_npc.dch"
 }
 directories/dtl_directory={
+"cook_discuss_friend": "res://dialogue/character_timelines/cook/cook_discuss_friend.dtl",
+"cook_discuss_gardener": "res://dialogue/character_timelines/cook/cook_discuss_gardener.dtl",
 "cook_discuss_guard": "res://dialogue/character_timelines/cook/cook_discuss_guard.dtl",
 "cook_discuss_niece": "res://dialogue/character_timelines/cook/cook_discuss_niece.dtl",
-"cook_discuss_safe": "res://dialogue/character_timelines/cook/cook_discuss_safe.dtl",
 "cook_friend_suspects": "res://dialogue/character_timelines/cook/cook_friend_suspects.dtl",
 "cook_garlic_suspicion": "res://dialogue/character_timelines/cook/cook_garlic_suspicion.dtl",
 "cook_introduction": "res://dialogue/character_timelines/cook/cook_introduction.dtl",
+"cook_key_wrong": "res://dialogue/character_timelines/cook/cook_key_wrong.dtl",
+"cook_safe": "res://dialogue/character_timelines/cook/cook_safe.dtl",
 "cook_secret_cabinet": "res://dialogue/character_timelines/cook/cook_secret_cabinet.dtl",
 "cook_self_test": "res://dialogue/character_timelines/cook_self_test.dtl",
 "detective_already_asked": "res://dialogue/character_timelines/detective/detective_already_asked.dtl",

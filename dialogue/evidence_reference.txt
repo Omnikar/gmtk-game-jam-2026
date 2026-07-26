@@ -45,7 +45,9 @@ table_leg_supposedly_underneath
 someone_in_hallway
 
 niece_planted_will
-niece_stole_key
 
 guard_is_vampire
 cook_vase_alibi
+
+cook_niece_cooperating
+garlic_small_dose
