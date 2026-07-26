@@ -1,4 +1,4 @@
-{cook_niece_cooperating}
+{cook_niece_cooperating-0}
 I suspect that you poisoned Dracula with garlic.
 There was garlic in the hidden cabinet in the kitchen. Other than the gardener, you’re the only one who knows about that cabinet.
 You were in the kitchen practically all night. Both your account and the other witnesses’ accounts agree on that.
@@ -16,7 +16,7 @@ But she came up with the idea! Don’t ask me why she wanted me to poison him, b
 She even smuggled the garlic over here. That’s why it’s in an airtight bag, so it wouldn’t affect her.
 
 
-{garlic_small_dose}
+{cook_niece_cooperating-1}
 ---
 Anyway, it’s not like we actually wanted to hurt him. I put only a tiny dose of garlic into the dessert, just enough to keep the Count down for what, ten minutes? Twenty? Maybe less.
 If I had to guess, if the Count hadn't been stabbed dead, he'd have already been awake by the same time we discovered the body.
@@ -32,3 +32,8 @@ I didn’t put it anywhere in the kitchen!
 And I definitely didn’t kill the Count! 
 …
 I must have been framed.
+
+
+If the garlic was just about to wear off, could he have been awake when he was killed?
+Why would [NIECE] have wanted to knock Dracula out?
+Who could be trying to frame [COOK]?

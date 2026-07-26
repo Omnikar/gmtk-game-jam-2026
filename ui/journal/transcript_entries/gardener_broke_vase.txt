@@ -21,6 +21,7 @@ Well.
 I wish I could apologize to the old Count, but I s’pose it’s a bit too late for that.
 
 
+{gardener_is_thief}
 So you were only upstairs to steal Dracula’s belongings?
 ---
 …yeah.

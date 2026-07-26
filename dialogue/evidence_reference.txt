@@ -48,6 +48,7 @@ niece_planted_will
 
 guard_is_vampire
 cook_vase_alibi
+gardener_is_thief
 
 cook_niece_cooperating
-garlic_small_dose
+niece_bribed_cook

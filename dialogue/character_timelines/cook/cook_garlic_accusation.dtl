@@ -26,4 +26,7 @@ cook: I didn’t put it anywhere in the kitchen!
 cook (unamused): And I definitely didn’t kill the Count! 
 cook: …
 cook (squinting): I must have been framed.
-
+join detective_thinking right
+detective_thinking: If the garlic was just about to wear off, could he have been awake when he was killed?
+detective_thinking: Why would [NIECE] have wanted to knock Dracula out?
+detective_thinking: Who could be trying to frame [COOK]?
