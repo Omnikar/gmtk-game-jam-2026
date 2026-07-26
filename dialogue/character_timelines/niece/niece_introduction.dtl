@@ -1,10 +1,24 @@
 if {niece_introduced} == false:
 	set {niece_introduced} = true
 	join detective right
-	detective: yo bro
+	detective: Hello.
 	join niece left
-	niece: ahahahahhaha
-	niece: ...
+	niece: Hello, madam. You’re the detective, I presume?
+	detective: Yes. I’m here to find the Count’s murderer.
+	detective: Can you tell me everything you remember about the events leading up to the murder?
+	niece: Indubitably!
+	niece: My dear uncle Dracula was hosting a dinner party for many guests, myself included of course!
+	niece: We were all having a wonderful time, but unfortunately, after a while, only a few of us remained: Dracula, [FRIEND], and myself.
+	niece (disappointed): We had not long since finished our desserts when my poor uncle suddenly collapsed!
+	niece (speaking): [FRIEND] and I took him upstairs to his quarters so that he could rest in a safer place. 
+	niece: We left the room, of course. A vampire needs his privacy.
+	niece: Not too long after, the guard and I went to check on him…
+	niece (disappointed): …and found a stake buried in his chest.
+	detective: Can you tell me more about yourself?
+	niece (speaking): Absolutely!
+	niece: I am [NIECE], Count Dracula’s niece. He has many, but I'm no doubt his favorite.
+	niece: I’ve been told that I’m a bit dramatic, but I prefer the term…
+	niece: …theatrical!
 else:
 	join niece left
 	niece: However may I assist you?
