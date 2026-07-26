@@ -37,3 +37,8 @@ func _gui_input(event: InputEvent) -> void:
 func update_inner_properties() -> void:
 	$VBoxContainer/Prompt/Text.text = prompt
 	$VBoxContainer/Response/Text.text = response
+
+	if response.is_empty():
+		$Selected.size_flags_horizontal = SizeFlags.SIZE_SHRINK_END
+	else:
+		$Selected.size_flags_horizontal = SizeFlags.SIZE_SHRINK_BEGIN
