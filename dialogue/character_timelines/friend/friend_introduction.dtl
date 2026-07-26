@@ -10,12 +10,12 @@ if {friend_introduced} == false:
 	friend: Dracula invited me and some other friends and family over. We had dinner. A few people left.
 	friend: Eventually, it was just Dracula, his niece, and me.
 	friend: We were eating dessert when he collapsed. 
-	friend: I knew something was wrong, so I asked [NIECE], his niece, to help me get him upstairs.
+	friend: I knew something was wrong, so I asked Narin, his niece, to help me get him upstairs.
 	friend: I assumed he’d be able to rest safely up there, but…
 	friend: …
 	friend: …that wasn’t the case.
 	friend: ………
-	friend: [NIECE] and the guard went upstairs to check on him, and he was dead. 
+	friend: Narin and the guard went upstairs to check on him, and he was dead. 
 	friend: …I’m sorry. It’s a lot for me to deal with right now.
 	detective: Can you tell me more about yourself?
 	friend: I’m Dracula’s friend.

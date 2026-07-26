@@ -10,7 +10,7 @@ region = Rect2(362.93066, 116.08392, 1331.0598, 1331.0598)
 [node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_wfp8l")]
 texture = SubResource("AtlasTexture_3ev5e")
 tag = "guard_character"
-evidence_name = "[GUARD]"
+evidence_name = "Andrei"
 evidence_description = "Human
 Professional venue security officer hired to guard Count Dracula's manor for the duration of the dinner party."
 
@@ -18,7 +18,7 @@ Professional venue security officer hired to guard Count Dracula's manor for the
 texture = SubResource("AtlasTexture_3ev5e")
 
 [node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
-text = "[GUARD]"
+text = "Andrei"
 
 [node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
 text = "Human

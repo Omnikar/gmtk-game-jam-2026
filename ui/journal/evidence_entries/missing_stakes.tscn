@@ -11,7 +11,7 @@ region = Rect2(20.426918, 13.955139, 38.39946, 38.541584)
 texture = SubResource("AtlasTexture_l53jw")
 tag = "missing_stakes"
 evidence_name = "Wooden stake supply"
-evidence_description = "[GARDENER]'s supply of gardening stakes. Two stakes went missing on the night of the murder."
+evidence_description = "Alin's supply of gardening stakes. Two stakes went missing on the night of the murder."
 
 [node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
 texture = SubResource("AtlasTexture_l53jw")
@@ -20,4 +20,4 @@ texture = SubResource("AtlasTexture_l53jw")
 text = "Wooden stake supply"
 
 [node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
-text = "[GARDENER]'s supply of gardening stakes. Two stakes went missing on the night of the murder."
+text = "Alin's supply of gardening stakes. Two stakes went missing on the night of the murder."

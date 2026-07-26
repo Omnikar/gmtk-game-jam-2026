@@ -1,16 +1,16 @@
 join detective right
-detective: [NIECE], I have come to the conclusion that this will is fake.
+detective: Narin, I have come to the conclusion that this will is fake.
 join niece left
 niece: Whatever do you mean?
 detective: You’re not Dracula’s real heiress. 
-detective: That title belongs to [FRIEND].
+detective: That title belongs to Aslan.
 detective: I discovered that the guard was secretly a vampire all along.
 detective: Meaning they are beholden to the vampires' rule of invitation.
 detective: Dracula would have been the only one allowed to bring them in. That is, until he was killed.
 detective: After Dracula's death, that ability transfers to his real heir.
-detective: According to both of your accounts, [GUARD] did not come into the house when you invited them, even after Dracula’s death.
+detective: According to both of your accounts, Andrei did not come into the house when you invited them, even after Dracula’s death.
 detective: If you were really Dracula’s heiress, the guard would have been able to enter the house with your invitation.
-detective: However, they only entered after [FRIEND] invited them in, meaning that he is the real heir.
+detective: However, they only entered after Aslan invited them in, meaning that he is the real heir.
 detective: Therefore, this will is a fake, and you must have planted it.
 niece (disappointed): Preposterous!
 niece: …

@@ -7,7 +7,7 @@ if {cook_introduced} == false:
 	detective: I'm here to ask you some questions about the murder.
 	cook: I figured.
 	detective: Mind introducing yourself?
-	cook: My name is [COOK]. I make food for Dracula. Or, did, rather.
+	cook: My name is Camelia. I make food for Dracula. Or, did, rather.
 	cook: It was about time though, honestly. The guy's been around for way too long.
 	cook: But now some other sucker is going to take his place for the next 400 years until the same happens to them.
 	detective: You don't like Dracula very much, do you?
@@ -18,10 +18,10 @@ if {cook_introduced} == false:
 	detective: Anyway, moving on.
 	detective: What can you tell me about the murder?
 	cook: The dinner party was just wrapping up. I was exhausted.
-	cook: I thought I was done for the night, but [NIECE] ordered up one last round of Drac's favorite dessert. So I got to work.
+	cook: I thought I was done for the night, but Narin ordered up one last round of Drac's favorite dessert. So I got to work.
 	cook (unamused): Ugh.
 	cook (speaking): Anyway, a few minutes after, the guy collapsed out of the blue.
-	cook: [NIECE] and [FRIEND] came to his aid, brought him upstairs.
+	cook: Narin and Aslan came to his aid, brought him upstairs.
 	cook: That was the last time I saw him.
 	cook: ...
 else:

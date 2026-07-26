@@ -1,5 +1,5 @@
 join detective right
-detective: [FRIEND] thinks you poisoned Dracula, and that's why he collapsed at the dinner table.
+detective: Aslan thinks you poisoned Dracula, and that's why he collapsed at the dinner table.
 join cook left
 cook: Why would I do that? Sounds like a stupid idea.
 detective: You did mention that you don't like vampires.

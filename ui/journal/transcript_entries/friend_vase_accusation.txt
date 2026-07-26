@@ -1,4 +1,4 @@
-[NIECE] says you broke the vase.
+Narin says you broke the vase.
 ---
 …yeah…
 I bumped into the table when we were helping Dracula to his quarters.
@@ -17,4 +17,4 @@ At least Dracula won’t find out.
 
 
 {table_leg_supposedly_underneath-1}
-So the table leg must have collapsed underneath the table, shortly after [FRIEND] bumped it...
+So the table leg must have collapsed underneath the table, shortly after Aslan bumped it...

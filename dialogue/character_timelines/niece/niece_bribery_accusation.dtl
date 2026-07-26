@@ -1,5 +1,5 @@
 join detective right
-detective: [NIECE], I know why Dracula collapsed.
+detective: Narin, I know why Dracula collapsed.
 join niece left
 niece (disappointed): What's that, dear?
 detective: Your plot to swap out Dracula's will required you to get your hands on his safe key.
@@ -9,7 +9,7 @@ detective (speaking): Of course, a dose of garlic was the perfect way to do that
 detective (thinking): But there's just one problem. You're a vampire too. You can't be the one working with the garlic.
 detective: You also don't have easy access to the food Dracula eats.
 detective (speaking): All that said, the human cook was the perfect accomplice.
-detective: You bribed [COOK] to poison Dracula and knock him out for just enough time for you to snatch the key, swap the will, and return the key like nothing ever happened.
+detective: You bribed Camelia to poison Dracula and knock him out for just enough time for you to snatch the key, swap the will, and return the key like nothing ever happened.
 detective: But things didn't exactly go as planned did they?
 niece (speaking): Well then, dear. I suppose I don't need to say anything.
 niece: Figuring out my plan, it makes you almost as brilliant as I am for coming up with it.
@@ -17,4 +17,4 @@ niece (disappointed): It still doesn't tell you who killed uncle, though.
 join detective_thinking right
 detective_thinking: She's right. I'm still not certian who stabbed Dracula, but I feel like I'm close.
 detective_thinking: Who would have been in Dracula's room around the time he was waking up from the garlic?
-detective_thinking: If I combine [NIECE] and [COOK]'s secret' with an answer to that question, I think I'll have solved it.
+detective_thinking: If I combine Narin and Camelia's secret' with an answer to that question, I think I'll have solved it.

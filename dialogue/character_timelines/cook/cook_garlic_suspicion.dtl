@@ -13,5 +13,5 @@ if {has_searched_cabinet} == false:
 	cook: See? I might not be his biggest fan, but I mean him no harm.
 else:
 	join detective_thinking right
-	detective_thinking: I've already found the garlic [COOK] was hiding. I would be better off asking them about the evidence directly.
+	detective_thinking: I've already found the garlic Camelia was hiding. I would be better off asking them about the evidence directly.
 

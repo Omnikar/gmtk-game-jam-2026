@@ -10,7 +10,7 @@ region = Rect2(302.47388, 13.90686, 1297.6449, 1297.6449)
 [node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_ie23o")]
 texture = SubResource("AtlasTexture_t0fyi")
 tag = "friend_character"
-evidence_name = "[FRIEND]"
+evidence_name = "Aslan"
 evidence_description = "Vampire
 Close friend of Dracula's, and one of the honored guests at the dinner party."
 
@@ -18,7 +18,7 @@ Close friend of Dracula's, and one of the honored guests at the dinner party."
 texture = SubResource("AtlasTexture_t0fyi")
 
 [node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
-text = "[FRIEND]"
+text = "Aslan"
 
 [node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
 text = "Vampire

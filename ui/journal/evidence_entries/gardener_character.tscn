@@ -10,7 +10,7 @@ region = Rect2(309.42786, 403.29895, 1172.483, 1172.483)
 [node name="EvidenceEntry" unique_id=1957364986 instance=ExtResource("1_ousvg")]
 texture = SubResource("AtlasTexture_8lrpl")
 tag = "gardener_character"
-evidence_name = "[GARDENER]"
+evidence_name = "Alin"
 evidence_description = "Human
 Employee of Dracula's, maintains and lives among the gardens behind the manor."
 
@@ -18,7 +18,7 @@ Employee of Dracula's, maintains and lives among the gardens behind the manor."
 texture = SubResource("AtlasTexture_8lrpl")
 
 [node name="RichTextLabel" parent="HBoxContainer/Name" parent_id_path=PackedInt32Array(577881238) index="0" unique_id=269140008]
-text = "[GARDENER]"
+text = "Alin"
 
 [node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
 text = "Human
