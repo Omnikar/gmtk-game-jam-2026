@@ -38,7 +38,7 @@ size = Vector2(34, 16)
 y_sort_enabled = true
 
 [node name="Floors" type="TileMapLayer" parent="." unique_id=1434782804]
-z_index = -1
+z_index = -2
 y_sort_enabled = true
 tile_map_data = PackedByteArray("AAD+//7/BwAAAAAAAAD+////BwAAAAAAAAD///7/BwAAAAAAAAD/////BwAAAAEAAAAAAP7/BwAAAAAAAAAAAP//BwAAAAAAAAABAP7/BwAAAAAAAAABAP//BwAAAAAAAAACAPv/CQABAAAAAAACAPz/CQAAAAAAAAACAP3/CQAAAAEAAAADAPv/CQABAAAAAAADAPz/CQAAAAAAAAADAP3/CQAAAAEAAAAEAPv/CQABAAAAAAAEAPz/CQAAAAAAAAAEAP3/CQAAAAEAAAAFAPv/CQABAAAAAAAFAPz/CQAAAAAAAAAFAP3/CQAAAAEAAAAGAPv/CQABAAAAAAAGAPz/CQAAAAAAAAAGAP3/CQAAAAEAAAAHAPv/CQABAAAAAAAHAPz/CQAAAAAAAAAHAP3/CQAAAAEAAAAIAPv/CQABAAAAAAAIAPz/CQAAAAAAAAAIAP3/CQAAAAEAAAAJAPv/CQABAAAAAAAJAPz/CQAAAAAAAAAJAP3/CQAAAAEAAAAKAPv/CQABAAAAAAAKAPz/CQAAAAAAAAAKAP3/CQAAAAEAAAALAPv/CQACAAEAAAALAPz/CQABAAEAAAALAP3/CQACAAIAAAD0//v/CQAAAAIAAAD0//z/CQACAAAAAAD0//3/CQABAAIAAAD1//v/CQABAAAAAAD1//z/CQAAAAAAAAD1//3/CQAAAAEAAAD2//v/CQABAAAAAAD2//z/CQAAAAAAAAD2//3/CQAAAAEAAAD3//v/CQABAAAAAAD3//z/CQAAAAAAAAD3//3/CQAAAAEAAAD4//v/CQABAAAAAAD4//z/CQAAAAAAAAD4//3/CQAAAAEAAAD5//v/CQABAAAAAAD5//z/CQAAAAAAAAD5//3/CQAAAAEAAAD6//v/CQABAAAAAAD6//z/CQAAAAAAAAD6//3/CQAAAAEAAAD7//v/CQABAAAAAAD7//z/CQAAAAAAAAD7//3/CQAAAAEAAAD8//v/CQABAAAAAAD8//z/CQAAAAAAAAD8//3/CQAAAAEAAAD9//v/CQABAAAAAAD9//z/CQAAAAAAAAD9//3/CQAAAAEAAAD+//v/CQABAAAAAAD+//z/CQAAAAAAAAD+//3/CQAAAAEAAAD///v/CQABAAAAAAD///z/CQAAAAAAAAD///3/CQAAAAEAAAAAAPv/CQABAAAAAAAAAPz/CQAAAAAAAAAAAP3/CQAAAAEAAAABAPv/CQABAAAAAAABAPz/CQAAAAAAAAABAP3/CQAAAAEAAAD9//L/CQABAAIAAAD9//P/AAAAAAAAAAD9//T/AAAAAAEAAAD9//X/CQAAAAIAAAD9//b/CQACAAAAAAD9//f/CQABAAIAAAD+//L/CQAAAAEAAAD+//P/AAAAAAEAAAD+//T/AAAAAAEAAAD+//X/CQABAAAAAAD+//b/CQAAAAAAAAD+//f/CQAAAAEAAAD///L/CQAAAAEAAAD///P/AAAAAAEAAAD///T/AAAAAAEAAAD///X/CQABAAAAAAD///b/CQAAAAAAAAD///f/CQAAAAEAAAAAAPL/CQAAAAEAAAAAAPP/AAAAAAEAAAAAAPT/AAAAAAAAAAAAAPX/CQABAAAAAAAAAPb/CQAAAAAAAAAAAPf/CQAAAAEAAAABAPL/CQAAAAEAAAABAPP/AAAAAAAAAAABAPT/AAAAAAEAAAABAPX/CQABAAAAAAABAPb/CQAAAAAAAAABAPf/CQAAAAEAAAACAPL/CQAAAAEAAAACAPP/AAAAAAEAAAACAPT/AAAAAAEAAAACAPX/CQACAAEAAAACAPb/CQABAAEAAAACAPf/CQACAAIAAAADAPL/CQAAAAEAAAADAPP/AAAAAAEAAAADAPT/AAAAAAEAAAADAPX/AAAAAAAAAAADAPb/AAAAAAEAAAADAPf/AAAAAAAAAAAEAPL/CQACAAIAAAAEAPP/AAAAAAAAAAAEAPT/AAAAAAEAAAAEAPX/AAAAAAEAAAAEAPb/AAAAAAAAAAAEAPf/AAAAAAAAAAAGAPL/CQACAAAAAAAGAPP/CQACAAAAAAAGAPT/CQACAAAAAAAGAPX/CQABAAIAAAAGAPb/AAAAAAAAAAAGAPf/AAAAAAEAAAAHAPL/CQAAAAAAAAAHAPP/CQAAAAAAAAAHAPT/CQAAAAAAAAAHAPX/CQAAAAEAAAAHAPb/AAAAAAAAAAAHAPf/AAAAAAAAAAAIAPL/CQAAAAAAAAAIAPP/CQAAAAAAAAAIAPT/CQAAAAAAAAAIAPX/CQAAAAEAAAAIAPb/AAAAAAAAAAAIAPf/AAAAAAAAAAAJAPL/CQAAAAAAAAAJAPP/CQAAAAAAAAAJAPT/CQAAAAAAAAAJAPX/CQAAAAEAAAAJAPb/AAAAAAAAAAAJAPf/AAAAAAEAAAAKAPL/CQAAAAAAAAAKAPP/CQAAAAAAAAAKAPT/CQAAAAAAAAAKAPX/CQAAAAEAAAAKAPb/AAAAAAEAAAAKAPf/AAAAAAEAAAALAPL/CQABAAEAAAALAPP/CQABAAEAAAALAPT/CQABAAEAAAALAPX/CQACAAIAAAALAPb/AAAAAAEAAAALAPf/AAAAAAAAAAD1//b/AAAAAAAAAAD1//f/AAAAAAEAAAD2//b/AAAAAAAAAAD2//f/AAAAAAEAAAD9//D/CQAAAAIAAAD9//H/CQACAAAAAAD+//D/CQABAAAAAAD+//H/CQAAAAAAAAD///D/CQABAAAAAAD///H/CQAAAAAAAAAAAPD/CQABAAAAAAAAAPH/CQAAAAAAAAABAPD/CQABAAAAAAABAPH/CQAAAAAAAAACAPD/CQABAAAAAAACAPH/CQAAAAAAAAADAPD/CQABAAAAAAADAPH/CQAAAAAAAAAEAPD/CQACAAEAAAAEAPH/CQABAAEAAAAGAPD/CQAAAAIAAAAGAPH/CQACAAAAAAAHAPD/CQABAAAAAAAHAPH/CQAAAAAAAAAIAPD/CQABAAAAAAAIAPH/CQAAAAAAAAAJAPD/CQABAAAAAAAJAPH/CQAAAAAAAAAKAPD/CQABAAAAAAAKAPH/CQAAAAAAAAALAPD/CQACAAEAAAALAPH/CQABAAEAAAADAPr/AAAAAAEAAAADAPn/AAAAAAEAAAADAPj/AAAAAAAAAAAHAPr/AAAAAAEAAAAHAPn/AAAAAAEAAAAHAPj/AAAAAAAAAAD2//r/AAAAAAAAAAD2//n/AAAAAAEAAAD2//j/AAAAAAEAAAD+/wAABwAAAAEAAAD+/wEABwAAAAEAAAD//wEABwAAAAAAAAAAAAEABwAAAAEAAAABAAEABwAAAAAAAAABAAAABwAAAAEAAAAAAAAABwAAAAAAAAD//wAABwAAAAAAAAA=")
 tile_set = ExtResource("1_5bcbq")
@@ -99,20 +99,24 @@ y_sort_enabled = true
 position = Vector2(-9, -180)
 
 [node name="LossPainting" parent="." unique_id=845526192 instance=ExtResource("5_s02p6")]
+z_index = 1
 y_sort_enabled = true
 position = Vector2(88, -8)
 
 [node name="AcePainting" parent="." unique_id=1493602490 instance=ExtResource("6_nqn47")]
+z_index = 1
 y_sort_enabled = true
 position = Vector2(-67, -108)
 
 [node name="AroPainting" parent="." unique_id=1596647884 instance=ExtResource("7_6hmx5")]
+z_index = 1
 y_sort_enabled = true
 position = Vector2(-97, -108)
 
 [node name="Vase" parent="." unique_id=1555561706 instance=ExtResource("9_5ownu")]
+z_index = -1
 y_sort_enabled = true
-position = Vector2(-30, -64)
+position = Vector2(-30, -67)
 
 [node name="Vase_Table" type="Node2D" parent="." unique_id=1976512838]
 y_sort_enabled = true
@@ -136,6 +140,7 @@ y_sort_enabled = true
 position = Vector2(-67, -53)
 
 [node name="Sprite2D" type="Sprite2D" parent="TableLeg" unique_id=1011700763]
+z_index = -1
 texture = ExtResource("9_ubpyk")
 region_enabled = true
 region_rect = Rect2(80.1042, 154.61473, 30.301086, 25.83043)
@@ -148,25 +153,37 @@ position = Vector2(108, -249)
 
 [node name="DecorVase" parent="." unique_id=534189687 instance=ExtResource("12_dyg8e")]
 y_sort_enabled = true
-position = Vector2(108, -266)
+position = Vector2(108, -249)
+
+[node name="Sprite2D" parent="DecorVase" index="0" unique_id=128379062]
+offset = Vector2(0, -17.23)
 
 [node name="Skull" parent="." unique_id=1962406875 instance=ExtResource("13_88afm")]
 y_sort_enabled = true
-position = Vector2(28, -176)
+position = Vector2(28, -161)
+
+[node name="Sprite2D" parent="Skull" index="0" unique_id=128525521]
+offset = Vector2(0, -14.38)
 
 [node name="RoundTableCloth2" parent="." unique_id=1866957348 instance=ExtResource("11_x274g")]
 position = Vector2(181, -250)
 
 [node name="DecorVase2" parent="." unique_id=2086033999 instance=ExtResource("12_dyg8e")]
 y_sort_enabled = true
-position = Vector2(180, -267)
+position = Vector2(180, -250)
+
+[node name="Sprite2D" parent="DecorVase2" index="0" unique_id=128379062]
+offset = Vector2(0, -16.43)
 
 [node name="RoundTable2" parent="." unique_id=2064461666 instance=ExtResource("10_2cwo3")]
 position = Vector2(164, -78)
 
 [node name="Kettle" parent="." unique_id=1315252326 instance=ExtResource("15_3dt3a")]
 y_sort_enabled = true
-position = Vector2(164, -93)
+position = Vector2(164, -77)
+
+[node name="Sprite2D" parent="Kettle" index="0" unique_id=222328829]
+offset = Vector2(0, -15.95)
 
 [node name="Candelabra2" parent="." unique_id=198944019 instance=ExtResource("14_fennu")]
 y_sort_enabled = true
@@ -181,30 +198,36 @@ position = Vector2(-178, -77)
 
 [node name="Crystal" parent="." unique_id=1399211297 instance=ExtResource("16_ibjcq")]
 y_sort_enabled = true
-position = Vector2(-178, -92)
+position = Vector2(-178, -77)
+
+[node name="Sprite2D" parent="Crystal" index="0" unique_id=1647419792]
+offset = Vector2(0, -15.57)
 
 [node name="Bookshelf" parent="." unique_id=1905424332 instance=ExtResource("17_x274g")]
 position = Vector2(-27, -244)
 
 [node name="Node2D" parent="." unique_id=2122470241 instance=ExtResource("6_nqn47")]
+z_index = 1
 y_sort_enabled = true
 position = Vector2(14, -288)
 
 [node name="AroPainting2" parent="." unique_id=326503370 instance=ExtResource("7_6hmx5")]
+z_index = 1
 y_sort_enabled = true
 position = Vector2(38, -288)
 
 [node name="LossPainting2" parent="." unique_id=1064135134 instance=ExtResource("5_s02p6")]
+z_index = 1
 y_sort_enabled = true
 position = Vector2(144, -188)
 
 [node name="Candelabra" parent="." unique_id=623592888 instance=ExtResource("14_fennu")]
 y_sort_enabled = true
-position = Vector2(-133, -89)
+position = Vector2(-133, -88)
 
 [node name="Candelabra4" parent="." unique_id=110924864 instance=ExtResource("14_fennu")]
 y_sort_enabled = true
-position = Vector2(37, -89)
+position = Vector2(37, -88)
 
 [node name="TestEvidence" parent="." unique_id=576349916 instance=ExtResource("17_dyg8e")]
 position = Vector2(67, -238)
@@ -222,3 +245,9 @@ reusable = true
 [node name="TestEvidence3" parent="." unique_id=2071696065 instance=ExtResource("17_dyg8e")]
 position = Vector2(-16, -66)
 timeline = ExtResource("21_3dt3a")
+
+[editable path="DecorVase"]
+[editable path="Skull"]
+[editable path="DecorVase2"]
+[editable path="Kettle"]
+[editable path="Crystal"]

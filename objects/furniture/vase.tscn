@@ -7,5 +7,6 @@
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=778141649]
 position = Vector2(0, -7)
 texture = ExtResource("1_xviko")
+offset = Vector2(0, 5.47)
 region_enabled = true
 region_rect = Rect2(0, 78.18156, 64, 49.818443)
