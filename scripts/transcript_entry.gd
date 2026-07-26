@@ -8,6 +8,8 @@ signal transcript_clicked(tag: String)
 @export_multiline var prompt: String = "Prompt"
 @export_multiline var response: String = "Response"
 
+@export var highlight_override: bool = false
+
 var selected: bool = false
 
 
@@ -42,3 +44,8 @@ func update_inner_properties() -> void:
 		$Selected.size_flags_horizontal = SizeFlags.SIZE_SHRINK_END
 	else:
 		$Selected.size_flags_horizontal = SizeFlags.SIZE_SHRINK_BEGIN
+
+	if not tag.is_empty() and not highlight_override:
+		modulate = Color.hex(0xfb7e43ff)
+	else:
+		modulate = Color.WHITE

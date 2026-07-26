@@ -43,6 +43,7 @@ directories/dtl_directory={
 "cook_discuss_guard": "res://dialogue/character_timelines/cook/cook_discuss_guard.dtl",
 "cook_discuss_niece": "res://dialogue/character_timelines/cook/cook_discuss_niece.dtl",
 "cook_friend_suspects": "res://dialogue/character_timelines/cook/cook_friend_suspects.dtl",
+"cook_garlic_accusation": "res://dialogue/character_timelines/cook/cook_garlic_accusation.dtl",
 "cook_garlic_suspicion": "res://dialogue/character_timelines/cook/cook_garlic_suspicion.dtl",
 "cook_introduction": "res://dialogue/character_timelines/cook/cook_introduction.dtl",
 "cook_key_wrong": "res://dialogue/character_timelines/cook/cook_key_wrong.dtl",

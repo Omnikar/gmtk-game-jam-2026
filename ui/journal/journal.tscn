@@ -188,6 +188,7 @@ response = "– Garlic
 	– The fumes from garlic can cause a vampire to experience a variety of allergy- or sickness-adjacent symptoms.
 	– Consumption of garlic can induce a sudden state of unconsciousness. Though it will not kill a vampire the duration of this unconsciousness is proportional to the amount of garlic consumed.
 	– Some vampires wince and cower at even the sight of garlic, though this is not universal."
+highlight_override = true
 
 [node name="Stakes" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=852611652 instance=ExtResource("5_pa4op")]
 layout_mode = 2
@@ -196,6 +197,7 @@ prompt = ""
 response = "– Wooden stakes
 	– A wooden stake is among the only known ways to permanently kill a vampire.
 	– The stake must be driven through the vampire's heart. If it misses its mark, the vampire will be virtually unharmed."
+highlight_override = true
 
 [node name="Reflections" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=2005352844 instance=ExtResource("5_pa4op")]
 layout_mode = 2
@@ -204,6 +206,7 @@ prompt = ""
 response = "– Reflections
 	– A vampire has no reflection in a mirror.
 	– This effect also applies to garments and accessories being worn by the vampire."
+highlight_override = true
 
 [node name="Entering" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=1068244341 instance=ExtResource("5_pa4op")]
 layout_mode = 2
@@ -214,6 +217,7 @@ response = "– Being invited into a home
 	– The sole owner of the home is the only one allowed to invite a vampire inside.
 	– The owner may revoke permission at any time, in which case the vampire is mentally compelled to exit the home as efficiently as possible.
 	– Should the owner of a home die, the new owner for the sake of this rule is determined by the previous owner's written will."
+highlight_override = true
 
 [node name="SelectedCount" type="RichTextLabel" parent="Control" unique_id=656829663]
 layout_mode = 1
