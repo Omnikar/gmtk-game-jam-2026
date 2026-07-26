@@ -103,6 +103,12 @@ text = "Thank you for playing"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Timer" type="Timer" parent="." unique_id=1321307718]
+wait_time = 0.5
+one_shot = true
+autostart = true
+
 [connection signal="body_entered" from="DownstairsTrigger" to="." method="_on_downstairs_trigger_body_entered"]
 [connection signal="body_entered" from="UpstairsTrigger" to="." method="_on_upstairs_trigger_body_entered"]
 [connection signal="finished" from="Music" to="." method="_on_music_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
