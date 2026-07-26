@@ -10,6 +10,9 @@ var present_mode: bool = false
 var present_target: String = ""
 var selected_evidence: Dictionary[String, bool] = {}
 
+# This isn't actually a property of Journal but it's a singleton so I'm exploiting it
+var player_can_interact: Dictionary[int, bool] = {}
+
 
 func _ready() -> void:
 	visible = false

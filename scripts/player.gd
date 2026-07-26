@@ -10,6 +10,12 @@ func _ready() -> void:
 
 
 func _physics_process(_delta: float) -> void:
+	var show_interact_indicator = false
+	if Dialogic.current_timeline == null and not Journal.visible:
+		for val in Journal.player_can_interact.values():
+			show_interact_indicator = val or show_interact_indicator
+	$InteractIndicator.visible = show_interact_indicator
+
 	var can_move = Dialogic.current_timeline == null and not Journal.visible
 
 	if can_move:

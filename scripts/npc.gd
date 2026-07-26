@@ -10,3 +10,7 @@ func _input(event: InputEvent) -> void:
 		and has_overlapping_bodies()
 	):
 		Dialogic.start(timeline)
+
+
+func _physics_process(_delta: float) -> void:
+	Journal.player_can_interact[get_instance_id()] = has_overlapping_bodies()
