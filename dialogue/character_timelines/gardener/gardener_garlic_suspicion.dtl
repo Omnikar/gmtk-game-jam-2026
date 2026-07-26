@@ -1,0 +1,15 @@
+join detective right
+detective (thinking): I suspect that garlic might have something to do with Dracula’s murder.
+join gardener left
+gardener: Garlic?
+detective (speaking): He collapsed after eating something. I'm thinking his food could have been laced with garlic.
+gardener: We don’t keep any garlic in the house!
+gardener: I ain’t even allowed to grow anything halfway related to garlic!
+gardener: Though I s’pose there could be some hidden somewhere…
+gardener (antsy) : …
+gardener: There’s a secret cabinet in the kitchen.
+gardener (speaking) : It’s awfully well hidden. I doubt even a detective like you could’ve found it on a first sweep through the house.
+gardener: I'll let you in on the secret.
+[style name="dialogue_style"]
+The gardener gives you instructions on how to find the hidden cabinet in the kitchen.
+gardener: Go on, talk to [COOK] about it. I'm sure she'll be amused.

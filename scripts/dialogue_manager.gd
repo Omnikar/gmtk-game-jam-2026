@@ -18,17 +18,45 @@ func dt(ch: String, t: Array[String], tl: String) -> DialogueTrigger:
 
 
 var triggers: Array[DialogueTrigger] = [
+	# SYNTAX:
+	# dt("current_character", ["list", "of", "evidence_tags"], "dialogue_name"),
+	#
 	# Already-introduced
-	dt("cook", ["cook_character"], "detective_already_introduced"),
+	dt("cook", ["cook_character", "tag_goes_here"], "detective_already_introduced"),
 	dt("guard", ["guard_character"], "detective_already_introduced"),
 	dt("gardener", ["gardener_character"], "detective_already_introduced"),
 	dt("friend", ["friend_character"], "detective_already_introduced"),
 	dt("niece", ["niece_character"], "detective_already_introduced"),
+	#
+	# --- COOK ---
 	# Ask cook about other people
 	dt("cook", ["guard_character"], "cook_discuss_guard"),
+	#
+	# --- GARDENER ---
 	# Ask gardener about other people
 	dt("gardener", ["cook_character"], "gardener_discuss_cook"),
 	dt("gardener", ["guard_character"], "gardener_discuss_guard"),
+	dt("gardener", ["niece_character"], "gardener_discuss_niece"),
+	dt("gardener", ["friend_character"], "gardener_discuss_friend"),
+	# Other
+	dt("gardener", ["murder_weapon"], "gardener_murder_weapon"),
+	dt("gardener", ["vase"], "gardener_vase"),
+	dt("gardener", ["safe"], "gardener_safe"),
+	dt("gardener", ["TODO"], "gardener_garlic_suspicion"),
+	dt("gardener", ["garlic_pouch"], "gardener_garlic_found"),
+	dt("gardener", ["second_stake"], "gardener_stake_found"),
+	dt("gardener", ["garlic_pouch", "second_stake"], "gardener_garlic_stake_found"),
+	dt("gardener", ["TODO"], "gardener_key_wrong"),
+	dt("gardener", ["TODO"], "gardener_broke_vase"),
+	#
+	# --- FRIEND ---
+	# Ask friend about other people
+	#
+	# --- NIECE ---
+	# Ask niece about other people
+	#
+	# --- GUARD ---
+	# Ask guard about other people
 ]
 
 var used_triggers: Array[int] = []

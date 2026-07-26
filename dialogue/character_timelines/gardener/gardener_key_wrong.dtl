@@ -1,0 +1,10 @@
+join detective right
+detective: I checked Dracula’s cloak. The key was in the wrong spot.
+join gardener left
+gardener: Huh.
+gardener: He’d never put it in the wrong pocket…
+gardener (antsy): …but someone else might.
+gardener: Not sure why anyone would do that, though.
+detective_thinking: Maybe someone took the key from Dracula and returned it to the wrong pocket.
+detective_thinking: And maybe they used the key sometime in between.
+

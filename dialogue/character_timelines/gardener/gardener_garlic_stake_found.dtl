@@ -1,0 +1,9 @@
+join detective right
+detective: I found some garlic hidden in the kitchen, along with your other missing stake.
+join gardener left
+gardener: In the hidden cabinet?
+detective: Yes.
+gardener: Well. How about that.
+gardener: Do you s’pose this means [COOK] took the Count down?
+gardener: ‘Cause I ain’t even a detective and I know that things ain’t looking good for her right now.
+

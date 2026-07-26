@@ -1,0 +1,22 @@
+FULL LIST OF EVIDENCE TAGS
+(hopefully this doesn't become horribly outdated)
+
+cook_character
+guard_character
+gardener_character
+niece_character
+friend_character
+
+dessert
+
+vase
+broken_table
+
+garlic_pouch
+second_stake
+missing_stakes
+murder_weapon
+
+safe
+key
+fake_will
