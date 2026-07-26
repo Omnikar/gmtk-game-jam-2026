@@ -1,0 +1,13 @@
+join detective right
+detective (thinking): Dracula collapsed right after he started eating dessert, right?
+join friend left
+friend: Correct.
+detective (speaking): Vampires have adverse reactions to garlic. They can even pass out after eating it.
+friend: This is true. Believe me, I speak from experience.
+friend: …
+friend: …!
+friend: Dracula might have eaten garlic!
+detective: Exactly what I was thinking.
+join detective_thinking right
+detective_thinking: Garlic might have been involved with Dracula’s murder, but who would even be able to poison him?
+detective_thinking: I should talk to the others about this by citing this entry in my transcript.

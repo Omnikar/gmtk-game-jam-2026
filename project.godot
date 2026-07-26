@@ -58,6 +58,7 @@ directories/dtl_directory={
 "friend_discuss_gardener": "res://dialogue/character_timelines/friend/friend_discuss_gardener.dtl",
 "friend_discuss_guard": "res://dialogue/character_timelines/friend/friend_discuss_guard.dtl",
 "friend_discuss_niece": "res://dialogue/character_timelines/friend/friend_discuss_niece.dtl",
+"friend_garlic_suspicion": "res://dialogue/character_timelines/friend/friend_garlic_suspicion.dtl",
 "friend_introduction": "res://dialogue/character_timelines/friend/friend_introduction.dtl",
 "gardener_broke_vase": "res://dialogue/character_timelines/gardener/gardener_broke_vase.dtl",
 "gardener_discuss_cook": "res://dialogue/character_timelines/gardener/gardener_discuss_cook.dtl",

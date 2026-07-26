@@ -22,6 +22,8 @@ key
 fake_will
 
 
+secret_cabinet
+
 key_location
 key_tampered
 
@@ -29,3 +31,5 @@ gardener_locked_out
 guard_stayed_outside
 
 friend_suspects_cook
+
+garlic_suspicion

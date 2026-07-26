@@ -34,6 +34,8 @@ var triggers: Array[DialogueTrigger] = [
 	# Ask cook about other people
 	dt("cook", ["guard_character"], "cook_discuss_guard"),
 	dt("cook", ["friend_suspects_cook"], "cook_friend_suspects"),
+	dt("cook", ["garlic_suspicion"], "cook_garlic_suspicion"),
+	dt("cook", ["secret_cabinet"], "cook_secret_cabinet"),
 	#
 	# --- GARDENER ---
 	# Ask gardener about other people
@@ -45,7 +47,7 @@ var triggers: Array[DialogueTrigger] = [
 	dt("gardener", ["murder_weapon"], "gardener_murder_weapon"),
 	dt("gardener", ["vase"], "gardener_vase"),
 	dt("gardener", ["safe"], "gardener_safe"),
-	dt("gardener", ["TODO"], "gardener_garlic_suspicion"),
+	dt("gardener", ["garlic_suspicion"], "gardener_garlic_suspicion"),
 	dt("gardener", ["garlic_pouch"], "gardener_garlic_found", true),
 	dt("gardener", ["second_stake"], "gardener_stake_found", true),
 	dt("gardener", ["garlic_pouch", "second_stake"], "gardener_garlic_stake_found"),
@@ -59,6 +61,7 @@ var triggers: Array[DialogueTrigger] = [
 	dt("friend", ["niece_character"], "friend_discuss_niece"),
 	dt("friend", ["cook_character"], "friend_discuss_cook"),
 	# Other
+	dt("friend", ["reference_garlic"], "friend_garlic_suspicion"),
 	#
 	# --- NIECE ---
 	# Ask niece about other people
