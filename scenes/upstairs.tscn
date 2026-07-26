@@ -21,6 +21,9 @@
 [ext_resource type="Texture2D" uid="uid://dsp8g2f6ooblq" path="res://sprites/characters/sprite_dracula_dead.png" id="19_88afm"]
 [ext_resource type="Resource" uid="uid://bj13jwnmhwqmx" path="res://dialogue/evidence_timelines/evidence_body.dtl" id="20_fennu"]
 [ext_resource type="Resource" uid="uid://ckqxob7anr50o" path="res://dialogue/evidence_timelines/evidence_vase.dtl" id="21_3dt3a"]
+[ext_resource type="PackedScene" uid="uid://c2onydhiv4uxr" path="res://objects/test_npc.tscn" id="22_tvmw1"]
+[ext_resource type="Resource" uid="uid://c84utmvfebsi8" path="res://dialogue/character_timelines/niece/niece_introduction.dtl" id="23_ynqu6"]
+[ext_resource type="Texture2D" uid="uid://daxfb4atcsd78" path="res://sprites/characters/niece/sprite_niece.png" id="24_t0dpw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hibae"]
 size = Vector2(61, 46)
@@ -246,8 +249,16 @@ reusable = true
 position = Vector2(-16, -66)
 timeline = ExtResource("21_3dt3a")
 
+[node name="TestNPC" parent="." unique_id=217485892 instance=ExtResource("22_tvmw1")]
+position = Vector2(-2, -165)
+timeline = ExtResource("23_ynqu6")
+
+[node name="Sprite2D" parent="TestNPC" index="1" unique_id=905578458]
+texture = ExtResource("24_t0dpw")
+
 [editable path="DecorVase"]
 [editable path="Skull"]
 [editable path="DecorVase2"]
 [editable path="Kettle"]
 [editable path="Crystal"]
+[editable path="TestNPC"]

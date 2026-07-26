@@ -30,6 +30,8 @@
 [ext_resource type="Resource" uid="uid://bifwqt46kymjq" path="res://dialogue/evidence_timelines/evidence_missing_stakes.dtl" id="28_7ery4"]
 [ext_resource type="Resource" uid="uid://s5oer1vo48iv" path="res://dialogue/character_timelines/gardener/gardener_introduction.dtl" id="29_4kwo4"]
 [ext_resource type="Texture2D" uid="uid://ej0fgaeeoutp" path="res://sprites/characters/gardener/sprite_gardener.png" id="30_5icnq"]
+[ext_resource type="Resource" uid="uid://dbf41sc8fa5y7" path="res://dialogue/character_timelines/guard/guard_introduction.dtl" id="31_ugbmy"]
+[ext_resource type="Texture2D" uid="uid://c4xrc0hor50lw" path="res://sprites/characters/guard/sprite_guard_earmuffs.png" id="32_xias6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hibae"]
 size = Vector2(59, 28)
@@ -104,11 +106,6 @@ tile_set = ExtResource("1_qjeyg")
 y_sort_enabled = true
 tile_map_data = PackedByteArray("AAACAP3/BQADAAQAAAADAP3/BQAAAAQAAAAEAP3/BQAAAAQAAAACAPz/BQADAAIAAAADAPz/BQACAAIAAAAEAPz/BQACAAIAAAAEAPv/BQACAAMAAAADAPv/BQACAAMAAAACAPv/BQAEAAIAAAAFAP//BQABAAQAAAAFAP7/BQAEAAMAAAAFAP3/BQADAAMAAAAGAPj/BQABAAMAAAAGAPf/BQAAAAMAAAAGAPn/BQACAAQAAAD7//v/BQACAAMAAAD7//z/BQACAAIAAAD7//3/BQAAAAQAAAD8//v/BQACAAMAAAD8//z/BQACAAIAAAD8//3/BQAAAAQAAAD9//v/BQAAAAMAAAD9//z/BQABAAMAAAD9//3/BQACAAQAAAD6////BQABAAQAAAD6//3/BQADAAMAAAD6//7/BQAEAAMAAAD7/wQABgAAAAEAAAD8/wQABgAAAAEAAAD9/wQABgAAAAEAAAD+/wQABgAAAAEAAAABAAQABgAAAAEAAAACAAQABgAAAAEAAAADAAQABgAAAAEAAAAEAAQABgAAAAEAAAAGAAQABgAAAAEAAAAHAAQABgAAAAEAAAAFAPj/BgAAAAAAAAAFAPn/BgAAAAAAAAAFAPr/BgAAAAAAAAAFAPf/BgABAAIAAAAFAPv/BgACAAAAAAAFAPz/BgACAAAAAAD6//v/BgACAAAAAAD6/wMABgACAAAAAAAFAAMABgACAAAAAAAFAAIABgAAAAIAAAD6/wIABgAAAAIAAAAJAPf/BQAEAAIAAAAJAPj/BQADAAIAAAAJAPn/BQADAAQAAAAJAAQABgAAAAEAAAAKAPf/BgACAAIAAAAKAPj/BgABAAAAAAAKAPn/BgABAAAAAAAKAPr/BgABAAAAAAAKAPv/BgABAAAAAAAKAPz/BgABAAAAAAAKAP3/BgABAAAAAAAKAP7/BgABAAAAAAAKAP//BgABAAAAAAAKAAAABgABAAAAAAAKAAEABgABAAAAAAAKAAIABgABAAAAAAAKAAMABgABAAAAAAAIAAQABgAAAAEAAAD6//z/BgACAAAAAAD2//j/BQABAAMAAAD2//f/BQAAAAMAAAD2//n/BQACAAQAAAD5//j/BQADAAIAAAD5//f/BQAEAAIAAAD5//n/BQADAAQAAAD2/wQABgAAAAEAAAD3/wQABgAAAAEAAAD4/wQABgAAAAEAAAD5/wQABgAAAAEAAAD6//f/BgACAAEAAAD7//f/BgAAAAEAAAD8//f/BgAAAAEAAADz//f/BgAAAAEAAAD0//f/BgAAAAEAAAD1//f/BgABAAEAAAD1//j/BgAAAAAAAAD1//n/BgAAAAAAAAD1//r/BgAAAAAAAAD1//v/BgAAAAAAAAD1//z/BgAAAAAAAAD1//3/BgAAAAAAAAD1//7/BgAAAAAAAAD1////BgAAAAAAAAD1/wAABgAAAAAAAAD1/wEABgAAAAAAAAD1/wIABgAAAAAAAAD1/wMABgAAAAAAAAD6//j/BgABAAAAAAD6//n/BgABAAAAAAD6//r/BgABAAAAAAD9/+7/BgABAAAAAAD9//H/BgABAAAAAAD9//L/BgABAAAAAAD9//P/BgABAAAAAAD9//T/BgABAAAAAAD9//X/BgABAAAAAAD9//b/BgABAAAAAADy//X/BgAAAAIAAADy//b/BgACAAAAAADy//D/BQADAAMAAADy//H/BQAEAAMAAADy//L/BQABAAQAAADz/+7/BQACAAMAAAD0/+7/BQACAAMAAAD1/+7/BQACAAMAAAD2/+7/BQACAAMAAAD3/+7/BQACAAMAAAD4/+7/BQACAAMAAAD5/+7/BQACAAMAAAD6/+7/BQACAAMAAAD7/+7/BQACAAMAAAD8/+7/BQACAAMAAADz/+//BQACAAIAAADz//D/BQAAAAQAAAD0/+//BQACAAIAAAD0//D/BQAAAAQAAAD1/+//BQACAAIAAAD1//D/BQAAAAQAAAD2/+//BQACAAIAAAD2//D/BQAAAAQAAAD3/+//BQACAAIAAAD3//D/BQAAAAQAAAD4/+//BQACAAIAAAD4//D/BQAAAAQAAAD5/+//BQACAAIAAAD5//D/BQAAAAQAAAD6/+//BQACAAIAAAD6//D/BQAAAAQAAAD7/+//BQACAAIAAAD7//D/BQAAAAQAAAD8/+//BQACAAIAAAD8//D/BQAAAAQAAAD9/+//BgABAAAAAAD9//D/BgABAAAAAADy/+//BgACAAAAAADy/+7/BgAAAAMAAAAEAO3/CgAAAAAAAAAFAO3/CgAAAAAAAAABAO3/CgAAAAAAAAAAAO3/CgAAAAAAAAAAAOf/CgAAAAAAAAAAAOb/CgAAAAAAAAAAAOX/CgAAAAAAAAABAOX/CgAAAAAAAAACAOX/CgAAAAAAAAADAOX/CgAAAAAAAAAEAOX/CgAAAAAAAAAFAOX/CgAAAAAAAAAFAOb/CgAAAAAAAAAFAOf/CgAAAAAAAAAEAOf/CgAAAAAAAAADAOf/CgAAAAAAAAACAOf/CgAAAAAAAAABAOf/CgAAAAAAAAABAOb/CgAAAAAAAAACAOb/CgAAAAAAAAADAOb/CgAAAAAAAAAEAOb/CgAAAAAAAAABAOT/CgABAAAAAAACAOT/CgABAAAAAAADAOT/CgABAAAAAAAEAOT/CgABAAAAAAAAAOT/CgABAAIAAAAFAOT/CgAAAAIAAAAGAOz/CgACAAEAAAAGAOv/CgACAAEAAAAGAOr/CgACAAEAAAAGAOn/CgACAAEAAAAGAOj/CgACAAEAAAAGAOf/CgACAAEAAAAGAOb/CgACAAEAAAAGAO3/CgACAAEAAAAGAOX/CgABAAEAAAD//+X/CgACAAAAAAD//+b/CgAAAAEAAAD//+f/CgAAAAEAAAD//+j/CgAAAAEAAAD//+n/CgAAAAEAAAD//+r/CgAAAAEAAAD//+v/CgAAAAEAAAD//+z/CgAAAAEAAAD//+3/CgAAAAEAAAAKAPb/DAABAAEAAAAKAPX/DAABAAAAAAAKAPT/DAABAAAAAAAKAPP/DAAAAAAAAAAKAPL/DAABAAAAAAAKAPH/DAAAAAAAAAAKAPD/DAAAAAAAAAAKAO//DAABAAAAAAAKAO7/DAAAAAAAAAAKAO3/DAAAAAAAAAAKAOz/DAAAAAAAAAAKAOv/DAABAAAAAAAKAOr/DAABAAAAAAAKAOn/DAAAAAAAAAAKAOj/DAABAAIAAAD+/+j/DAAAAAIAAAD+/+n/DAAAAAAAAAD+/+r/DAABAAAAAAD+/+v/DAAAAAAAAAD+/+z/DAAAAAAAAAD+/+3/DAAAAAAAAAD+/+7/DAABAAAAAAD+/+//DAABAAAAAAD+//D/DAABAAAAAAD+//H/DAABAAAAAAD+//L/DAAAAAAAAAD+//P/DAAAAAAAAAD+//T/DAAAAAAAAAD+//X/DAAAAAAAAAD+//b/DAACAAEAAAD///b/DAAAAAEAAAAAAPb/DAACAAAAAAABAPb/DAAAAAEAAAACAPb/DAACAAAAAAADAPb/DAACAAAAAAAEAPb/DAACAAAAAAAFAPb/DAACAAAAAAAHAOj/DAAAAAIAAAAIAOj/DAACAAAAAAAJAOj/DAACAAAAAADt//b/BgAAAAAAAADt//X/BgAAAAAAAADt//T/BgAAAAAAAADt//P/BgAAAAAAAADt//L/BgAAAAAAAADt//H/BgAAAAAAAADu//f/BgAAAAEAAADv//f/BgAAAAEAAADw//f/BgAAAAEAAADx//f/BgAAAAEAAADt//D/BgAAAAAAAADt/+//BgAAAAAAAADt/+7/BgABAAIAAADu//D/DQAAAAAAAADv//D/DQAAAAAAAADw//D/DQAAAAAAAADx//D/DQAAAAAAAADx/+//DQAAAAAAAADw/+//DQAAAAAAAADv/+//DQAAAAAAAADu/+//DQAAAAAAAADu/+7/DQAAAAEAAADv/+7/DQAAAAEAAADw/+7/DQAAAAEAAADx/+7/DQAAAAEAAAAAAAQADgAAAAAAAAD//wQADgAAAAEAAAAEAOr/CgABAAIAAAAFAOr/CgAAAAIAAAABAOr/CgAAAAIAAAAAAOr/CgABAAIAAAAAAOv/CgAAAAAAAAABAOv/CgAAAAAAAAABAOz/CgAAAAAAAAAAAOz/CgAAAAAAAAAEAOv/CgAAAAAAAAAFAOv/CgAAAAAAAAAEAOz/CgAAAAAAAAAFAOz/CgAAAAAAAAACAOv/CgABAAEAAAACAOz/CgABAAEAAAACAO3/CgABAAEAAAADAOv/CgAAAAEAAAADAOz/CgAAAAEAAAADAO3/CgAAAAEAAAA=")
 tile_set = ExtResource("1_qjeyg")
-
-[node name="TestNPC" parent="." unique_id=956004964 instance=ExtResource("3_nd71p")]
-visible = false
-position = Vector2(21, -72)
-timeline = ExtResource("5_3qnke")
 
 [node name="TestEvidence" parent="." unique_id=1395274787 instance=ExtResource("4_7ddre")]
 visible = false
@@ -193,41 +190,58 @@ position = Vector2(-279, -192)
 texture = ExtResource("8_rnaij")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="KitchenCounter" unique_id=1208489806]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KitchenCounter/StaticBody2D" unique_id=229703020]
 position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_mv70y")
 
+[node name="Jello" type="Node2D" parent="." unique_id=284171113]
+y_sort_enabled = true
+position = Vector2(-241, -229)
+
+[node name="Sprite2D" type="Sprite2D" parent="Jello" unique_id=2046146072]
+texture = ExtResource("12_afgys")
+offset = Vector2(0, -23.84)
+region_enabled = true
+region_rect = Rect2(16.567963, 84.38414, 27.104126, 25.168106)
+
+[node name="DirtyPlate" parent="." unique_id=1459033969 instance=ExtResource("7_nks25")]
+y_sort_enabled = true
+position = Vector2(-233, -230)
+
+[node name="Sprite2D" parent="DirtyPlate" index="0" unique_id=566503172]
+offset = Vector2(0, -24.2)
+
+[node name="CleanPlate" parent="." unique_id=369202804 instance=ExtResource("8_kub5s")]
+y_sort_enabled = true
+position = Vector2(-250, -231)
+
+[node name="Sprite2D" parent="CleanPlate" index="0" unique_id=1534436695]
+offset = Vector2(0, -23.35)
+
+[node name="CleanPlate2" parent="." unique_id=1812891519 instance=ExtResource("8_kub5s")]
+y_sort_enabled = true
+position = Vector2(-263, -227)
+
+[node name="Sprite2D" parent="CleanPlate2" index="0" unique_id=1534436695]
+offset = Vector2(0, -23.49)
+
 [node name="Cabinet" type="Node2D" parent="." unique_id=1843841551]
-position = Vector2(-248, -233)
+y_sort_enabled = true
+position = Vector2(-248, -236)
 
 [node name="Sprite2D" type="Sprite2D" parent="Cabinet" unique_id=1603395403]
 position = Vector2(0, -6)
 texture = ExtResource("9_h3xc6")
+offset = Vector2(0, 4.18)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Cabinet" unique_id=369488706]
-position = Vector2(0, -6)
+position = Vector2(0, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cabinet/StaticBody2D" unique_id=1081963413]
 position = Vector2(0.5, -6)
 shape = SubResource("RectangleShape2D_2f6eb")
-
-[node name="Jello" type="Node2D" parent="Cabinet" unique_id=284171113]
-position = Vector2(7, -19)
-
-[node name="Sprite2D" type="Sprite2D" parent="Cabinet/Jello" unique_id=2046146072]
-texture = ExtResource("12_afgys")
-region_enabled = true
-region_rect = Rect2(16.567963, 84.38414, 27.104126, 25.168106)
-
-[node name="DirtyPlate" parent="Cabinet" unique_id=1459033969 instance=ExtResource("7_nks25")]
-position = Vector2(15, -20)
-
-[node name="CleanPlate" parent="Cabinet" unique_id=369202804 instance=ExtResource("8_kub5s")]
-position = Vector2(-2, -21)
-
-[node name="CleanPlate2" parent="Cabinet" unique_id=1812891519 instance=ExtResource("8_kub5s")]
-position = Vector2(-15, -17)
 
 [node name="Candelabra" parent="." unique_id=623592888 instance=ExtResource("10_s36qc")]
 position = Vector2(-103, -104)
@@ -434,6 +448,20 @@ timeline = ExtResource("29_4kwo4")
 [node name="Sprite2D" parent="TestNPC2" index="1" unique_id=905578458]
 texture = ExtResource("30_5icnq")
 
+[node name="TestNPC3" parent="." unique_id=2078744031 instance=ExtResource("3_nd71p")]
+position = Vector2(44, -4)
+timeline = ExtResource("31_ugbmy")
+
+[node name="Sprite2D" parent="TestNPC3" index="1" unique_id=905578458]
+texture = ExtResource("32_xias6")
+
+[node name="TestNPC4" parent="." unique_id=1796465014 instance=ExtResource("3_nd71p")]
+position = Vector2(-257, -188)
+timeline = ExtResource("5_3qnke")
+
+[editable path="DirtyPlate"]
+[editable path="CleanPlate"]
+[editable path="CleanPlate2"]
 [editable path="Kettle"]
 [editable path="RoundTable2/Skull"]
 [editable path="RoundTableCloth/Crystal"]
@@ -441,3 +469,4 @@ texture = ExtResource("30_5icnq")
 [editable path="RoundTable3/DecorVase"]
 [editable path="RoundTable4/Kettle"]
 [editable path="TestNPC2"]
+[editable path="TestNPC3"]
