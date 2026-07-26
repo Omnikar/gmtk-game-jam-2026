@@ -1,0 +1,10 @@
+{friend_vase_accusation}
+I found a broken vase in the upstairs hallway.
+---
+Oh, dear! I’m afraid [FRIEND] broke it when we were carrying my dear uncle to his quarters. 
+[FRIEND] blundered into the table holding the vase, but the table held, so we focused on the more pressing task of bringing my uncle to safety.
+Unfortunately, the table was weakened by age and not nearly as sturdy as it appeared.
+We had barely made it into the bedroom before we heard a tremendous crash!
+The table had broken, as had the vase.
+It’s quite a pity, don’t you think?
+I'll bet [FRIEND] is mighty embarrassed about being the culprit for that vase breaking.

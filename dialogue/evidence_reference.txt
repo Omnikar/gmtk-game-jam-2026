@@ -34,7 +34,10 @@ friend_suspects_cook
 
 garlic_suspicion
 
-friend_vase_accusation ** TODO
+friend_vase_accusation
 table_leg_supposedly_underneath
 
 someone_in_hallway
+
+niece_planted_will
+niece_stole_key

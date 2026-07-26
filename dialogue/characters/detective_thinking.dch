@@ -12,7 +12,7 @@
 },
 &"default_portrait": "thinking",
 &"description": "",
-&"display_name": "Detective",
+&"display_name": "Detective [DETECTIVE]",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),

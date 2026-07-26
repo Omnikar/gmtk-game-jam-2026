@@ -1,0 +1,23 @@
+{niece_planted_will}
+[NIECE], I have come to the conclusion that this will is fake.
+You’re not Dracula’s real heiress. 
+That title belongs to [FRIEND].
+I discovered that the guard was secretly a vampire all along.
+Meaning they are beholden to the vampires' rule of invitation.
+Dracula would have been the only one allowed to bring them in. That is, until he was killed.
+After Dracula's death, that ability transfers to his real heir.
+According to both of your accounts, [GUARD] did not come into the house when you invited them, even after Dracula’s death.
+If you were really Dracula’s heiress, the guard would have been able to enter the house with your invitation.
+However, they only entered after [FRIEND] invited them in, meaning that he is the real heir.
+Therefore, this will is a fake, and you must have planted it.
+---
+Preposterous!
+…
+You’re a clever one, I’ll give you that much.
+That will is fake. I forged it and hid it in his safe.
+But I deserve to be his heiress!
+It should be someone from his own family, not some irrelevant friend!
+
+
+{niece_stole_key}
+She must have stolen the key to unlock the safe.

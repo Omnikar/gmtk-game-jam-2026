@@ -1,0 +1,10 @@
+join detective right
+detective: I found a broken vase in the upstairs hallway.
+join niece left
+niece: Oh, dear! I’m afraid [FRIEND] broke it when we were carrying my dear uncle to his quarters. 
+niece: [FRIEND] blundered into the table holding the vase, but the table held, so we focused on the more pressing task of bringing my uncle to safety.
+niece (disappointed): Unfortunately, the table was weakened by age and not nearly as sturdy as it appeared.
+niece (speaking): We had barely made it into the bedroom before we heard a tremendous crash!
+niece: The table had broken, as had the vase.
+niece (disappointed): It’s quite a pity, don’t you think?
+niece: I'll bet [FRIEND] is mighty embarrassed about being the culprit for that vase breaking.
