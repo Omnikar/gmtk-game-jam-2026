@@ -135,9 +135,7 @@ func submit_evidence(character: String, tags: Array[String]) -> void:
 
 		var found_match = false
 
-		print(trig.tags)
 		for trig_tags in trig.tags:
-			print(tags)
 			var tag_masks = {}
 			for tag in trig_tags:
 				tag_masks[tag] = 1
@@ -150,10 +148,8 @@ func submit_evidence(character: String, tags: Array[String]) -> void:
 				if mask != 3:
 					matches = false
 			if not matches:
-				print(trig_tags, " didn't work")
 				continue
 			found_match = true
-			print(trig_tags, " worked")
 			break
 
 		if not found_match:
