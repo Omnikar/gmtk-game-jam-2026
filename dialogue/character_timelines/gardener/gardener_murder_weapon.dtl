@@ -1,9 +1,9 @@
 join detective right
 detective: The murder was done with a stake. 
-join detective left
 detective: You must have a few of those yourself for the garden.
+join gardener left
 gardener: Y-yes, I s’pose so.
 gardener: They’re awfully helpful for marking out garden beds ‘n such.
 gardener: ...
 gardener: I was actually working on that earlier, but two of my stakes were missing.
-gardener (antsy): I s’pose Dracula found one of them.
+gardener (antsy): I s’pose Dracula found one of them. The other's still out there somewhere.
