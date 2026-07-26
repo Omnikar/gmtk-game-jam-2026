@@ -1,0 +1,13 @@
+Tell me everything you know about what happened tonight.
+---
+Well, someone took the Count down.
+...that's all I know.
+I was, y'know, gardening. 
+
+
+{gardener_locked_out-gardener}
+---
+I generally don't step foot in the house when there're houseguests over.
+Not that Drac lets me come in usually anyway.
+That door you just took to get out here is almost always locked.
+Tonight was no different.

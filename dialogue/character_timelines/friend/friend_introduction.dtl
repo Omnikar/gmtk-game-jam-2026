@@ -1,0 +1,30 @@
+if {friend_introduced} == false:
+	set {friend_introduced} = true
+	join detective right
+	detective: Hello. You're a friend of Dracula's, correct?
+	join friend left
+	friend: Yes, I am.
+	friend (antsy): Was.
+	detective: Could you please tell me about everything leading up to the murder?
+	friend (speaking): Yeah.
+	friend: Dracula invited me and some other friends and family over. We had dinner. A few people left.
+	friend: Eventually, it was just Dracula, his niece, and me.
+	friend: We were eating dessert when he collapsed. 
+	friend: I knew something was wrong, so I asked [NIECE], his niece, to help me get him upstairs.
+	friend: I assumed he’d be able to rest safely up there, but…
+	friend: …
+	friend: …that wasn’t the case.
+	friend: ………
+	friend: [NIECE] and the guard went upstairs to check on him, and he was dead. 
+	friend: …I’m sorry. It’s a lot for me to deal with right now.
+	detective: Can you tell me more about yourself?
+	friend: I’m Dracula’s friend.
+	friend: I don’t know if I was his closest friend, but he was definitely my closest friend.
+	friend: I knew him for what, seven centuries? Maybe more?
+	friend: It wasn’t enough.
+else:
+	join friend left
+	friend: What can I do to help?
+- Question
+	[signal arg_type="dict" arg="{"present_evidence":"friend"}"]
+- Leave

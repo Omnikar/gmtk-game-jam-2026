@@ -1,0 +1,12 @@
+detective: What do you know about the guard?
+---
+friend: It might be irrational, but I’m a bit angry at them.
+friend: It was their job to protect Dracula, wasn’t it?
+friend: They were trying their best.
+
+
+{guard_stayed_outside-friend-0}
+---
+friend: They only stopped guarding the door when I insisted they come inside after Dracula fainted.
+friend: They were very devoted to their role, I suppose.
+friend: I still can’t say I like them, though.

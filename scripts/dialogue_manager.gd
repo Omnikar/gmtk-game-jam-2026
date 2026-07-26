@@ -24,7 +24,7 @@ var triggers: Array[DialogueTrigger] = [
 	# dt("current_character", ["list", "of", "evidence_tags"], "dialogue_name"),
 	#
 	# Already-introduced
-	dt("cook", ["cook_character", "tag_goes_here"], "detective_already_introduced"),
+	dt("cook", ["cook_character"], "detective_already_introduced"),
 	dt("guard", ["guard_character"], "detective_already_introduced"),
 	dt("gardener", ["gardener_character"], "detective_already_introduced"),
 	dt("friend", ["friend_character"], "detective_already_introduced"),
@@ -33,6 +33,7 @@ var triggers: Array[DialogueTrigger] = [
 	# --- COOK ---
 	# Ask cook about other people
 	dt("cook", ["guard_character"], "cook_discuss_guard"),
+	dt("cook", ["friend_suspects_cook"], "cook_friend_suspects"),
 	#
 	# --- GARDENER ---
 	# Ask gardener about other people
@@ -53,6 +54,11 @@ var triggers: Array[DialogueTrigger] = [
 	#
 	# --- FRIEND ---
 	# Ask friend about other people
+	dt("friend", ["gardener_character"], "friend_discuss_gardener"),
+	dt("friend", ["guard_character"], "friend_discuss_guard"),
+	dt("friend", ["niece_character"], "friend_discuss_niece"),
+	dt("friend", ["cook_character"], "friend_discuss_cook"),
+	# Other
 	#
 	# --- NIECE ---
 	# Ask niece about other people

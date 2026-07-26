@@ -5,6 +5,7 @@ extends CanvasLayer
 @export var transcript_entry_prefab_file: String
 
 var added_evidence: Dictionary[String, bool] = {}
+var added_transcripts: Dictionary[String, bool] = {}
 
 var present_mode: bool = false
 var present_target: String = ""
@@ -67,6 +68,9 @@ func add_evidence(evidence_id: String) -> void:
 
 
 func add_transcript(transcript_id: String) -> void:
+	if added_transcripts.has(transcript_id):
+		return
+
 	var transcript_path = "%s/%s.txt" % [transcript_folder, transcript_id]
 	var file = FileAccess.open(transcript_path, FileAccess.READ)
 	if file == null:
@@ -99,6 +103,8 @@ func add_transcript(transcript_id: String) -> void:
 			return
 		var vbox = tab.get_node("VBoxContainer")
 		vbox.add_child(scene_instance)
+
+	added_transcripts[transcript_id] = true
 
 
 func _on_timeline_started() -> void:
@@ -162,4 +168,8 @@ func end_present_mode() -> void:
 func _on_present_button_pressed() -> void:
 	end_present_mode()
 	# evidence_presented.emit(present_target, Array(selected_evidence.keys()))
-	DialogueManager.submit_evidence(present_target, Array(selected_evidence.keys()))
+	var selected_evidence_arr: Array[String] = []
+	for ev in selected_evidence.keys():
+		if selected_evidence[ev]:
+			selected_evidence_arr.append(ev)
+	DialogueManager.submit_evidence(present_target, selected_evidence_arr)

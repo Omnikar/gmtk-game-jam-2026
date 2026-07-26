@@ -17,6 +17,15 @@
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"antsy": {
+"export_overrides": {
+"image": "\"res://sprites/characters/friend/dialogue_friend_nervous.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "speaking": {
 "export_overrides": {
 "image": "\"res://sprites/characters/friend/dialogue_friend.png\""

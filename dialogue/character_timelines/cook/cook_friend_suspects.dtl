@@ -1,0 +1,7 @@
+join detective right
+detective: [FRIEND] thinks you poisoned Dracula, and that's why he collapsed at the dinner table.
+join cook left
+cook: Why would I do that? Sounds like a stupid idea.
+detective: You did mention that you don't like vampires.
+cook (unamused): Yeah, I did. But only a child would let that sort of thing come in the way of their basic sense of morality.
+cook (speaking): I didn't poison him.
