@@ -88,7 +88,7 @@ animations = [{
 size = Vector2(20, 12)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3dngu"]
-size = Vector2(47, 17)
+size = Vector2(47, 22.570007)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tffoe"]
 size = Vector2(8, 4)
@@ -386,19 +386,21 @@ position = Vector2(-60, -147)
 offset = Vector2(0, -14.73)
 
 [node name="StakePile" type="Node2D" parent="." unique_id=482807908]
-position = Vector2(74, -374)
+position = Vector2(74, -380)
 
 [node name="Sprite2D" type="Sprite2D" parent="StakePile" unique_id=1514675502]
-y_sort_enabled = true
 position = Vector2(-2, -21)
 texture = ExtResource("26_sstcd")
+offset = Vector2(0, 7.8)
 region_enabled = true
 region_rect = Rect2(0, 0, 64, 56.25615)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="StakePile" unique_id=1571163454]
+visible = false
+position = Vector2(0, 7.43)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StakePile/StaticBody2D" unique_id=984028804]
-position = Vector2(-1.5, -8.5)
+position = Vector2(-1.5, -5.7149963)
 shape = SubResource("RectangleShape2D_3dngu")
 
 [node name="Pot" type="Node2D" parent="." unique_id=1302623650]
@@ -411,6 +413,7 @@ region_enabled = true
 region_rect = Rect2(35.64559, 86.355354, 12.183121, 18.665825)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Pot" unique_id=1722594979]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pot/StaticBody2D" unique_id=1613593857]
 position = Vector2(0, -2)

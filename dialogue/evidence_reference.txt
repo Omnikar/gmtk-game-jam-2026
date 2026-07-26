@@ -20,3 +20,7 @@ murder_weapon
 safe
 key
 fake_will
+
+
+key_location
+key_tampered

@@ -1,0 +1,14 @@
+I suspect that garlic might have something to do with Dracula’s murder.
+He collapsed after eating something. I'm thinking his food could have been laced with garlic.
+---
+We don’t keep any garlic in the house!
+I ain’t even allowed to grow anything halfway related to garlic!
+Though I s’pose there could be some hidden somewhere…
+
+
+---
+There’s a secret cabinet in the kitchen.
+It’s awfully well hidden. I doubt even a detective like you could’ve found it on a first sweep through the house.
+I'll let you in on the secret.
+[The gardener gave you instructions on how to find the hidden cabinet in the kitchen.]
+Go on, talk to [COOK] about it. I'm sure she'll be amused.

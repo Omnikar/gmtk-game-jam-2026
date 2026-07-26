@@ -30,6 +30,6 @@ else:
 		cook: Hello.
 	else:
 		cook (squinting): What do you want?
-- Present evidence
+- Question
 	[signal arg_type="dict" arg="{"present_evidence":"cook"}"]
 - Leave

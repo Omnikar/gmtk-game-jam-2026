@@ -24,6 +24,6 @@ if {gardener_introduced} == false:
 	gardener: I’m more suited to shoveling dirt.
 else:
 	gardener: Sup?
-- Present evidence
+- Question
 	[signal arg_type="dict" arg="{"present_evidence":"gardener"}"]
 - Leave

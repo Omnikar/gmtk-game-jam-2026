@@ -8,7 +8,7 @@ detective (thinking): ...
 detective (thinking): uhh
 detective (speaking): what
 label pre_evidence
-- Present evidence
+- Question
 	[signal arg_type="dict" arg="{"present_evidence":"cook"}"]
 - Leave
 	[end_timeline]

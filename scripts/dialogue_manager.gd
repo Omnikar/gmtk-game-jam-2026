@@ -6,15 +6,17 @@ class DialogueTrigger:
 	var character: String
 	var tags: Array[String]
 	var timeline: String
+	var repeatable: bool
 
-	func _init(ch: String, t: Array[String], tl: String) -> void:
+	func _init(ch: String, t: Array[String], tl: String, rep: bool) -> void:
 		character = ch
 		tags = t
 		timeline = tl
+		repeatable = rep
 
 
-func dt(ch: String, t: Array[String], tl: String) -> DialogueTrigger:
-	return DialogueTrigger.new(ch, t, tl)
+func dt(ch: String, t: Array[String], tl: String, rep: bool = false) -> DialogueTrigger:
+	return DialogueTrigger.new(ch, t, tl, rep)
 
 
 var triggers: Array[DialogueTrigger] = [
@@ -43,10 +45,10 @@ var triggers: Array[DialogueTrigger] = [
 	dt("gardener", ["vase"], "gardener_vase"),
 	dt("gardener", ["safe"], "gardener_safe"),
 	dt("gardener", ["TODO"], "gardener_garlic_suspicion"),
-	dt("gardener", ["garlic_pouch"], "gardener_garlic_found"),
-	dt("gardener", ["second_stake"], "gardener_stake_found"),
+	dt("gardener", ["garlic_pouch"], "gardener_garlic_found", true),
+	dt("gardener", ["second_stake"], "gardener_stake_found", true),
 	dt("gardener", ["garlic_pouch", "second_stake"], "gardener_garlic_stake_found"),
-	dt("gardener", ["TODO"], "gardener_key_wrong"),
+	dt("gardener", ["key", "key_location"], "gardener_key_wrong"),
 	dt("gardener", ["TODO"], "gardener_broke_vase"),
 	#
 	# --- FRIEND ---
@@ -91,7 +93,8 @@ func submit_evidence(character: String, tags: Array[String]) -> void:
 			Dialogic.start("detective_already_asked")
 		else:
 			Dialogic.start(trig.timeline)
-			used_triggers.append(i)
+			if not trig.repeatable:
+				used_triggers.append(i)
 		return
 
 	Dialogic.start("detective_unsure")

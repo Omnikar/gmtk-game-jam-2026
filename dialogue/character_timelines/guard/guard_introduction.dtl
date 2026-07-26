@@ -26,6 +26,6 @@ if {guard_introduced} == false:
 	guard: That's when we found him stabbed dead with a stake in his bedroom.
 	guard: Honestly, though, I'd be careful about [NIECE]. The look on her face made me feel almost like she wasn't surprised, like she had already known he was dead.
 guard: ...
-- Present evidence
+- Question
 	[signal arg_type="dict" arg="{"present_evidence":"guard"}"]
 - Leave

@@ -7,6 +7,6 @@ if {niece_introduced} == false:
 	niece: ...
 else:
 	niece: However may I assist you?
-- Present evidence
+- Question
 	[signal arg_type="dict" arg="{"present_evidence":"niece"}"]
 - Leave

@@ -81,7 +81,7 @@ func add_transcript(transcript_id: String) -> void:
 
 		var parts = entry.split("---")
 		var prompt = parts[0].strip_edges()
-		var response = parts[1].strip_edges() if len(parts) >= 1 else ""
+		var response = parts[1].strip_edges() if len(parts) >= 2 else ""
 
 		var scene_resource: PackedScene = load(transcript_entry_prefab_file)
 		var scene_instance: TranscriptEntry = scene_resource.instantiate()
