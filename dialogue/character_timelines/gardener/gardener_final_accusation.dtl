@@ -1,4 +1,6 @@
+join detective right
 detective: [GARDENER], I believe that you murdered Count Dracula.
+join gardener left
 gardener (antsy): Huh?
 detective: It all started when Dracula invited the guard into the house to take a look around.
 detective: While the door was unguarded, you snuck through and made your way upstairs.

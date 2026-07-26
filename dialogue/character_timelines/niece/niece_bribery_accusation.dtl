@@ -5,10 +5,10 @@ niece (disappointed): What's that, dear?
 detective: Your plot to swap out Dracula's will required you to get your hands on his safe key.
 detective: The one he keeps on his person at all times.
 detective (thinking): You needed a way to get him vulnerable.
-detective: Of course, a dose of garlic was the perfect way to do that.
-detective: But there's just one problem. You're a vampire too. You can't be the one working with the garlic.
+detective (speaking): Of course, a dose of garlic was the perfect way to do that.
+detective (thinking): But there's just one problem. You're a vampire too. You can't be the one working with the garlic.
 detective: You also don't have easy access to the food Dracula eats.
-detective: All that said, the human cook was the perfect accomplice.
+detective (speaking): All that said, the human cook was the perfect accomplice.
 detective: You bribed [COOK] to poison Dracula and knock him out for just enough time for you to snatch the key, swap the will, and return the key like nothing ever happened.
 detective: But things didn't exactly go as planned did they?
 niece (speaking): Well then, dear. I suppose I don't need to say anything.
