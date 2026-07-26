@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="GMTK Game Jam 2026"
-run/main_scene="uid://icqnislki3vx"
+run/main_scene="uid://c6l35ao48najv"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -52,6 +52,7 @@ directories/dtl_directory={
 "cook_self_test": "res://dialogue/character_timelines/cook_self_test.dtl",
 "detective_already_asked": "res://dialogue/character_timelines/detective/detective_already_asked.dtl",
 "detective_already_introduced": "res://dialogue/character_timelines/detective/detective_already_introduced.dtl",
+"detective_introduction": "res://dialogue/character_timelines/detective/detective_introduction.dtl",
 "detective_unsure": "res://dialogue/character_timelines/detective/detective_unsure.dtl",
 "evidence_body": "res://dialogue/evidence_timelines/evidence_body.dtl",
 "evidence_dessert": "res://dialogue/evidence_timelines/evidence_dessert.dtl",

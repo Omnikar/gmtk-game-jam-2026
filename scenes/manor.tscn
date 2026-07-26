@@ -60,12 +60,11 @@ position = Vector2(0, -86)
 shape = SubResource("RectangleShape2D_ns7cy")
 
 [node name="Player" parent="." unique_id=1419036307 instance=ExtResource("4_pebnw")]
-position = Vector2(-17, 21)
+position = Vector2(0, 61)
 
 [node name="Music" type="AudioStreamPlayer" parent="." unique_id=874805917]
 stream = SubResource("AudioStreamRandomizer_ns7cy")
 volume_db = -15.743
-autoplay = true
 
 [node name="FinalMusic" type="AudioStreamPlayer" parent="." unique_id=1842534897]
 stream = ExtResource("9_vdpw0")

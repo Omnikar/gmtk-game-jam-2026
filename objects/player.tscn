@@ -8,8 +8,6 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eqqp1"]
 size = Vector2(12, 5)
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_bxedw"]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_uxov2"]
 atlas = ExtResource("2_ykyjo")
 region = Rect2(0, 0, 32, 32)
@@ -207,18 +205,13 @@ script = ExtResource("1_eqqp1")
 position = Vector2(0, -2.5)
 shape = SubResource("RectangleShape2D_eqqp1")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=467417967]
-visible = false
-scale = Vector2(15.999999, 15.999999)
-texture = SubResource("PlaceholderTexture2D_bxedw")
-
 [node name="MainCamera" type="Camera2D" parent="." unique_id=332261095]
 zoom = Vector2(3.45, 3.45)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=708546280]
 position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_ns7cy")
-animation = &"right_walk"
+animation = &"up_stand"
 speed_scale = 1.5
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1400794934]

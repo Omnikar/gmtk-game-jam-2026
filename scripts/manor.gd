@@ -13,6 +13,8 @@ func _ready() -> void:
 	show_downstairs()
 	hide_upstairs()
 
+	Dialogic.start("detective_introduction")
+
 
 func show_downstairs() -> void:
 	$Downstairs.show()
@@ -51,6 +53,8 @@ func _on_music_finished() -> void:
 
 
 func _on_dialogic_signal(arg: String) -> void:
+	if arg == "starting":
+		$Music.playing = true
 	if arg == "completing":
 		$Music.playing = false
 		$FinalMusic.playing = true

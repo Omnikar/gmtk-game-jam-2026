@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var move_speed: float = 80.0
 
-var facing_direction: String = "down"
+var facing_direction: String = "up"
 
 
 func _ready() -> void:
