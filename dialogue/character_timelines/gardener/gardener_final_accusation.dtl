@@ -1,4 +1,4 @@
-[signal arg="completing"]
+[signal arg_type="dict" arg="{"level_status":"completing"}"]
 join detective right
 detective: Alin, I believe that you murdered Count Dracula.
 join gardener left
@@ -30,4 +30,4 @@ gardener: …
 detective (speaking): You may be a petty thief, but that doesn't mean you aren't also a killer.
 detective: And there are no blessings for killers.
 gardener (guilty): ………
-[signal arg="complete"]
+[signal arg_type="dict" arg="{"level_status":"complete"}"]

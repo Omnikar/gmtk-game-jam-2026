@@ -52,11 +52,14 @@ func _on_music_finished() -> void:
 	$Music.play()
 
 
-func _on_dialogic_signal(arg: String) -> void:
-	if arg == "starting":
+func _on_dialogic_signal(arg: Dictionary) -> void:
+	if not arg.has("level_status"):
+		return
+	var status = arg["level_status"]
+	if status == "starting":
 		$Music.playing = true
-	if arg == "completing":
+	if status == "completing":
 		$Music.playing = false
 		$FinalMusic.playing = true
-	if arg == "complete":
+	if status == "complete":
 		$Thanks.show()

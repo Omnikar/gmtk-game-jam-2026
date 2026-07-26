@@ -14,4 +14,4 @@ detective_thinking: If I want to know someone's thoughts about something, I can 
 detective_thinking: If I want to use multiple pieces of evidence (including physical evidence, conversation transcripts, or reference book entries) to draw a conclusion, then I can select those multiple items when questioning someone.
 detective_thinking: I shouldn't ever strictly need to combine more than two pieces of evidence at a time, though I may choose to. But any more than three probably won't get me anywhere.
 detective_thinking: Alright, I'm ready. Let's investigate.
-[signal arg="starting"]
+[signal arg_type="dict" arg="{"level_status":"starting"}"]
