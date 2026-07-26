@@ -1,0 +1,5 @@
+join detective_thinking right
+detective_thinking: I almost have enough evidence to prove the gardener broke the vase.
+detective_thinking: But I haven't yet completely cleared the guard of suspicion.
+detective_thinking: Is there anything I know that would assure me Andrei was outside?
+[signal arg_type="dict" arg="{"present_evidence":""}"]

@@ -47,6 +47,7 @@ var triggers: Array[DialogueTrigger] = [
 		[["garlic_pouch"], ["second_stake"], ["garlic_pouch", "second_stake"]],
 		"cook_garlic_accusation",
 	),
+	dt("cook", [["someone_in_hallway", "guard_is_vampire"]], "detective_need_to_clear_cook"),
 	#
 	# --- GARDENER ---
 	# Ask gardener about other people
@@ -63,11 +64,14 @@ var triggers: Array[DialogueTrigger] = [
 	dt("gardener", [["second_stake"]], "gardener_stake_found", true),
 	dt("gardener", [["garlic_pouch", "second_stake"]], "gardener_garlic_stake_found"),
 	dt("gardener", [["key", "key_location"]], "gardener_key_wrong"),
+	dt("gardener", [["guard_is_vampire"]], "gardener_guard_vampire"),
 	dt(
 		"gardener",
 		[["someone_in_hallway", "cook_vase_alibi", "guard_is_vampire"]],
 		"gardener_broke_vase",
 	),
+	dt("gardener", [["someone_in_hallway", "cook_vase_alibi"]], "detective_need_to_clear_guard"),
+	dt("gardener", [["someone_in_hallway", "guard_is_vampire"]], "detective_need_to_clear_cook"),
 	dt("gardener", [["niece_bribed_cook", "gardener_is_thief"]], "gardener_final_accusation"),
 	#
 	# --- FRIEND ---
@@ -91,6 +95,8 @@ var triggers: Array[DialogueTrigger] = [
 	dt("niece", [["cook_character"]], "niece_discuss_cook"),
 	# Other
 	dt("niece", [["vase"], ["broken_table"], ["vase", "broken_table"]], "niece_vase"),
+	dt("niece", [["fake_will"]], "niece_will.dtl"),
+	dt("niece", [["guard_is_vampire"]], "niece_guard_vampire.dtl"),
 	dt(
 		"niece",
 		[
@@ -100,6 +106,7 @@ var triggers: Array[DialogueTrigger] = [
 		"niece_will_accusation"
 	),
 	dt("niece", [["cook_niece_cooperating", "niece_planted_will"]], "niece_bribery_accusation"),
+	dt("niece", [["cook_niece_cooperating"]], "detective_niece_pondering.dtl"),
 	#
 	# --- GUARD ---
 	# Ask guard about other people
@@ -109,7 +116,12 @@ var triggers: Array[DialogueTrigger] = [
 	dt("guard", [["friend_character"]], "guard_discuss_friend"),
 	# Other
 	dt("guard", [["garlic_pouch"]], "guard_garlic"),
-	dt("guard", [["vase"], ["broken_table"], ["vase", "broken_table"]], "guard_vase"),
+	dt("guard", [["guard_stayed_outside"]], "guard_staying_outside"),
+	dt(
+		"guard",
+		[["vase"], ["broken_table"], ["vase", "broken_table"], ["someone_in_hallway"]],
+		"guard_vase"
+	),
 	dt(
 		"guard",
 		[

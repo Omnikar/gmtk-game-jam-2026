@@ -1,0 +1,5 @@
+join detective_thinking right
+detective_thinking: I'm getting close to figuring out who broke the vase.
+detective_thinking: But I'm still split between the cook and the gardener.
+detective_thinking: Have I encountered any testimonies that would help provide an alibi?
+[signal arg_type="dict" arg="{"present_evidence":""}"]

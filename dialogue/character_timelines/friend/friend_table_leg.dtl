@@ -11,3 +11,8 @@ friend: Are you suggesting that I’m not responsible for breaking the vase?
 detective: Yes. In fact, there may have been someone else in the hallway… and that someone else may have broken the vase.
 friend: This is a relief.
 detective: I think we have very different priorities.
+join detective_thinking right
+detective_thinking: It's unlikely at this point that Narin or Aslan were responsible for the vase breaking.
+detective_thinking: Perhaps I can try to eliminate the remaining possibilities by looking for more information.
+detective_thinking: Once I confront the vase-shattering culprit with evidence enough to supply alibis for everyone else, I'll be certain.
+detective_thinking: Camelia, Alin, and Andrei remain. I need to find alibis for two of them.

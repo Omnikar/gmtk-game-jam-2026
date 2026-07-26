@@ -1,4 +1,3 @@
-{key_tampered-cook-0}
 Dracula’s key wasn’t in the pocket I was told it would be in.
 ---
 Hm. Weird.

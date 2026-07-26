@@ -12,7 +12,7 @@ tag = "fake_will"
 evidence_name = "Dracula's will"
 evidence_description = "The last will and testament of Count Dracula.
 Found in Dracula's study after his death.
-Among other things, entrusts the Transylvania estate to [NAME OF FAKE HEIR]."
+Among other things, entrusts the Transylvania estate to Dracula's niece Narin."
 
 [node name="TextureRect" parent="HBoxContainer/Image" parent_id_path=PackedInt32Array(1774074990) index="0" unique_id=1924471794]
 texture = SubResource("AtlasTexture_3yypy")
@@ -23,4 +23,4 @@ text = "Dracula's will"
 [node name="RichTextLabel" parent="HBoxContainer/Description" parent_id_path=PackedInt32Array(1240456865) index="0" unique_id=848825136]
 text = "The last will and testament of Count Dracula.
 Found in Dracula's study after his death.
-Among other things, entrusts the Transylvania estate to [NAME OF FAKE HEIR]."
+Among other things, entrusts the Transylvania estate to Dracula's niece Narin."

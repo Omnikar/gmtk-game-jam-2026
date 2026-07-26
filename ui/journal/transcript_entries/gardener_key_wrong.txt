@@ -1,4 +1,3 @@
-{key_tampered-gardener-0}
 I checked Dracula’s cloak. The key was in the wrong spot.
 ---
 Huh.

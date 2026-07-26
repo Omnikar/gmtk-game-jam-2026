@@ -1,0 +1,5 @@
+join detective_thinking right
+detective_thinking: Camelia did tell me she was working with Narin.
+detective_thinking: But I need to figure out what exactly Narin's plot was about before I confront her.
+detective_thinking: Then, I can see how the cook's role plays into it.
+[signal arg_type="dict" arg="{"present_evidence":""}"]

@@ -1,4 +1,3 @@
-{someone_in_hallway-0}
 Something’s not lining up about the broken vase.
 You collided with the table, left the hallway, and then heard the vase shatter, right?
 The broken leg of the table is across the hallway. It wouldn’t be over there if you collided with it like you said you did. It should have been right underneath the table.
@@ -10,3 +9,9 @@ Are you suggesting that I’m not responsible for breaking the vase?
 
 {someone_in_hallway-1}
 Yes. In fact, there may have been someone else in the hallway… and that someone else may have broken the vase.
+
+
+It's unlikely at this point that Narin or Aslan were responsible for the vase breaking.
+Perhaps I can try to eliminate the remaining possibilities by looking for more information.
+Once I confront the vase-shattering culprit with evidence enough to supply alibis for everyone else, I'll be certain.
+Camelia, Alin, and Andrei remain. I need to find alibis for two of them.

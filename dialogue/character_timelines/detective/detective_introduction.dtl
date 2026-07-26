@@ -7,11 +7,11 @@ detective_thinking: I don't have to worry about them trying anything mischievous
 detective_thinking: When I come near a person or a piece of evidence, I can use the [E] key to interact with it.
 detective_thinking: I'm going to gather evidence and question the suspects until I figure out exactly what happened here.
 detective_thinking: Anything I find will go in my journal, which I can open and close by pressing [TAB].
-detective_thinking: My journal will also keep a log of the conversations I've had, so I can reference them later.
+detective_thinking: My journal will also keep a log of the conversations I've had, so I can reference them later. Some parts might be highlighted for containing important information that I might want to cite later.
 detective_thinking: The last tab in my journal also includes some helpful notes about vampires, at least some of which will no doubt come in handy for this investigation.
 detective_thinking: When I question someone, I will do so by selecting one or more records from my journal to ask about.
 detective_thinking: If I want to know someone's thoughts about something, I can select that one item when questioning them.
 detective_thinking: If I want to use multiple pieces of evidence (including physical evidence, conversation transcripts, or reference book entries) to draw a conclusion, then I can select those multiple items when questioning someone.
-detective_thinking: I shouldn't ever strictly need to combine more than two pieces of evidence at a time, though I may choose to. But any more than three probably won't get me anywhere.
+detective_thinking: I usually won't need to combine more than two pieces of evidence at a time, though it may be necessary at some point. But any more than three probably won't get me anywhere.
 detective_thinking: Alright, I'm ready. Let's investigate.
 [signal arg_type="dict" arg="{"level_status":"starting"}"]

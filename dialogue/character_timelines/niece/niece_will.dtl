@@ -1,0 +1,7 @@
+join detective right
+detective: This will, it seems to entrust this entire estate to you, Narin.
+join niece left
+niece: Why of course it does. I always was uncle's favorite.
+join detective_thinking right
+detective_thinking: For some reason, I struggle to believe her.
+detective_thinking: But even if I were right, how would I disprove the authenticity of this piece of paper?
