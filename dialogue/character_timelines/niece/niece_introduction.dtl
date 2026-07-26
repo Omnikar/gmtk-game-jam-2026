@@ -1,11 +1,12 @@
-join niece left
 if {niece_introduced} == false:
 	set {niece_introduced} = true
 	join detective right
 	detective: yo bro
+	join niece left
 	niece: ahahahahhaha
 	niece: ...
 else:
+	join niece left
 	niece: However may I assist you?
 - Question
 	[signal arg_type="dict" arg="{"present_evidence":"niece"}"]

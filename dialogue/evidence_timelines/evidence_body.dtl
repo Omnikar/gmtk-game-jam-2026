@@ -7,6 +7,7 @@ if {body_seen} == false:
 	[signal arg_type="dict" arg="{"add_evidence":"murder_weapon"}"]
 if {key_known} == true:
 	- Search body
+		set {has_key} = true
 		Dracula's cloak has many pockets on the inside.
 		In a pocket on the bottom-right side, you find an ornate key.
 		Golden key added to journal.

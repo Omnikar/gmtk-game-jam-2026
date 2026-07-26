@@ -1,4 +1,17 @@
 [style name="dialogue_style"]
-A sturdy safe stands in the corner of the room
-Safe added to journal
-[signal arg_type="dict" arg="{"add_evidence":"safe"}"]
+A sturdy safe stands in the corner of the room.
+if {has_seen_safe} == false:
+	set {has_seen_safe} = true
+	Safe added to journal.
+	[signal arg_type="dict" arg="{"add_evidence":"safe"}"]
+if {has_key} == true:
+	- Use Golden Key
+		Inside the safe is a huge amount of priceless valuables.
+		Above all of it, though, is a sheet of paper.
+		Dracula's will added to journal.
+		[signal arg_type="dict" arg="{"add_evidence":"fake_will"}"]
+		join niece left
+		niece: Oh, what's that? You've found the old man's will?
+		niece: And the principal beneficiary is... none other than, yours truly?
+		niece: I expected nothing less.
+	- Leave

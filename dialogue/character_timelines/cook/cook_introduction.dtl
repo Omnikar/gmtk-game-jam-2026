@@ -1,4 +1,3 @@
-join cook left
 if {cook_introduced} == false:
 	set {cook_introduced} = true
 	join detective right
@@ -26,6 +25,7 @@ if {cook_introduced} == false:
 	cook: That was the last time I saw him.
 	cook: ...
 else:
+	join cook left
 	if {cook_angry} == false:
 		cook: Hello.
 	else:

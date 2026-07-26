@@ -88,11 +88,11 @@ text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
 text/autoadvance_per_character_delay=0.1
 text/autoadvance_ignored_characters_enabled=true
-animations/join_default_length=0.5
+animations/join_default_length=0.0
 animations/join_default_wait=true
-animations/leave_default_length=0.5
+animations/leave_default_length=0.0
 animations/leave_default_wait=true
-animations/cross_fade_default_length=0.5
+animations/cross_fade_default_length=0.0
 choices/autofocus_first=true
 choices/delay=0.2
 choices/reveal_delay=0
@@ -123,7 +123,9 @@ variables={
 "friend_introduced": false,
 "gardener_introduced": false,
 "guard_introduced": false,
+"has_key": false,
 "has_searched_cabinet": false,
+"has_seen_safe": false,
 "key_known": false,
 "niece_introduced": false
 }

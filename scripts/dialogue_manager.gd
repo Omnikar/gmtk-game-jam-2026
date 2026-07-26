@@ -90,11 +90,14 @@ func submit_evidence(character: String, tags: Array[String]) -> void:
 			continue
 
 		if i in used_triggers:
-			Dialogic.start("detective_already_asked")
+			if Dialogic.current_timeline == null:
+				Dialogic.start("detective_already_asked")
 		else:
-			Dialogic.start(trig.timeline)
+			if Dialogic.current_timeline == null:
+				Dialogic.start(trig.timeline)
 			if not trig.repeatable:
 				used_triggers.append(i)
 		return
 
-	Dialogic.start("detective_unsure")
+	if Dialogic.current_timeline == null:
+		Dialogic.start("detective_unsure")

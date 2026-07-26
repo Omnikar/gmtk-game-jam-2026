@@ -1,10 +1,10 @@
-join gardener left
 if {gardener_introduced} == false:
 	set {gardener_introduced} = true
 	join detective right
 	detective: Hello.
 	detective: I'm here to ask you about the murder.
 	detective: Tell me everything you know about what happened tonight.
+	join gardener left
 	gardener: Well, someone took the Count down.
 	gardener: ...that's all I know.
 	detective: ...
@@ -23,6 +23,7 @@ if {gardener_introduced} == false:
 	gardener: 'fraid I'm not really sure what's going on so I'm real sorry I'm not much help.
 	gardener: I’m more suited to shoveling dirt.
 else:
+	join gardener left
 	gardener: Sup?
 - Question
 	[signal arg_type="dict" arg="{"present_evidence":"gardener"}"]

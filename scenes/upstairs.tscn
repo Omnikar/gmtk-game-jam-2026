@@ -239,6 +239,7 @@ position = Vector2(37, -88)
 [node name="TestEvidence" parent="." unique_id=576349916 instance=ExtResource("17_dyg8e")]
 position = Vector2(67, -238)
 timeline = ExtResource("18_dyg8e")
+reusable = true
 
 [node name="SpriteDraculaDead" type="Sprite2D" parent="." unique_id=506344545]
 z_index = 1
