@@ -70,7 +70,7 @@ var triggers: Array[DialogueTrigger] = [
 	# --- NIECE ---
 	# Ask niece about other people
 	dt("niece", [["gardener_character"]], "niece_discuss_gardener"),
-	dt("niece", [["guard_character"], ["vase", "murder_weapon"]], "niece_discuss_guard"),
+	dt("niece", [["guard_character"]], "niece_discuss_guard"),
 	dt("niece", [["friend_character"]], "niece_discuss_friend"),
 	dt("niece", [["cook_character"]], "niece_discuss_cook"),
 	#
