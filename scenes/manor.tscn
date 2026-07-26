@@ -4,9 +4,19 @@
 [ext_resource type="PackedScene" uid="uid://j3eurykqlbo2" path="res://scenes/downstairs.tscn" id="2_pebnw"]
 [ext_resource type="PackedScene" uid="uid://ftefqu73hrj3" path="res://scenes/upstairs.tscn" id="3_y4eaa"]
 [ext_resource type="PackedScene" uid="uid://81l1pn88itn2" path="res://objects/player.tscn" id="4_pebnw"]
+[ext_resource type="AudioStream" uid="uid://qcmpwd7orhbv" path="res://sounds/Cool Vibes.mp3" id="5_vmfxj"]
+[ext_resource type="AudioStream" uid="uid://bh0q85jpmr6pv" path="res://sounds/Smoking Gun.mp3" id="6_xidna"]
+[ext_resource type="AudioStream" uid="uid://4xmkginqhlx1" path="res://sounds/Covert Affair.mp3" id="7_vdpw0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ns7cy"]
 size = Vector2(64, 18)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ns7cy"]
+playback_mode = 2
+streams_count = 4
+stream_0/stream = ExtResource("5_vmfxj")
+stream_1/stream = ExtResource("6_xidna")
+stream_2/stream = ExtResource("7_vdpw0")
 
 [node name="Manor" type="Node2D" unique_id=360900187]
 y_sort_enabled = true
@@ -35,5 +45,11 @@ shape = SubResource("RectangleShape2D_ns7cy")
 [node name="Player" parent="." unique_id=1419036307 instance=ExtResource("4_pebnw")]
 position = Vector2(-17, 21)
 
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=874805917]
+stream = SubResource("AudioStreamRandomizer_ns7cy")
+volume_db = -15.743
+autoplay = true
+
 [connection signal="body_entered" from="DownstairsTrigger" to="." method="_on_downstairs_trigger_body_entered"]
 [connection signal="body_entered" from="UpstairsTrigger" to="." method="_on_upstairs_trigger_body_entered"]
+[connection signal="finished" from="Music" to="." method="_on_music_finished"]

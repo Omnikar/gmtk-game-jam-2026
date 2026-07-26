@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dhrhyaxpopvft" path="res://scripts/player.gd" id="1_eqqp1"]
 [ext_resource type="Texture2D" uid="uid://dh3oqe6ibklsv" path="res://sprites/characters/detective/detective_sprite_sheet.png" id="2_ykyjo"]
+[ext_resource type="AudioStream" uid="uid://bws2c1kv657xh" path="res://sounds/footstep.mp3" id="3_uxov2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eqqp1"]
 size = Vector2(12, 5)
@@ -191,6 +192,10 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ykyjo"]
+streams_count = 1
+stream_0/stream = ExtResource("3_uxov2")
+
 [node name="Player" type="CharacterBody2D" unique_id=1419036307]
 y_sort_enabled = true
 collision_layer = 2
@@ -214,3 +219,6 @@ position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_ns7cy")
 animation = &"right_walk"
 speed_scale = 1.5
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1400794934]
+stream = SubResource("AudioStreamRandomizer_ykyjo")

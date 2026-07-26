@@ -26,6 +26,9 @@ var triggers: Array[DialogueTrigger] = [
 	dt("niece", ["niece_character"], "detective_already_introduced"),
 	# Ask cook about other people
 	dt("cook", ["guard_character"], "cook_discuss_guard"),
+	# Ask gardener about other people
+	dt("gardener", ["cook_character"], "gardener_discuss_cook"),
+	dt("gardener", ["guard_character"], "gardener_discuss_guard"),
 ]
 
 var used_triggers: Array[int] = []

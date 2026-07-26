@@ -42,3 +42,7 @@ func _on_downstairs_trigger_body_entered(_body: Node2D) -> void:
 func _on_upstairs_trigger_body_entered(_body: Node2D) -> void:
 	hide_downstairs()
 	show_upstairs()
+
+
+func _on_music_finished() -> void:
+	$Music.play()

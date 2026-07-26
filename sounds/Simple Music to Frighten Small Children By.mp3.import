@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxlqpf0d2txxe"
+path="res://.godot/imported/Simple Music to Frighten Small Children By.mp3-300cc875c96c767c72a2c1f84cb91450.mp3str"
+
+[deps]
+
+source_file="res://sounds/Simple Music to Frighten Small Children By.mp3"
+dest_files=["res://.godot/imported/Simple Music to Frighten Small Children By.mp3-300cc875c96c767c72a2c1f84cb91450.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
