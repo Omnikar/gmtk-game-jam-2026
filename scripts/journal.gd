@@ -31,9 +31,9 @@ func _ready() -> void:
 
 	add_evidence("gardener_character")
 	add_evidence("cook_character")
+	add_evidence("guard_character")
 	add_evidence("niece_character")
 	add_evidence("friend_character")
-	add_evidence("guard_character")
 
 
 func _input(event: InputEvent) -> void:
@@ -177,3 +177,8 @@ func _on_present_button_pressed() -> void:
 		if selected_evidence[ev]:
 			selected_evidence_arr.append(ev)
 	DialogueManager.submit_evidence(present_target, selected_evidence_arr)
+
+
+func _on_close_button_pressed() -> void:
+	visible = false
+	end_present_mode()
