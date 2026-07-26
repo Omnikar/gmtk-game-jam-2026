@@ -5,11 +5,13 @@ join cook left
 ---
 Of course not. I'm a chef for a vampire household. Garlic stays far, far away from here.
 
+===
 
 Would you mind if I searched the cabinets?
 ---
 Not at all. Take a look, only vampire-safe ingredients in there.
 
+===
 
 You search the cabinet. There isn't any garlic in sight.
 ---

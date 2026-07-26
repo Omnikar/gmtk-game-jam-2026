@@ -3,16 +3,19 @@ Tell me about Dracula’s safe.
 If you asked old Drac’ ‘bout that thing, he’d’ve sat you down for a good long hour and told you all about it.
 He said he’s got gold in there… jewels… rare art. Real fancy stuff.
 
+===
 
 {key_location-gardener-0}
 ---
 He always kept the key on him, right in his upper-left-inner pocket of his cloak. 
 Right next to his heart.
 
+===
 
 ---
 Do vampires have hearts?
 Anyway. That’s what I know ‘bout the safe.
 
+===
 
 I should see if Dracula still has the key on him.

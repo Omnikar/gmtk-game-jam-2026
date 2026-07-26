@@ -111,4 +111,5 @@ autostart = true
 [connection signal="body_entered" from="DownstairsTrigger" to="." method="_on_downstairs_trigger_body_entered"]
 [connection signal="body_entered" from="UpstairsTrigger" to="." method="_on_upstairs_trigger_body_entered"]
 [connection signal="finished" from="Music" to="." method="_on_music_finished"]
+[connection signal="finished" from="FinalMusic" to="." method="_on_final_music_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

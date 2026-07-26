@@ -1,10 +1,10 @@
-{guard_is_vampire-0}
 Hmm, I have a hunch.
 As the authority on this investigation, I order you to remove your earmuffs.
 ---
 You can't do that—
 Hey!
 
+===
 
 {guard_is_vampire-1}
 Just as I suspected.

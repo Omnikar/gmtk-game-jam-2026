@@ -6,10 +6,12 @@ Something else happened in the hallway while you and Narin weren’t there.
 ---
 Are you suggesting that I’m not responsible for breaking the vase?
 
+===
 
 {someone_in_hallway-1}
 Yes. In fact, there may have been someone else in the hallway… and that someone else may have broken the vase.
 
+===
 
 It's unlikely at this point that Narin or Aslan were responsible for the vase breaking.
 Perhaps I can try to eliminate the remaining possibilities by looking for more information.

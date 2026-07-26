@@ -50,6 +50,10 @@ func _on_music_finished() -> void:
 	$Music.play()
 
 
+func _on_final_music_finished() -> void:
+	$FinalMusic.play()
+
+
 func _on_dialogic_signal(arg: Dictionary) -> void:
 	if not arg.has("level_status"):
 		return

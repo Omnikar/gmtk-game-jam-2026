@@ -82,7 +82,7 @@ func add_transcript(transcript_id: String) -> void:
 		return
 	var content = file.get_as_text()
 
-	var entries = content.split("\n\n\n")
+	var entries = content.split("===")
 	for entry: String in entries:
 		entry = entry.strip_edges()
 		var tag: String = ""
