@@ -82,6 +82,7 @@ directories/dtl_directory={
 "guard_discuss_friend": "res://dialogue/character_timelines/guard/guard_discuss_friend.dtl",
 "guard_discuss_gardener": "res://dialogue/character_timelines/guard/guard_discuss_gardener.dtl",
 "guard_discuss_niece": "res://dialogue/character_timelines/guard/guard_discuss_niece.dtl",
+"guard_garlic": "res://dialogue/character_timelines/guard/guard_garlic.dtl",
 "guard_identity_revealed": "res://dialogue/character_timelines/guard/guard_identity_revealed.dtl",
 "guard_introduction": "res://dialogue/character_timelines/guard/guard_introduction.dtl",
 "intro": "res://dialogue/intro.dtl",

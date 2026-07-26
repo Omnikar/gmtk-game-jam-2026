@@ -1,0 +1,18 @@
+{guard_is_vampire-0}
+Hmm, I have a hunch.
+As the authority on this investigation, I order you to remove your earmuffs.
+---
+You can't do that—
+Hey!
+
+
+{guard_is_vampire-1}
+Just as I suspected.
+You're no human guard.
+The whole party, you refused to leave your post for even a moment. Everyone thought you were simply that diligent.
+But the moment Dracula himself invited you in, you jumped straight at the opportunity.
+When I showed you this bag of garlic, you tried to hide it, but you were clearly put off.
+The signs were all there. You're a vampire.
+Though one question remains... how did you enter the house after Dracula was knocked out?
+---
+...

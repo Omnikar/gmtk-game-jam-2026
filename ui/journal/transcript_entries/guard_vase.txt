@@ -1,0 +1,15 @@
+{cook_vase_alibi-0}
+There’s a broken vase upstairs.
+I need to know who broke it.
+---
+All I can say is that I didn’t do it. 
+Why are you worried about a vase? Aren’t you solving a murder?
+Whatever.
+
+
+{cook_vase_alibi-1}
+---
+If it was that big, fancy, golden vase in the upstairs hallway, it was definitely intact when the Count gave me a tour of the house.
+And then the cook came out to let me know the Count had collapsed just minutes after that.
+She stayed with me until after the heard a crashing sound.
+So I suppose she couldn’t have done it either.

@@ -1,6 +1,11 @@
 FULL LIST OF EVIDENCE TAGS
 (hopefully this doesn't become horribly outdated)
 
+reference_garlic
+reference_stakes
+reference_reflections
+reference_entering
+
 cook_character
 guard_character
 gardener_character
@@ -41,3 +46,6 @@ someone_in_hallway
 
 niece_planted_will
 niece_stole_key
+
+guard_is_vampire
+cook_vase_alibi

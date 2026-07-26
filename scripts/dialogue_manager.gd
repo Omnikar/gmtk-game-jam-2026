@@ -46,7 +46,7 @@ var triggers: Array[DialogueTrigger] = [
 	dt("gardener", [["friend_character"]], "gardener_discuss_friend"),
 	# Other
 	dt("gardener", [["murder_weapon"]], "gardener_murder_weapon"),
-	dt("gardener", [["vase"]], "gardener_vase"),
+	dt("gardener", [["vase"], ["broken_table"], ["vase", "broken_table"]], "gardener_vase"),
 	dt("gardener", [["safe"]], "gardener_safe"),
 	dt("gardener", [["garlic_suspicion"]], "gardener_garlic_suspicion"),
 	dt("gardener", [["garlic_pouch"]], "gardener_garlic_found", true),
@@ -85,6 +85,23 @@ var triggers: Array[DialogueTrigger] = [
 	dt("guard", [["niece_character"]], "guard_discuss_niece"),
 	dt("guard", [["friend_character"]], "guard_discuss_friend"),
 	# Other
+	dt("guard", [["garlic_pouch"]], "guard_garlic"),
+	dt("guard", [["vase"], ["broken_table"], ["vase", "broken_table"]], "guard_vase"),
+	dt(
+		"guard",
+		[
+			["guard_stayed_outside", "guard_hates_garlic"],
+			["guard_stayed_outside", "guard_hates_garlic", "reference_garlic"],
+			["guard_stayed_outside", "guard_hates_garlic", "reference_entering"],
+			[
+				"guard_stayed_outside",
+				"guard_hates_garlic",
+				"reference_garlic",
+				"reference_entering",
+			],
+		],
+		"guard_identity_revealed",
+	),
 ]
 
 var used_triggers: Array[int] = []
