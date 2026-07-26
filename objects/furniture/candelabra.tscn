@@ -41,6 +41,7 @@ sprite_frames = SubResource("SpriteFrames_wexef")
 autoplay = "default"
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1558525360]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1758533194]
 position = Vector2(0, 10)

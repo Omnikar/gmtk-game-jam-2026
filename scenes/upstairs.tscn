@@ -61,6 +61,7 @@ region_enabled = true
 region_rect = Rect2(56.80002, 123.2, 78.399994, 73.59999)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Desk" unique_id=632562864]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Desk/StaticBody2D" unique_id=928108509]
 position = Vector2(0, 1)
@@ -76,6 +77,7 @@ region_enabled = true
 region_rect = Rect2(123.20001, 191.99998, 68.79999, 64.000015)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Bed" unique_id=57428089]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bed/StaticBody2D" unique_id=637453732]
 position = Vector2(2, 1)
@@ -92,6 +94,7 @@ region_enabled = true
 region_rect = Rect2(13.600037, 138.4, 32.799988, 49.59999)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Safe" unique_id=1186148567]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Safe/StaticBody2D" unique_id=1100304483]
 position = Vector2(0, 1.5)
@@ -132,6 +135,7 @@ region_enabled = true
 region_rect = Rect2(0, 132.09344, 58.009735, 52.157593)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Vase_Table" unique_id=1778595616]
+visible = false
 position = Vector2(-6, -8)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Vase_Table/StaticBody2D" unique_id=908834519]
@@ -237,6 +241,8 @@ position = Vector2(67, -238)
 timeline = ExtResource("18_dyg8e")
 
 [node name="SpriteDraculaDead" type="Sprite2D" parent="." unique_id=506344545]
+z_index = 1
+y_sort_enabled = true
 position = Vector2(133, -251)
 texture = ExtResource("19_88afm")
 
