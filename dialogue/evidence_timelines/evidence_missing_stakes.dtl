@@ -1,4 +1,5 @@
 [style name="dialogue_style"]
+[signal arg_type="dict" arg="{"add_evidence":"missing_stakes"}"]
 A pile of wooden stakes sits at the back of the garden shed.
 join gardener left
 gardener: Hey! Let me take a wild guess why you're eyeing my pile of stakes.
@@ -11,4 +12,3 @@ gardener: S'pose Drac found one of 'em.
 gardener: But the other is still out there somewhere.
 detective (thinking): Interesting.
 Wooden stake supply added to journal.
-[signal arg_type="dict" arg="{"add_evidence":"missing_stakes"}"]

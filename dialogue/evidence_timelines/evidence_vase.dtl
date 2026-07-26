@@ -1,7 +1,7 @@
 [style name="dialogue_style"]
+[signal arg_type="dict" arg="{"add_evidence":"vase"}"]
+[signal arg_type="dict" arg="{"add_evidence":"broken_table"}"]
 A priceless vase lays shattered on the floor, seemingly having fallen with the collapsed table beside it.
 One leg of the table sits on the ground a short distance away from the rest of the scene.
 Shattered vase added to journal
 Broken table added to journal
-[signal arg_type="dict" arg="{"add_evidence":"vase"}"]
-[signal arg_type="dict" arg="{"add_evidence":"broken_table"}"]

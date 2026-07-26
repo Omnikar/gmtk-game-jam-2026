@@ -53,7 +53,11 @@ var triggers: Array[DialogueTrigger] = [
 	dt("gardener", [["second_stake"]], "gardener_stake_found", true),
 	dt("gardener", [["garlic_pouch", "second_stake"]], "gardener_garlic_stake_found"),
 	dt("gardener", [["key", "key_location"]], "gardener_key_wrong"),
-	dt("gardener", [["TODO"]], "gardener_broke_vase"),
+	dt(
+		"gardener",
+		[["someone_in_hallway", "cook_vase_alibi", "guard_is_vampire"]],
+		"gardener_broke_vase",
+	),
 	#
 	# --- FRIEND ---
 	# Ask friend about other people

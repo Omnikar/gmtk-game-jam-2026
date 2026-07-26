@@ -18,4 +18,6 @@ func _input(event: InputEvent) -> void:
 
 
 func _physics_process(_delta: float) -> void:
-	Journal.player_can_interact[get_instance_id()] = has_overlapping_bodies()
+	Journal.player_can_interact[get_instance_id()] = (
+		has_overlapping_bodies() and (reusable or not used)
+	)

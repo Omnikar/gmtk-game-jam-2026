@@ -1,4 +1,4 @@
 [style name="dialogue_style"]
+[signal arg_type="dict" arg="{"add_evidence":"dessert"}"]
 A plate of red gelatin sits on the kitchen counter
 Dessert added to journal
-[signal arg_type="dict" arg="{"add_evidence":"dessert"}"]
