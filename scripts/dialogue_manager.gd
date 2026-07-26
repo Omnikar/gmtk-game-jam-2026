@@ -33,6 +33,7 @@ var triggers: Array[DialogueTrigger] = [
 	# --- COOK ---
 	# Ask cook about other people
 	dt("cook", [["guard_character"]], "cook_discuss_guard"),
+	# Other
 	dt("cook", [["friend_suspects_cook"]], "cook_friend_suspects"),
 	dt("cook", [["garlic_suspicion"]], "cook_garlic_suspicion"),
 	dt("cook", [["secret_cabinet"]], "cook_secret_cabinet"),
@@ -75,10 +76,15 @@ var triggers: Array[DialogueTrigger] = [
 	dt("niece", [["cook_character"]], "niece_discuss_cook"),
 	# Other
 	dt("niece", [["vase"], ["broken_table"], ["vase", "broken_table"]], "niece_vase"),
-	dt("niece", ["TODO"], "niece_will_accusation"),
+	dt("niece", [["TODO"]], "niece_will_accusation"),
 	#
 	# --- GUARD ---
 	# Ask guard about other people
+	dt("guard", [["cook_character"]], "guard_discuss_cook"),
+	dt("guard", [["gardener_character"]], "guard_discuss_gardener"),
+	dt("guard", [["niece_character"]], "guard_discuss_niece"),
+	dt("guard", [["friend_character"]], "guard_discuss_friend"),
+	# Other
 ]
 
 var used_triggers: Array[int] = []
