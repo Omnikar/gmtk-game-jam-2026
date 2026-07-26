@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dj2vale3ru2uf" path="res://scripts/manor.gd" id="1_gd6oa"]
 [ext_resource type="PackedScene" uid="uid://j3eurykqlbo2" path="res://scenes/downstairs.tscn" id="2_pebnw"]
+[ext_resource type="Texture2D" uid="uid://p26y0pgtqv7r" path="res://sprites/pixel.png" id="2_xidna"]
 [ext_resource type="PackedScene" uid="uid://ftefqu73hrj3" path="res://scenes/upstairs.tscn" id="3_y4eaa"]
 [ext_resource type="PackedScene" uid="uid://81l1pn88itn2" path="res://objects/player.tscn" id="4_pebnw"]
 [ext_resource type="AudioStream" uid="uid://qcmpwd7orhbv" path="res://sounds/Cool Vibes.mp3" id="5_vmfxj"]
@@ -21,6 +22,21 @@ stream_2/stream = ExtResource("7_vdpw0")
 [node name="Manor" type="Node2D" unique_id=360900187]
 y_sort_enabled = true
 script = ExtResource("1_gd6oa")
+
+[node name="Background" type="CanvasLayer" parent="." unique_id=1925016990]
+layer = -10
+
+[node name="TextureRect" type="TextureRect" parent="Background" unique_id=1231394799]
+modulate = Color(0, 0, 0, 1)
+z_as_relative = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_xidna")
 
 [node name="Downstairs" parent="." unique_id=1069451238 instance=ExtResource("2_pebnw")]
 
