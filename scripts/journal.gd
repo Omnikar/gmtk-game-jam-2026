@@ -167,7 +167,6 @@ func end_present_mode() -> void:
 
 func _on_present_button_pressed() -> void:
 	end_present_mode()
-	# evidence_presented.emit(present_target, Array(selected_evidence.keys()))
 	var selected_evidence_arr: Array[String] = []
 	for ev in selected_evidence.keys():
 		if selected_evidence[ev]:
