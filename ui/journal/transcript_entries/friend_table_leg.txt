@@ -1,0 +1,12 @@
+{someone_in_hallway-0}
+Something’s not lining up about the broken vase.
+You collided with the table, left the hallway, and then heard the vase shatter, right?
+The broken leg of the table is across the hallway. It wouldn’t be over there if you collided with it like you said you did. It should have been right underneath the table.
+Which means…
+Something else happened in the hallway while you and [NIECE] weren’t there.
+---
+Are you suggesting that I’m not responsible for breaking the vase?
+
+
+{someone_in_hallway-1}
+Yes. In fact, there may have been someone else in the hallway… and that someone else may have broken the vase.

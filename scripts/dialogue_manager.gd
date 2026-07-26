@@ -62,6 +62,10 @@ var triggers: Array[DialogueTrigger] = [
 	dt("friend", ["cook_character"], "friend_discuss_cook"),
 	# Other
 	dt("friend", ["reference_garlic"], "friend_garlic_suspicion"),
+	dt("friend", ["garlic_pouch"], "friend_garlic_found"),
+	dt("friend", ["vase"], "friend_vase"),
+	dt("friend", ["friend_vase_accusation"], "friend_vase_accusation"),
+	dt("friend", ["table_leg_supposedly_underneath", "vase"], "friend_table_leg"),
 	#
 	# --- NIECE ---
 	# Ask niece about other people

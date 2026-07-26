@@ -33,3 +33,8 @@ guard_stayed_outside
 friend_suspects_cook
 
 garlic_suspicion
+
+friend_vase_accusation ** TODO
+table_leg_supposedly_underneath
+
+someone_in_hallway
