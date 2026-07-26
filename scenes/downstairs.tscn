@@ -435,8 +435,8 @@ region_rect = Rect2(8, 75, 15, 31)
 [node name="PlantPot3" parent="." unique_id=731581168 instance=ExtResource("27_2oq4n")]
 position = Vector2(90, -367)
 
-[node name="TestEvidence2" parent="." unique_id=576349916 instance=ExtResource("4_7ddre")]
-position = Vector2(-242, -232)
+[node name="DessertTrigger" parent="." unique_id=576349916 instance=ExtResource("4_7ddre")]
+position = Vector2(-243, -326)
 timeline = ExtResource("27_8r6a3")
 
 [node name="TestEvidence3" parent="." unique_id=17126725 instance=ExtResource("4_7ddre")]

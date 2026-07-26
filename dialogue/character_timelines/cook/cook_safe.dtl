@@ -1,3 +1,4 @@
+set {key_known} = true
 join detective right
 detective: I found a safe in Dracula's study. Do you know anything about it?
 join cook left

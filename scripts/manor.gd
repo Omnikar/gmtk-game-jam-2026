@@ -5,6 +5,8 @@ var upstairs_pos: Vector2
 
 
 func _ready() -> void:
+	Dialogic.signal_event.connect(_on_dialogic_signal)
+
 	downstairs_pos = $Downstairs.transform.origin
 	upstairs_pos = $Upstairs.transform.origin
 
@@ -46,3 +48,11 @@ func _on_upstairs_trigger_body_entered(_body: Node2D) -> void:
 
 func _on_music_finished() -> void:
 	$Music.play()
+
+
+func _on_dialogic_signal(arg: String) -> void:
+	if arg == "completing":
+		$Music.playing = false
+		$FinalMusic.playing = true
+	if arg == "complete":
+		$Thanks.show()

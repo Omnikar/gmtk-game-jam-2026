@@ -8,6 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://qcmpwd7orhbv" path="res://sounds/Cool Vibes.mp3" id="5_vmfxj"]
 [ext_resource type="AudioStream" uid="uid://bh0q85jpmr6pv" path="res://sounds/Smoking Gun.mp3" id="6_xidna"]
 [ext_resource type="AudioStream" uid="uid://4xmkginqhlx1" path="res://sounds/Covert Affair.mp3" id="7_vdpw0"]
+[ext_resource type="AudioStream" uid="uid://drxm0fhgrqi3o" path="res://sounds/Tango de Manzana.mp3" id="9_vdpw0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ns7cy"]
 size = Vector2(64, 18)
@@ -65,6 +66,43 @@ position = Vector2(-17, 21)
 stream = SubResource("AudioStreamRandomizer_ns7cy")
 volume_db = -15.743
 autoplay = true
+
+[node name="FinalMusic" type="AudioStreamPlayer" parent="." unique_id=1842534897]
+stream = ExtResource("9_vdpw0")
+volume_db = -12.0
+
+[node name="Thanks" type="CanvasLayer" parent="." unique_id=2121026714]
+layer = 6
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="Thanks" unique_id=1433040125]
+modulate = Color(0, 0, 0, 1)
+z_as_relative = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_xidna")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Thanks" unique_id=547318623]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -659.0
+offset_top = -205.0
+offset_right = 659.0
+offset_bottom = 205.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 100
+text = "Thank you for playing"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="body_entered" from="DownstairsTrigger" to="." method="_on_downstairs_trigger_body_entered"]
 [connection signal="body_entered" from="UpstairsTrigger" to="." method="_on_upstairs_trigger_body_entered"]

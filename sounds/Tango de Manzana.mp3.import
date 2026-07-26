@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://drxm0fhgrqi3o"
+path="res://.godot/imported/Tango de Manzana.mp3-3f50d88110c3a9c092ec049bd8d7e0ac.mp3str"
+
+[deps]
+
+source_file="res://sounds/Tango de Manzana.mp3"
+dest_files=["res://.godot/imported/Tango de Manzana.mp3-3f50d88110c3a9c092ec049bd8d7e0ac.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
