@@ -14,7 +14,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="GMTK Game Jam 2026"
+config/name="Murder at Transylvania Manor"
 run/main_scene="uid://c6l35ao48najv"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
