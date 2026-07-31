@@ -16,6 +16,8 @@ if {guard_introduced} == false:
 	detective: What can you tell me about the events of the murder?
 	guard: Not much, to be honest.
 	guard: I remained outside the whole time, as a guard is meant to.
+	guard: As the party was getting close to ending, before all the drama unfolded, Dracula brought me inside for a brief tour around the place.
+	guard: But I went right back to my post afterward.
 	guard: At one point the cook, Camelia, came outside to talk to me. She told me that Count Dracula had collapsed at the dining table.
 	guard: We talked for a bit after that, then she went back inside.
 	guard: ...

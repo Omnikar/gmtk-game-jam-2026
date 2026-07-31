@@ -1,0 +1,3 @@
+join detective_thinking right
+detective_thinking: I feel like I'm on the right track, but maybe I'm better off asking a different suspect about this.
+[signal arg_type="dict" arg="{"present_evidence":""}"]

@@ -1,0 +1,12 @@
+join detective right
+detective: Aslan, I've determined that you are the heir to this estate designated by Count Dracula.
+detective: The guard Andrei turned out to be a vampire in disguise, and therefore is subject to the rule that a vampire can only enter a house upon invitation by its owner.
+detective: After the Count invited them inside to give them a tour around the manor, they remained outside until after Dracula had already collapsed at the dinner table.
+detective: According to testimonies from both you and Narin, they did not enter when invited inside by Narin, but finally complied when invited inside by you.
+detective: This can only mean that by this point, Dracula was already dead, and you had become the owner of the estate, and thus the sole individual capable of inviting another vampire inside.
+join friend left
+friend: I— I'm honored.
+friend: I'm so glad that our friendship meant that much to him.
+friend: I miss you, Dracula.
+join detective_thinking right
+detective_thinking: This can only mean that the will I found in Dracula's safe was a forgery. I should confront the false beneficiary about this.

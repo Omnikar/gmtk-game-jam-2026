@@ -47,6 +47,17 @@ var triggers: Array[DialogueTrigger] = [
 		[["garlic_pouch"], ["second_stake"], ["garlic_pouch", "second_stake"]],
 		"cook_garlic_accusation",
 	),
+	dt(
+		"cook",
+		[
+			["vase"],
+			["broken_table"],
+			["vase", "broken_table"],
+			["someone_in_hallway"],
+			["cook_vase_alibi"],
+		],
+		"cook_vase"
+	),
 	dt("cook", [["someone_in_hallway", "guard_is_vampire"]], "detective_need_to_clear_cook", true),
 	#
 	# --- GARDENER ---
@@ -91,11 +102,25 @@ var triggers: Array[DialogueTrigger] = [
 	dt("friend", [["niece_character"]], "friend_discuss_niece"),
 	dt("friend", [["cook_character"]], "friend_discuss_cook"),
 	# Other
-	dt("friend", [["reference_garlic"]], "friend_garlic_suspicion"),
+	dt(
+		"friend",
+		[["reference_garlic"], ["reference_garlic", "friend_suspects_cook"]],
+		"friend_garlic_suspicion"
+	),
 	dt("friend", [["garlic_pouch"]], "friend_garlic_found"),
 	dt("friend", [["vase"], ["broken_table"], ["vase", "broken_table"]], "friend_vase"),
 	dt("friend", [["friend_vase_accusation"]], "friend_vase_accusation"),
 	dt("friend", [["table_leg_supposedly_underneath", "broken_table"]], "friend_table_leg"),
+	dt(
+		"friend",
+		[
+			["guard_is_vampire", "fake_will"],
+			["guard_stayed_outside", "guard_is_vampire", "fake_will"],
+			["guard_is_vampire", "fake_will", "reference_entering"],
+			["guard_stayed_outside", "guard_is_vampire", "fake_will", "reference_entering"],
+		],
+		"friend_will_revelation"
+	),
 	#
 	# --- NIECE ---
 	# Ask niece about other people
@@ -112,6 +137,9 @@ var triggers: Array[DialogueTrigger] = [
 		[
 			["guard_is_vampire", "fake_will"],
 			["guard_stayed_outside", "guard_is_vampire", "fake_will"],
+			["guard_is_vampire", "fake_will", "reference_entering"],
+			["guard_stayed_outside", "guard_is_vampire", "fake_will", "reference_entering"],
+			["niece_planted_will"],
 		],
 		"niece_will_accusation"
 	),
@@ -131,6 +159,18 @@ var triggers: Array[DialogueTrigger] = [
 		"guard",
 		[["vase"], ["broken_table"], ["vase", "broken_table"], ["someone_in_hallway"]],
 		"guard_vase"
+	),
+	dt(
+		"guard",
+		[["guard_stayed_outside", "reference_entering"]],
+		"detective_guard_outside_pondering",
+		true
+	),
+	dt(
+		"guard",
+		[["guard_hates_garlic", "reference_garlic"]],
+		"detective_guard_garlic_pondering",
+		true
 	),
 	dt(
 		"guard",
@@ -158,11 +198,11 @@ func _input(event: InputEvent) -> void:
 
 
 func submit_evidence(character: String, tags: Array[String]) -> void:
+	var right_track: bool = false
+
 	var i: int = -1
 	for trig in triggers:
 		i += 1
-		if trig.character != character:
-			continue
 
 		var found_match = false
 
@@ -186,6 +226,11 @@ func submit_evidence(character: String, tags: Array[String]) -> void:
 		if not found_match:
 			continue
 
+		if trig.character != character:
+			if len(tags) >= 2 and not i in used_triggers:
+				right_track = true
+			continue
+
 		if i in used_triggers:
 			if Dialogic.current_timeline == null:
 				Dialogic.start("detective_already_asked")
@@ -197,4 +242,7 @@ func submit_evidence(character: String, tags: Array[String]) -> void:
 		return
 
 	if Dialogic.current_timeline == null:
-		Dialogic.start("detective_unsure")
+		if right_track:
+			Dialogic.start("detective_wrong_character")
+		else:
+			Dialogic.start("detective_unsure")

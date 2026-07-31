@@ -1,0 +1,4 @@
+join detective_thinking right
+detective_thinking: It is a bit strange how stubborn Andrei was to come inside, except when invited in by specific people.
+detective_thinking: I wonder if I can find any other evidence that would help me support my hypothesis.
+[signal arg_type="dict" arg="{"present_evidence":""}"]

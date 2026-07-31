@@ -196,7 +196,8 @@ tag = "reference_stakes"
 prompt = ""
 response = "– Wooden stakes
 	– A wooden stake is among the only known ways to permanently kill a vampire.
-	– The stake must be driven through the vampire's heart. If it misses its mark, the vampire will be virtually unharmed."
+	– The stake must be driven through the vampire's heart. If it misses its mark, the vampire will be virtually unharmed.
+	– When a vampire is attacked in this way, instead of bleeding as a human would, their body quickly turns to ash around the location of injury."
 highlight_override = true
 
 [node name="Reflections" parent="Control/TabContainer/Reference/MarginContainer/VBoxContainer" unique_id=2005352844 instance=ExtResource("5_pa4op")]

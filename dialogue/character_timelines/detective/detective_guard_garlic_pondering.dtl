@@ -1,0 +1,5 @@
+join detective_thinking right
+detective_thinking: Andrei did have a rather strange, almost vampire-like reaction when I showed them the pouch of garlic.
+detective_thinking: Have I heard anything else about them that would support this hypothesis?
+detective_thinking: If not, it might be worth asking the other suspects to tell me more about Andrei.
+[signal arg_type="dict" arg="{"present_evidence":""}"]

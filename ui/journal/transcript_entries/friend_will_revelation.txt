@@ -1,0 +1,14 @@
+Aslan, I've determined that you are the heir to this estate designated by Count Dracula.
+The guard Andrei turned out to be a vampire in disguise, and therefore is subject to the rule that a vampire can only enter a house upon invitation by its owner.
+After the Count invited them inside to give them a tour around the manor, they remained outside until after Dracula had already collapsed at the dinner table.
+According to testimonies from both you and Narin, they did not enter when invited inside by Narin, but finally complied when invited inside by you.
+This can only mean that by this point, Dracula was already dead, and you had become the owner of the estate, and thus the sole individual capable of inviting another vampire inside.
+---
+I— I'm honored.
+I'm so glad that our friendship meant that much to him.
+I miss you, Dracula.
+
+===
+
+{niece_planted_will-friend-0}
+This can only mean that the will I found in Dracula's safe was a forgery. I should confront the false beneficiary about this.
