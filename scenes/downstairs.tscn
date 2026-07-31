@@ -424,7 +424,8 @@ position = Vector2(27, -350)
 position = Vector2(10, -354)
 
 [node name="Rake" type="Node2D" parent="." unique_id=368798066]
-position = Vector2(11, -381)
+y_sort_enabled = true
+position = Vector2(11, -374)
 
 [node name="Sprite2D" type="Sprite2D" parent="Rake" unique_id=902765182]
 position = Vector2(1, -16)
