@@ -24,11 +24,11 @@ var triggers: Array[DialogueTrigger] = [
 	# dt("current_character", [["evidence_tags", "list"], ["different", "tags_option"]], "dialogue_name"),
 	#
 	# Already-introduced
-	dt("cook", [["cook_character"]], "detective_already_introduced"),
-	dt("guard", [["guard_character"]], "detective_already_introduced"),
-	dt("gardener", [["gardener_character"]], "detective_already_introduced"),
-	dt("friend", [["friend_character"]], "detective_already_introduced"),
-	dt("niece", [["niece_character"]], "detective_already_introduced"),
+	dt("cook", [["cook_character"]], "detective_already_introduced", true),
+	dt("guard", [["guard_character"]], "detective_already_introduced", true),
+	dt("gardener", [["gardener_character"]], "detective_already_introduced", true),
+	dt("friend", [["friend_character"]], "detective_already_introduced", true),
+	dt("niece", [["niece_character"]], "detective_already_introduced", true),
 	#
 	# --- COOK ---
 	# Ask cook about other people
@@ -47,7 +47,7 @@ var triggers: Array[DialogueTrigger] = [
 		[["garlic_pouch"], ["second_stake"], ["garlic_pouch", "second_stake"]],
 		"cook_garlic_accusation",
 	),
-	dt("cook", [["someone_in_hallway", "guard_is_vampire"]], "detective_need_to_clear_cook"),
+	dt("cook", [["someone_in_hallway", "guard_is_vampire"]], "detective_need_to_clear_cook", true),
 	#
 	# --- GARDENER ---
 	# Ask gardener about other people
@@ -70,8 +70,18 @@ var triggers: Array[DialogueTrigger] = [
 		[["someone_in_hallway", "cook_vase_alibi", "guard_is_vampire"]],
 		"gardener_broke_vase",
 	),
-	dt("gardener", [["someone_in_hallway", "cook_vase_alibi"]], "detective_need_to_clear_guard"),
-	dt("gardener", [["someone_in_hallway", "guard_is_vampire"]], "detective_need_to_clear_cook"),
+	dt(
+		"gardener",
+		[["someone_in_hallway", "cook_vase_alibi"]],
+		"detective_need_to_clear_guard",
+		true
+	),
+	dt(
+		"gardener",
+		[["someone_in_hallway", "guard_is_vampire"]],
+		"detective_need_to_clear_cook",
+		true
+	),
 	dt("gardener", [["niece_bribed_cook", "gardener_is_thief"]], "gardener_final_accusation"),
 	#
 	# --- FRIEND ---
@@ -95,8 +105,8 @@ var triggers: Array[DialogueTrigger] = [
 	dt("niece", [["cook_character"]], "niece_discuss_cook"),
 	# Other
 	dt("niece", [["vase"], ["broken_table"], ["vase", "broken_table"]], "niece_vase"),
-	dt("niece", [["fake_will"]], "niece_will.dtl"),
-	dt("niece", [["guard_is_vampire"]], "niece_guard_vampire.dtl"),
+	dt("niece", [["fake_will"]], "niece_will"),
+	dt("niece", [["guard_is_vampire"]], "niece_guard_vampire"),
 	dt(
 		"niece",
 		[
@@ -106,7 +116,7 @@ var triggers: Array[DialogueTrigger] = [
 		"niece_will_accusation"
 	),
 	dt("niece", [["cook_niece_cooperating", "niece_planted_will"]], "niece_bribery_accusation"),
-	dt("niece", [["cook_niece_cooperating"]], "detective_niece_pondering.dtl"),
+	dt("niece", [["cook_niece_cooperating"]], "detective_niece_pondering", true),
 	#
 	# --- GUARD ---
 	# Ask guard about other people
