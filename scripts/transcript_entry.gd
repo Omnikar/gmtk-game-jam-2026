@@ -10,6 +10,7 @@ signal transcript_clicked(tag: String)
 
 @export var highlight_override: bool = false
 
+var significant: bool = true
 var selected: bool = false
 
 
@@ -18,6 +19,7 @@ func _ready() -> void:
 	update_inner_properties()
 	if not Engine.is_editor_hint() and tag.is_empty():
 		tag = str(randi())
+		significant = false
 
 
 func _process(_delta: float) -> void:
@@ -29,7 +31,8 @@ func _process(_delta: float) -> void:
 
 func _gui_input(event: InputEvent) -> void:
 	if (
-		event is InputEventMouseButton
+		significant
+		and event is InputEventMouseButton
 		and event.is_pressed()
 		and event.button_index == MOUSE_BUTTON_LEFT
 	):
