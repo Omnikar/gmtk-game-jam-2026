@@ -108,6 +108,7 @@ func add_transcript(transcript_id: String) -> void:
 			return
 		var vbox = tab.get_node("VBoxContainer")
 		vbox.add_child(scene_instance)
+		tab.show()
 
 	added_transcripts[transcript_id] = true
 

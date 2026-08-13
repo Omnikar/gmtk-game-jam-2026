@@ -31,13 +31,13 @@ func _physics_process(_delta: float) -> void:
 		# element and the world is going to be grid-organized
 		motion = motion.normalized()
 
-		if motion.y < 0:
+		if motion.y < 0 and velocity.x == 0:
 			facing_direction = "up"
-		elif velocity.y > 0:
+		elif velocity.y > 0 and velocity.x == 0:
 			facing_direction = "down"
-		elif velocity.x < 0:
+		elif velocity.x < 0 and velocity.y == 0:
 			facing_direction = "left"
-		elif velocity.x > 0:
+		elif velocity.x > 0 and velocity.y == 0:
 			facing_direction = "right"
 
 		velocity = move_speed * motion

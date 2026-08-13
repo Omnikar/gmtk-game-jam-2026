@@ -37,6 +37,7 @@ var triggers: Array[DialogueTrigger] = [
 	dt("cook", [["friend_character"]], "cook_discuss_friend"),
 	dt("cook", [["gardener_character"]], "cook_discuss_gardener"),
 	# Other
+	dt("cook", [["murder_weapon"]], "cook_murder_weapon"),
 	dt("cook", [["safe"]], "cook_safe"),
 	dt("cook", [["friend_suspects_cook"]], "cook_friend_suspects"),
 	dt("cook", [["garlic_suspicion"]], "cook_garlic_suspicion"),
@@ -74,6 +75,7 @@ var triggers: Array[DialogueTrigger] = [
 	dt("gardener", [["garlic_pouch"]], "gardener_garlic_found", true),
 	dt("gardener", [["second_stake"]], "gardener_stake_found", true),
 	dt("gardener", [["garlic_pouch", "second_stake"]], "gardener_garlic_stake_found"),
+	dt("gardener", [["key"]], "gardener_key", true),
 	dt("gardener", [["key", "key_location"]], "gardener_key_wrong"),
 	dt("gardener", [["guard_is_vampire"]], "gardener_guard_vampire"),
 	dt(
@@ -102,6 +104,7 @@ var triggers: Array[DialogueTrigger] = [
 	dt("friend", [["niece_character"]], "friend_discuss_niece"),
 	dt("friend", [["cook_character"]], "friend_discuss_cook"),
 	# Other
+	dt("friend", [["murder_weapon"]], "friend_murder_weapon", true),
 	dt(
 		"friend",
 		[["reference_garlic"], ["reference_garlic", "friend_suspects_cook"]],
@@ -160,6 +163,7 @@ var triggers: Array[DialogueTrigger] = [
 		[["vase"], ["broken_table"], ["vase", "broken_table"], ["someone_in_hallway"]],
 		"guard_vase"
 	),
+	dt("guard", [["guard_hates_garlic"]], "detective_guard_garlic_first_pondering", true),
 	dt(
 		"guard",
 		[["guard_stayed_outside", "reference_entering"]],

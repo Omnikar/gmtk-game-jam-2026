@@ -1,0 +1,4 @@
+join detective_thinking right
+detective_thinking: Andrei had such an odd reaction to being shown the garlic.
+detective_thinking: Why could this be? I should check my reference.
+[signal arg_type="dict" arg="{"present_evidence":""}"]
