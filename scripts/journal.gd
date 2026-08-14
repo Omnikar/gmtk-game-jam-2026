@@ -17,7 +17,7 @@ var player_can_interact: Dictionary[int, bool] = {}
 
 func _ready() -> void:
 	visible = false
-	$Control/PresentButton.visible = false
+	$Control/PresentButton.disabled = true
 
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	Dialogic.timeline_started.connect(_on_timeline_started)
@@ -144,7 +144,7 @@ func _on_evidence_clicked(tag: String) -> void:
 		var s = "" if selected_count == 1 else "s"
 		var message = "%d item%s selected" % [selected_count, s]
 		$Control/SelectedCount.text = message
-		$Control/PresentButton.visible = selected_count >= 1
+		$Control/PresentButton.disabled = selected_count < 1
 
 
 func start_present_mode() -> void:
@@ -158,7 +158,7 @@ func end_present_mode() -> void:
 	present_mode = false
 	$Control/SelectedCount.text = "0 items selected"
 	$Control/SelectedCount.visible = false
-	$Control/PresentButton.visible = false
+	$Control/PresentButton.disabled = true
 	for entry in $Control/TabContainer/Evidence/MarginContainer/VBoxContainer.get_children():
 		if entry is EvidenceEntry:
 			entry.selected = false
