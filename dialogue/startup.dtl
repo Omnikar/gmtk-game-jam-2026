@@ -1,0 +1,4 @@
+- Load existing save
+	[signal arg_type="dict" arg="{"should_load_save":true}"]
+- Start new game
+	[signal arg_type="dict" arg="{"should_load_save":false}"]

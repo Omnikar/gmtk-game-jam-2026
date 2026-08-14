@@ -4,6 +4,8 @@ extends CanvasLayer
 @export var transcript_folder: String
 @export var transcript_entry_prefab_file: String
 
+var save_path = "user://save.json"
+
 var added_evidence: Dictionary[String, bool] = {}
 var added_transcripts: Dictionary[String, bool] = {}
 
@@ -29,11 +31,11 @@ func _ready() -> void:
 		if entry is TranscriptEntry:
 			entry.transcript_clicked.connect(_on_evidence_clicked)
 
-	add_evidence("gardener_character")
-	add_evidence("cook_character")
-	add_evidence("guard_character")
-	add_evidence("niece_character")
-	add_evidence("friend_character")
+	add_evidence("gardener_character", true)
+	add_evidence("cook_character", true)
+	add_evidence("guard_character", true)
+	add_evidence("niece_character", true)
+	add_evidence("friend_character", true)
 
 
 func _input(event: InputEvent) -> void:
@@ -55,7 +57,9 @@ func _on_dialogic_signal(arg: Dictionary) -> void:
 		start_present_mode()
 
 
-func add_evidence(evidence_id: String) -> void:
+func add_evidence(evidence_id: String, skip_saving: bool = false) -> void:
+	if added_evidence.has(evidence_id):
+		return
 	var vbox = $Control/TabContainer/Evidence/MarginContainer/VBoxContainer
 	vbox.get_node("TutorialTip").hide()
 	added_evidence[evidence_id] = true
@@ -65,6 +69,9 @@ func add_evidence(evidence_id: String) -> void:
 	scene_instance.evidence_clicked.connect(_on_evidence_clicked)
 	vbox.add_child(scene_instance)
 	vbox.move_child(scene_instance, 0)
+
+	if not skip_saving:
+		save_game()
 
 
 func add_transcript(transcript_id: String) -> void:
@@ -111,6 +118,8 @@ func add_transcript(transcript_id: String) -> void:
 		tab.show()
 
 	added_transcripts[transcript_id] = true
+
+	save_game()
 
 
 func _on_timeline_started() -> void:
@@ -183,3 +192,33 @@ func _on_present_button_pressed() -> void:
 func _on_close_button_pressed() -> void:
 	visible = false
 	end_present_mode()
+
+
+func save_game() -> void:
+	var dialogic_vars = {}
+	for var_name in Dialogic.VAR.variables():
+		dialogic_vars[var_name] = Dialogic.VAR[var_name]
+	var save_dict = {
+		"evidence_entries": added_evidence.keys(),
+		"transcript_entries": added_transcripts.keys(),
+		"dialogic_vars": dialogic_vars,
+	}
+	var save_data = JSON.stringify(save_dict)
+	var save_file = FileAccess.open(save_path, FileAccess.WRITE)
+	save_file.store_string(save_data)
+
+
+func load_game() -> void:
+	var save_data = FileAccess.get_file_as_string(save_path)
+	if save_data.is_empty():
+		return
+
+	var save_dict: Dictionary = JSON.parse_string(save_data)
+	for var_name in save_dict["dialogic_vars"]:
+		Dialogic.VAR[var_name] = save_dict["dialogic_vars"][var_name]
+
+	for evidence_id in save_dict["evidence_entries"]:
+		add_evidence(evidence_id)
+
+	for transcript_id in save_dict["transcript_entries"]:
+		add_transcript(transcript_id)

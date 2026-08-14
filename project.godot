@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Murder at Transylvania Manor"
-run/main_scene="uid://c6l35ao48najv"
+run/main_scene="uid://ixnlqbl6e16o"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -117,6 +117,7 @@ directories/dtl_directory={
 "niece_vase": "res://dialogue/character_timelines/niece/niece_vase.dtl",
 "niece_will": "res://dialogue/character_timelines/niece/niece_will.dtl",
 "niece_will_accusation": "res://dialogue/character_timelines/niece/niece_will_accusation.dtl",
+"startup": "res://dialogue/startup.dtl",
 "test_evidence_timeline": "res://dialogue/evidence_timelines/test_evidence_timeline.dtl",
 "test_npc_timeline": "res://dialogue/character_timelines/test_npc_timeline.dtl"
 }
@@ -164,6 +165,7 @@ variables={
 "cook_angry": false,
 "cook_introduced": false,
 "friend_introduced": false,
+"game_started": false,
 "gardener_introduced": false,
 "guard_introduced": false,
 "has_key": false,

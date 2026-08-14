@@ -1,17 +1,22 @@
 join detective_thinking right
-detective_thinking: I've arrived at the manor of none other than Count Dracula.
-detective_thinking: I'm here to investigate his untimely homicide.
-detective_thinking: As reported, Dracula was just wrapping up a dinner party when the incident happened.
-detective_thinking: There are five suspects in this case, all currently on the scene.
-detective_thinking: I don't have to worry about them trying anything mischievous now that I'm here. My incredible monocle is too intimidating. :)
-detective_thinking: When I come near a person or a piece of evidence, I can use the [E] key to interact with it.
-detective_thinking: I'm going to gather evidence and question the suspects until I figure out exactly what happened here.
-detective_thinking: Anything I find will go in my journal, which I can open and close by pressing [TAB].
-detective_thinking: My journal will also keep a log of the conversations I've had, so I can reference them later. Some parts might be highlighted for containing important information that I might want to cite later.
-detective_thinking: The last tab in my journal also includes some helpful notes about vampires, at least some of which will no doubt come in handy for this investigation.
-detective_thinking: When I question someone, I will do so by selecting one or more records from my journal to ask about.
-detective_thinking: If I want to know someone's thoughts about something, I can select that one item when questioning them.
-detective_thinking: If I want to use multiple pieces of evidence (including physical evidence, conversation transcripts, or reference book entries) to draw a conclusion, then I can select those multiple items when questioning someone.
-detective_thinking: I usually won't need to combine more than two pieces of evidence at a time, though it may be necessary at some point. But any more than three probably won't get me anywhere.
-detective_thinking: Alright, I'm ready. Let's investigate.
+if {game_started} == false:
+	detective_thinking: I've arrived at the manor of none other than Count Dracula.
+	detective_thinking: I'm here to investigate his untimely homicide.
+	detective_thinking: As reported, Dracula was just wrapping up a dinner party when the incident happened.
+	detective_thinking: There are five suspects in this case, all currently on the scene.
+	detective_thinking: I don't have to worry about them trying anything mischievous now that I'm here. My incredible monocle is too intimidating. :)
+	detective_thinking: When I come near a person or a piece of evidence, I can use the [E] key to interact with it.
+	detective_thinking: I'm going to gather evidence and question the suspects until I figure out exactly what happened here.
+	detective_thinking: Anything I find will go in my journal, which I can open and close by pressing [TAB].
+	detective_thinking: My journal will also keep a log of the conversations I've had, so I can reference them later. Some parts might be highlighted for containing important information that I might want to cite later.
+	detective_thinking: The last tab in my journal also includes some helpful notes about vampires, at least some of which will no doubt come in handy for this investigation.
+	detective_thinking: When I question someone, I will do so by selecting one or more records from my journal to ask about.
+	detective_thinking: If I want to know someone's thoughts about something, I can select that one item when questioning them.
+	detective_thinking: If I want to use multiple pieces of evidence (including physical evidence, conversation transcripts, or reference book entries) to draw a conclusion, then I can select those multiple items when questioning someone.
+	detective_thinking: I usually won't need to combine more than two pieces of evidence at a time, though it may be necessary at some point. But any more than three probably won't get me anywhere.
+	detective_thinking: Alright, I'm ready. Let's investigate.
+else:
+	detective_thinking: I'm back, and this mystery still needs solving.
+	detective_thinking: Now, where did I leave off? I should review my journal by pressing [TAB].
+set {game_started} = true
 [signal arg_type="dict" arg="{"level_status":"starting"}"]

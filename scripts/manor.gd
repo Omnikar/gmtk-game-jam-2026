@@ -63,6 +63,7 @@ func _on_dialogic_signal(arg: Dictionary) -> void:
 	if status == "completing":
 		$Music.playing = false
 		$FinalMusic.playing = true
+		DirAccess.remove_absolute(Journal.save_path)
 	if status == "complete":
 		$Thanks.show()
 

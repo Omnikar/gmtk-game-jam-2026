@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ixnlqbl6e16o"]
+
+[ext_resource type="Script" uid="uid://bx2kln4dn4j14" path="res://scripts/save_loader.gd" id="1_i57nb"]
+[ext_resource type="Texture2D" uid="uid://p26y0pgtqv7r" path="res://sprites/pixel.png" id="1_t1a8t"]
+
+[node name="SaveLoader" type="CanvasLayer" unique_id=1702006804]
+script = ExtResource("1_i57nb")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1935676967]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_t1a8t")
+expand_mode = 1
